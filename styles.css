@@ -195,25 +195,6 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 .addon-slide span { color: var(--orange-2); font: 800 10px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .08em; }
 .addon-slide strong { margin-top: 9px; color: var(--white); line-height: 1.15; }
 .addon-slide small { margin-top: 7px; line-height: 1.4; }
-.private-tools {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 20px;
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
-}
-.private-tools a, .private-label {
-  padding: 7px 11px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 850;
-}
-.private-tools a { color: var(--cyan); text-decoration: none; }
-.private-tools a:hover { border-color: var(--cyan); color: var(--white); }
-.private-label { color: var(--muted); background: rgba(255,255,255,.03); }
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 42px; }
 .card {
   min-height: 225px;
