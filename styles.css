@@ -195,6 +195,36 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 .addon-slide span { color: var(--orange-2); font: 800 10px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .08em; }
 .addon-slide strong { margin-top: 9px; color: var(--white); line-height: 1.15; }
 .addon-slide small { margin-top: 7px; line-height: 1.4; }
+.lab-about {
+  border-top: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 10% 35%, rgba(244,122,42,.09), transparent 26rem),
+    rgba(3,12,22,.42);
+}
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr);
+  gap: clamp(36px, 7vw, 90px);
+  align-items: start;
+}
+.about-copy p:first-child { margin-top: 0; }
+.about-copy p { color: var(--muted); }
+.focus-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 25px;
+}
+.focus-list span {
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  background: rgba(17,45,72,.72);
+  font: 800 12px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace;
+  letter-spacing: .03em;
+}
+
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 42px; }
 .card {
   min-height: 225px;
@@ -289,6 +319,7 @@ footer a { color: var(--cyan); }
   .lead, .section-lead { font-size: 18px; }
   .actions { width: 100%; margin-top: 22px; }
   .actions .button { flex: 1 1 100%; width: 100%; padding-inline: 16px; text-align: center; }
+  .about-layout { grid-template-columns: 1fr; gap: 25px; }
   .grid { gap: 15px; margin-top: 30px; }
   .card { min-height: 0; padding: 22px; }
   .compact-lab { margin-top: 38px; padding-top: 28px; }
