@@ -121,7 +121,7 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 
 .experiments { overflow: hidden; }
 .experiments::before { content: none; }
-.experiment-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 0; }
+.experiment-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 0; }
 .experiment-card {
   display: grid;
   grid-template-columns: 62px 1fr;
@@ -134,6 +134,7 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 }
 .experiment-card.orange-lab { border-top: 3px solid var(--orange); }
 .experiment-card.blue-lab { border-top: 3px solid var(--cyan); }
+.experiment-card.fish-lab { border-top: 3px solid var(--lime); }
 .experiment-icon {
   display: grid;
   place-items: center;
@@ -148,9 +149,21 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
   transform: rotate(-3deg);
 }
 .blue-lab .experiment-icon { background: var(--cyan); transform: rotate(3deg); }
+.fish-lab .experiment-icon { background: var(--lime); transform: rotate(-2deg); }
 .experiment-card h3 { color: var(--white); font: 950 24px/1.1 ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui, sans-serif; }
 .experiment-card p { margin: 8px 0; font-size: 15px; line-height: 1.45; }
 .lab-link { font-weight: 950; text-decoration-thickness: 2px; }
+.coming-soon {
+  display: inline-flex;
+  margin-top: 4px;
+  padding: 5px 9px;
+  border: 1px solid rgba(167,217,91,.55);
+  border-radius: 999px;
+  color: var(--lime);
+  font: 900 11px/1 ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui, sans-serif;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
 .addon-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 28px; }
 .addon-heading p { margin: 0; color: var(--white); }
 .addon-heading a { font-size: 14px; font-weight: 850; }
