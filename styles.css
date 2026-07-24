@@ -135,6 +135,7 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 .experiment-card.orange-lab { border-top: 3px solid var(--orange); }
 .experiment-card.blue-lab { border-top: 3px solid var(--cyan); }
 .experiment-card.fish-lab { border-top: 3px solid var(--lime); }
+.experiment-card.duck-lab { border-top: 3px solid var(--purple); }
 .experiment-icon {
   display: grid;
   place-items: center;
@@ -150,6 +151,7 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 }
 .blue-lab .experiment-icon { background: var(--cyan); transform: rotate(3deg); }
 .fish-lab .experiment-icon { background: var(--lime); transform: rotate(-2deg); }
+.duck-lab .experiment-icon { background: var(--purple); transform: rotate(4deg); }
 .experiment-card h3 { color: var(--white); font: 950 24px/1.1 ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui, sans-serif; }
 .experiment-card p { margin: 8px 0; font-size: 15px; line-height: 1.45; }
 .lab-link { font-weight: 950; text-decoration-thickness: 2px; }
