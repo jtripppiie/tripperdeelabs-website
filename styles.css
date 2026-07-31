@@ -390,10 +390,17 @@ footer a { color: var(--cyan); }
   text-align: center;
   text-transform: uppercase;
 }
-.visitor-counter img {
-  width: auto;
-  height: 28px;
-  image-rendering: pixelated;
+.counter-digits {
+  display: inline-grid;
+  min-width: 42px;
+  min-height: 28px;
+  place-items: center;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #071526;
+  background: var(--orange-2);
+  font: 950 14px/1 ui-monospace, SFMono-Regular, Consolas, monospace;
+  letter-spacing: .08em;
 }
 .counter-sparkle { color: var(--cyan); animation: counter-twinkle 1.6s steps(2, end) infinite; }
 @keyframes counter-twinkle { 50% { opacity: .25; } }
@@ -413,7 +420,7 @@ footer a { color: var(--cyan); }
   .links .button { min-height: 44px; padding: 8px 13px; border-width: 2px; font-size: 13px; box-shadow: 3px 3px 0 var(--blue); }
   .visitor-counter { gap: 4px; padding: 4px 6px; }
   .visitor-counter .counter-copy, .visitor-counter .counter-sparkle { display: none; }
-  .visitor-counter img { height: 24px; }
+  .counter-digits { min-height: 24px; padding-block: 3px; }
   .grid, .app-card, .experiment-grid { grid-template-columns: 1fr; }
   .experiment-card { grid-template-columns: 1fr; }
   .hero { padding: 42px 0 46px; }
