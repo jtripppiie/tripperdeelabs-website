@@ -301,6 +301,35 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 footer { padding: 44px 0; color: var(--muted); background: #030d18; border-top: 1px solid var(--line); }
 .footer-row { display: flex; justify-content: space-between; gap: 28px; flex-wrap: wrap; }
 footer a { color: var(--cyan); }
+.visitor-counter {
+  display: flex;
+  width: fit-content;
+  max-width: calc(100% - 36px);
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 28px;
+  padding: 9px 14px;
+  border: 1px dashed rgba(255,173,56,.65);
+  border-radius: 8px;
+  color: var(--orange-2);
+  background: rgba(244,122,42,.06);
+  font: 800 11px/1.3 ui-monospace, SFMono-Regular, Consolas, monospace;
+  letter-spacing: .08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.visitor-counter img {
+  width: auto;
+  height: 28px;
+  image-rendering: pixelated;
+}
+.counter-sparkle { color: var(--cyan); animation: counter-twinkle 1.6s steps(2, end) infinite; }
+@keyframes counter-twinkle { 50% { opacity: .25; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .counter-sparkle { animation: none; }
+}
 
 @media (max-width: 760px) {
   body { font-size: 16px; line-height: 1.58; }
@@ -318,6 +347,7 @@ footer a { color: var(--cyan); }
   .hero-logo { width: 108px; align-self: start; }
   h1 { font-size: clamp(39px, 12vw, 56px); letter-spacing: -.045em; }
   h2 { font-size: clamp(32px, 10vw, 48px); }
+  .visitor-counter { flex-wrap: wrap; max-width: calc(100% - 28px); }
   .lead, .section-lead { font-size: 18px; }
   .actions { width: 100%; margin-top: 22px; }
   .actions .button { flex: 1 1 100%; width: 100%; padding-inline: 16px; text-align: center; }
