@@ -111,6 +111,7 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 }
 .button.secondary { color: var(--white); background: var(--panel-2); box-shadow: 3px 3px 0 var(--orange); }
 .button:hover { color: #071526; background: var(--cyan); box-shadow: 2px 2px 0 var(--orange); transform: translate(3px,3px); }
+.surprise-button { cursor: pointer; font-size: inherit; }
 
 .section { position: relative; padding: 72px 0; }
 .section.dark { color: var(--ink); background: rgba(3,12,22,.8); border-block: 1px solid var(--line); }
@@ -197,6 +198,75 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 .addon-slide span { color: var(--orange-2); font: 800 10px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .08em; }
 .addon-slide strong { margin-top: 9px; color: var(--white); line-height: 1.15; }
 .addon-slide small { margin-top: 7px; line-height: 1.4; }
+.lab-pulse {
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 88% 18%, rgba(154,89,209,.13), transparent 25rem),
+    rgba(3,12,22,.55);
+}
+.pulse-heading {
+  display: grid;
+  grid-template-columns: minmax(260px, .85fr) minmax(0, 1.15fr);
+  gap: clamp(32px, 7vw, 90px);
+  align-items: end;
+}
+.pulse-intro { max-width: 620px; margin: 0 0 4px; font-size: 19px; }
+.pulse-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(290px, .75fr);
+  gap: 18px;
+  margin-top: 38px;
+}
+.status-board {
+  display: grid;
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: var(--line);
+}
+.status-item {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 21px 23px;
+  background: rgba(13,34,56,.97);
+}
+.status-item h3 { color: var(--white); }
+.status-item p { margin: 6px 0 0; font-size: 15px; line-height: 1.45; }
+.status-item .status-label {
+  margin: 0 0 5px;
+  color: var(--orange-2);
+  font: 900 10px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.status-light {
+  width: 11px;
+  height: 11px;
+  margin-top: 3px;
+  border: 2px solid rgba(255,255,255,.8);
+  border-radius: 50%;
+  box-shadow: 0 0 12px currentColor;
+}
+.status-light.brewing { color: var(--orange-2); background: currentColor; }
+.status-light.testing { color: var(--purple); background: currentColor; }
+.status-light.shipped { color: var(--lime); background: currentColor; }
+.lab-log {
+  padding: 23px;
+  border: 1px dashed rgba(44,185,232,.55);
+  border-radius: 17px;
+  background: rgba(7,21,38,.9);
+}
+.log-title-row { display: flex; align-items: center; justify-content: space-between; color: var(--cyan); }
+.log-title-row span { font-size: 26px; }
+.lab-log ol { margin: 19px 0 0; padding: 0; list-style: none; }
+.lab-log li { display: grid; grid-template-columns: 56px 1fr; gap: 12px; padding: 13px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; line-height: 1.45; }
+.lab-log time { color: var(--orange-2); font: 850 11px/1.4 ui-monospace, SFMono-Regular, Consolas, monospace; text-transform: uppercase; }
+.current-obsession { margin: 18px 0 0; padding: 13px 14px; border-radius: 10px; background: rgba(154,89,209,.12); font-size: 14px; line-height: 1.45; }
+.current-obsession strong { color: var(--white); }
 .lab-about {
   border-top: 1px solid var(--line);
   background:
@@ -354,6 +424,11 @@ footer a { color: var(--cyan); }
   .actions { width: 100%; margin-top: 22px; }
   .actions .button { flex: 1 1 100%; width: 100%; padding-inline: 16px; text-align: center; }
   .about-layout { grid-template-columns: 1fr; gap: 25px; }
+  .pulse-heading, .pulse-layout { grid-template-columns: 1fr; }
+  .pulse-heading { gap: 18px; }
+  .pulse-intro { font-size: 17px; }
+  .pulse-layout { margin-top: 27px; }
+  .status-item { padding: 18px; }
   .grid { gap: 15px; margin-top: 30px; }
   .card { min-height: 0; padding: 22px; }
   .compact-lab { margin-top: 38px; padding-top: 28px; }

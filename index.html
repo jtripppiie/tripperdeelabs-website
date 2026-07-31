@@ -39,7 +39,11 @@
           <p class="eyebrow">Independent software lab</p>
           <h1>Useful ideas.<br>A little weirdness.</h1>
           <p class="lead">Friendly apps and browser experiments made with curiosity and care.</p>
-          <div class="actions"><a class="button" href="#experiments">See the experiments</a><a class="button secondary" href="mailto:feedback@tripperdeelabs.com">Say hello</a></div>
+          <div class="actions">
+            <a class="button" href="#experiments">See the experiments</a>
+            <button class="button secondary surprise-button" type="button">↝ Surprise me</button>
+            <a class="button secondary" href="mailto:feedback@tripperdeelabs.com">Say hello</a>
+          </div>
         </div>
         <img class="hero-logo" src="/assets/tripperdeelabs-logo.png" alt="TripperDeeLabs fox scientist logo">
       </div>
@@ -75,6 +79,45 @@
         </div>
       </div>
     </section>
+    <section class="section lab-pulse" aria-labelledby="lab-pulse-title">
+      <div class="wrap">
+        <div class="pulse-heading">
+          <div>
+            <p class="eyebrow">Live from the workbench</p>
+            <h2 id="lab-pulse-title">Now in the lab.</h2>
+          </div>
+          <p class="pulse-intro">A small, occasionally scientific record of what is brewing, shipping, and wandering around unsupervised.</p>
+        </div>
+        <div class="pulse-layout">
+          <div class="status-board" aria-label="Current project statuses">
+            <article class="status-item">
+              <span class="status-light brewing" aria-hidden="true"></span>
+              <div><p class="status-label">Brewing</p><h3>Salmon Tracker</h3><p>Turning public Alaska fish counts into useful, unofficial intelligence.</p></div>
+            </article>
+            <article class="status-item">
+              <span class="status-light testing" aria-hidden="true"></span>
+              <div><p class="status-label">Prototyping</p><h3>Captain Quack</h3><p>Giving one determined duck a spaceship and an asteroid problem.</p></div>
+            </article>
+            <article class="status-item">
+              <span class="status-light shipped" aria-hidden="true"></span>
+              <div><p class="status-label">In the wild</p><h3>Local Lore + Firefox tools</h3><p>Helping curious people explore nearby places and poke at the web.</p></div>
+            </article>
+          </div>
+          <aside class="lab-log" aria-labelledby="lab-log-title">
+            <div class="log-title-row">
+              <h3 id="lab-log-title">Lab log</h3>
+              <span aria-hidden="true">⌁</span>
+            </div>
+            <ol>
+              <li><time datetime="2026-07-30">Jul 30</time><span>Installed a tiny old-web visitor counter. Watched it count itself.</span></li>
+              <li><time datetime="2026-07-24">Jul 24</time><span>Captain Quack landed on the experiment shelf.</span></li>
+              <li><time datetime="2026-07-23">Jul 23</time><span>Salmon Tracker swam into the upcoming-project queue.</span></li>
+            </ol>
+            <p class="current-obsession"><strong>Current strange obsession:</strong> making public data feel less like homework.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
     <section class="section lab-about" id="about">
       <div class="wrap about-layout">
         <div>
@@ -104,6 +147,19 @@
   <script>
     const visitorCount = document.querySelector("#visitor-count");
     visitorCount.src = `${visitorCount.dataset.counterSrc}&cacheBust=${Date.now()}`;
+
+    const experiments = [
+      "/local-lore/",
+      "https://addons.mozilla.org/en-US/firefox/addon/force-hover/",
+      "https://addons.mozilla.org/en-US/firefox/addon/page-guides/",
+      "https://addons.mozilla.org/en-US/firefox/addon/playphrase-roulette/",
+      "https://addons.mozilla.org/en-US/firefox/addon/geocities-chaos-mode/",
+      "https://addons.mozilla.org/en-US/firefox/addon/ultimate-screenshotter/"
+    ];
+    document.querySelector(".surprise-button").addEventListener("click", () => {
+      const destination = experiments[Math.floor(Math.random() * experiments.length)];
+      window.location.assign(destination);
+    });
   </script>
 </body>
 </html>
