@@ -8,5 +8,8 @@ Static GitHub Pages site for `tripperdeelabs.com`.
 - `/local-lore/` — Local Lore product page
 - `/local-lore/privacy/` — Google Play privacy policy
 - `/local-lore/support/` — support, safety, and corrections
+- `/roboball/` — RoboBall product page
+- `/roboball/privacy/` — RoboBall Google Play privacy policy
+- `/roboball/support/` — RoboBall support and troubleshooting
 
 There is no build step, JavaScript application, analytics, account system, or backend. GitHub Pages publishes the files directly.
