@@ -138,6 +138,7 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 .experiment-card.fish-lab { border-top: 3px solid var(--lime); }
 .experiment-card.duck-lab { border-top: 3px solid var(--purple); }
 .experiment-card.roboball-lab { border-top: 3px solid #ff4f8b; }
+.experiment-card.garmin-lab { border-top: 3px solid #62e66c; }
 .experiment-icon {
   display: grid;
   place-items: center;
@@ -155,6 +156,7 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 .fish-lab .experiment-icon { background: var(--lime); transform: rotate(-2deg); }
 .duck-lab .experiment-icon { background: var(--purple); transform: rotate(4deg); }
 .roboball-lab .experiment-icon { background: #ffad38; transform: rotate(-4deg); }
+.garmin-lab .experiment-icon { background: #62e66c; transform: rotate(2deg); }
 .experiment-card h3 { color: var(--white); font: 950 24px/1.1 ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui, sans-serif; }
 .experiment-card p { margin: 8px 0; font-size: 15px; line-height: 1.45; }
 .lab-link { font-weight: 950; text-decoration-thickness: 2px; }
@@ -413,6 +415,54 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 .roboball-mark::before { transform: translateX(-47%); }
 .roboball-mark::after { transform: translateY(-47%); }
 
+.garmin-hero { text-align: center; }
+.garmin-hero .lead { margin-inline: auto; }
+.garmin-hero .actions { justify-content: center; }
+.watch-catalog { padding-top: 28px; }
+.watch-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 36px; }
+.watch-card {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(17,45,72,.96), rgba(5,17,30,.98));
+}
+.watch-card h2 { color: var(--white); font-size: clamp(27px, 3vw, 38px); }
+.watch-card p { margin: 10px 0 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
+.watch-tag { color: var(--orange-2) !important; font: 900 10px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .1em; text-transform: uppercase; }
+.watch-status { display: inline-flex; margin-top: 16px; padding: 6px 10px; border: 1px solid rgba(98,230,108,.55); border-radius: 999px; color: #8df494; background: rgba(98,230,108,.08); font: 900 11px/1 ui-monospace, SFMono-Regular, Consolas, monospace; text-transform: uppercase; }
+.watch-preview {
+  position: relative;
+  display: grid;
+  width: 180px;
+  aspect-ratio: 1;
+  place-items: center;
+  overflow: hidden;
+  border: 10px solid #222d37;
+  border-radius: 50%;
+  background: #030609;
+  box-shadow: inset 0 0 0 2px #55616b, 0 16px 28px rgba(0,0,0,.38);
+}
+.watch-preview::before { content: ""; position: absolute; inset: 7%; border: 1px solid rgba(255,255,255,.16); border-radius: 50%; }
+.watch-screen { position: relative; z-index: 1; width: 76%; color: #fff; font-family: "Arial Narrow", "Roboto Condensed", sans-serif; }
+.watch-time { display: block; font-size: 42px; font-weight: 950; line-height: .9; letter-spacing: -.05em; }
+.watch-small { display: block; margin-top: 8px; color: #aebbc7; font: 800 10px/1.3 ui-monospace, monospace; letter-spacing: .07em; }
+.watch-bars { display: grid; gap: 5px; margin-top: 12px; }
+.watch-bars i { display: block; height: 4px; border-radius: 999px; background: #62e66c; }
+.watch-bars i:nth-child(2) { width: 78%; background: #ff5260; }
+.watch-bars i:nth-child(3) { width: 62%; background: #5282ff; }
+.watch-preview.photo { background: linear-gradient(90deg, #020406 0 52%, #bb8a58 53% 100%); }
+.watch-preview.photo .watch-screen { transform: translateX(-18%); }
+.watch-preview.summit { background: linear-gradient(155deg, #07101a 0 64%, #233d52 65% 70%, #0b1721 71%); }
+.watch-preview.launch .watch-time { color: #ffad38; }
+.watch-preview.launch::after { content: "▲"; position: absolute; right: 26px; bottom: 31px; color: #ff694d; font-size: 31px; transform: rotate(8deg); }
+.watch-preview.college { background: linear-gradient(135deg, #08274e 0 50%, #f0b323 50%); }
+.watch-preview.college .watch-screen { padding: 14px 8px; border: 3px solid #fff; background: rgba(1,10,20,.72); text-align: center; }
+.garmin-note { margin-top: 30px; padding: 19px 21px; border: 1px dashed rgba(44,185,232,.55); border-radius: 14px; color: var(--muted); background: rgba(7,21,38,.85); }
+
 footer { padding: 44px 0; color: var(--muted); background: #030d18; border-top: 1px solid var(--line); }
 .footer-row { display: flex; justify-content: space-between; gap: 28px; flex-wrap: wrap; }
 footer a { color: var(--cyan); }
@@ -500,6 +550,10 @@ footer a { color: var(--cyan); }
   .roboball-hero { padding-bottom: 185px; }
   .roboball-hero::before { width: 210px; right: 50%; top: auto; bottom: -60px; transform: translateX(50%); }
   .roboball-mark { right: 50%; top: auto; bottom: -23px; width: 150px; transform: translateX(50%) rotate(-9deg); }
+  .watch-grid { grid-template-columns: 1fr; }
+  .watch-card { grid-template-columns: 130px minmax(0, 1fr); gap: 17px; padding: 18px; }
+  .watch-preview { width: 124px; border-width: 7px; }
+  .watch-time { font-size: 29px; }
   footer { padding: 34px 0; font-size: 14px; }
   .footer-row { gap: 15px; }
   .footer-row > * { width: 100%; }
