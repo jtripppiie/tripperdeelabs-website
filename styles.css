@@ -461,6 +461,12 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 .watch-preview.launch::after { content: "▲"; position: absolute; right: 26px; bottom: 31px; color: #ff694d; font-size: 31px; transform: rotate(8deg); }
 .watch-preview.college { background: linear-gradient(135deg, #08274e 0 50%, #f0b323 50%); }
 .watch-preview.college .watch-screen { padding: 14px 8px; border: 3px solid #fff; background: rgba(1,10,20,.72); text-align: center; }
+.watch-preview.amelia { background: radial-gradient(circle at 32% 25%, #dfb9ff, transparent 26%), linear-gradient(145deg, #351d52, #120d26 68%); }
+.watch-preview.amelia .watch-screen { text-align: center; }
+.watch-monogram { display: block; margin-bottom: 5px; color: #f4d8ff; font: 950 31px/1 Georgia, serif; }
+.watch-preview.fish { background: radial-gradient(circle at 68% 24%, rgba(109,230,225,.28), transparent 27%), linear-gradient(165deg, #0b6571, #052b42 62%, #031722); }
+.watch-preview.fish .watch-screen { text-align: center; }
+.watch-fish { display: block; margin-bottom: 7px; color: #72e6da; font: 900 25px/1 system-ui, sans-serif; letter-spacing: -.25em; transform: translateX(-4px); }
 .garmin-note { margin-top: 30px; padding: 19px 21px; border: 1px dashed rgba(44,185,232,.55); border-radius: 14px; color: var(--muted); background: rgba(7,21,38,.85); }
 
 footer { padding: 44px 0; color: var(--muted); background: #030d18; border-top: 1px solid var(--line); }
