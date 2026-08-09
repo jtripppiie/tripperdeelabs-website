@@ -13,6 +13,24 @@
   <meta property="og:description" content="Independent software studio creating privacy-conscious Android apps, Firefox extensions, and useful experiments.">
   <meta property="og:url" content="https://tripperdeelabs.com/">
   <meta property="og:image" content="https://tripperdeelabs.com/assets/tripperdeelabs-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TripperDeeLabs — Android Apps, Firefox Extensions & Curious Tools">
+  <meta name="twitter:description" content="Privacy-conscious Android apps, Firefox extensions, Garmin watch faces, and useful software experiments.">
+  <meta name="twitter:image" content="https://tripperdeelabs.com/assets/tripperdeelabs-logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TripperDeeLabs",
+    "url": "https://tripperdeelabs.com/",
+    "logo": "https://tripperdeelabs.com/assets/tripperdeelabs-logo.png",
+    "description": "Independent software studio creating privacy-conscious Android apps, Firefox extensions, Garmin watch faces, and useful experiments.",
+    "sameAs": [
+      "https://addons.mozilla.org/en-US/firefox/user/19956782/",
+      "https://github.com/jtripppiie"
+    ]
+  }
+  </script>
   <script defer src="/contact-links.js"></script>
   <script defer src="/cookie-consent.js"></script>
 </head>
@@ -26,7 +44,7 @@
         <span class="counter-digits" id="visitor-count" role="status" aria-live="polite" aria-label="Loading total homepage visits">···</span>
         <span class="counter-sparkle" aria-hidden="true">✦</span>
       </div>
-      <div class="links"><a href="#experiments">Experiments</a><a href="#about">About</a><a href="/garmin/">Garmin</a><a href="/roboball/">RoboBall</a><a href="/local-lore/">Local Lore</a><a class="button" href="/contact-email">Contact</a></div>
+      <div class="links"><a href="#experiments">Experiments</a><a href="#about">About</a><a href="/parked/">Parked</a><a href="/garmin/">Garmin</a><a href="/roboball/">RoboBall</a><a href="/local-lore/">Local Lore</a><a class="button" href="/contact-email">Contact</a></div>
     </nav>
   </header>
   <main>
@@ -46,6 +64,10 @@
       </div>
       <div class="compact-lab" id="experiments">
         <div class="experiment-grid">
+          <article class="experiment-card parked-lab">
+            <div class="experiment-icon" aria-hidden="true">P?</div>
+            <div><p class="number">ANDROID · FIND MY CAR</p><h3>Parked</h3><p>A compact home-screen widget that remembers where you parked and opens walking directions back.</p><a class="lab-link" href="/parked/">Meet Parked →</a></div>
+          </article>
           <article class="experiment-card orange-lab">
             <div class="experiment-icon" aria-hidden="true">⌖</div>
             <div><p class="number">ANDROID · LOCAL DISCOVERY</p><h3>Local Lore</h3><p>Uncover nearby history, wildlife, oddities, and legends.</p><a class="lab-link" href="/local-lore/">Meet Local Lore →</a></div>
@@ -152,7 +174,7 @@
   <footer>
     <div class="footer-row wrap">
       <span>© 2026 TripperDeeLabs · Doing TripperDee things in a TripperDee world.</span>
-      <span><a href="https://addons.mozilla.org/en-US/firefox/user/19956782/" rel="me noopener">Firefox Add-ons</a> · <a href="/garmin/">Garmin</a> · <a href="/roboball/">RoboBall</a> · <a href="/local-lore/">Local Lore</a> · <a href="/contact-email">Support</a></span>
+      <span><a href="https://addons.mozilla.org/en-US/firefox/user/19956782/" rel="me noopener">Firefox Add-ons</a> · <a href="/parked/">Parked</a> · <a href="/garmin/">Garmin</a> · <a href="/roboball/">RoboBall</a> · <a href="/local-lore/">Local Lore</a> · <a href="/contact-email">Support</a></span>
     </div>
   </footer>
   <script>
@@ -176,6 +198,7 @@
       });
 
     const experiments = [
+      "/parked/",
       "/boss-button/",
       "/roboball/",
       "/local-lore/",

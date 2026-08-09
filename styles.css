@@ -139,6 +139,7 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 .experiment-card.duck-lab { border-top: 3px solid var(--purple); }
 .experiment-card.roboball-lab { border-top: 3px solid #ff4f8b; }
 .experiment-card.garmin-lab { border-top: 3px solid #62e66c; }
+.experiment-card.parked-lab { border-top: 3px solid var(--orange-2); }
 .experiment-icon {
   display: grid;
   place-items: center;
@@ -157,6 +158,7 @@ h3 { font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui
 .duck-lab .experiment-icon { background: var(--purple); transform: rotate(4deg); }
 .roboball-lab .experiment-icon { background: #ffad38; transform: rotate(-4deg); }
 .garmin-lab .experiment-icon { background: #62e66c; transform: rotate(2deg); }
+.parked-lab .experiment-icon { background: var(--orange-2); transform: rotate(-2deg); }
 .experiment-card h3 { color: var(--white); font: 950 24px/1.1 ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui, sans-serif; }
 .experiment-card p { margin: 8px 0; font-size: 15px; line-height: 1.45; }
 .lab-link { font-weight: 950; text-decoration-thickness: 2px; }

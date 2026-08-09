@@ -2,6 +2,8 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://tripperdeelabs.com/sitemap.xml
+
 # AI training and bulk data-collection crawlers.
 User-agent: GPTBot
 Disallow: /
@@ -15,12 +17,6 @@ Disallow: /
 User-agent: ClaudeBot
 Disallow: /
 
-User-agent: Claude-SearchBot
-Disallow: /
-
-User-agent: Claude-User
-Disallow: /
-
 User-agent: Bytespider
 Disallow: /
 
@@ -28,9 +24,6 @@ User-agent: Meta-ExternalAgent
 Disallow: /
 
 User-agent: Meta-ExternalFetcher
-Disallow: /
-
-User-agent: PerplexityBot
 Disallow: /
 
 User-agent: Amazonbot
