@@ -16,7 +16,7 @@
 <main class="wrap"><article class="prose">
   <p class="eyebrow">Mock Location: Fake GPS</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Effective August 8, 2026</p>
+  <p class="updated">Effective August 26, 2026</p>
   <p class="notice"><strong>The short version:</strong> Mock Location: Fake GPS has no advertising SDK, account system, first-party analytics, behavioral tracking, or developer-operated location server. Local settings and saved locations stay on your device. Map display and address search use the network services described below.</p>
 
   <h2>Who publishes the app</h2>
@@ -43,7 +43,7 @@
   <p>You can avoid address search by selecting a point directly on the map or entering latitude and longitude coordinates.</p>
 
   <h2>Physical location permission</h2>
-  <p>Location permission is requested only when you tap the current-device-location button. That optional feature reads the most recent physical position available from Android locally to move the map and select a point. Starting a mock-location session does not require physical-location permission. TripperDeeLabs does not receive or store physical or simulated locations on a server.</p>
+  <p>Location permission is requested when you start a mock-location session because Google Play services requires it to enable fused mock-location compatibility. Starting a session does not cause this app to read your device's physical location. The optional current-device-location button reads the most recent physical position available from Android locally to move the map and select a point. TripperDeeLabs does not receive or store physical or simulated locations on a server.</p>
 
   <h2>Mock-location sessions</h2>
   <p>Selected and simulated coordinates are generated locally through Android's official mock-location testing capability. The app does not attempt to conceal Android's mock-location indicator or bypass applications that reject mock locations.</p>
@@ -51,7 +51,7 @@
   <h2>Permissions</h2>
   <ul>
     <li><strong>Internet:</strong> loads map resources and performs Photon address searches.</li>
-    <li><strong>Location:</strong> selects the current device position only when you invoke that optional feature.</li>
+    <li><strong>Location:</strong> enables Google Play services fused mock-location compatibility when a session starts and selects the current device position only when you invoke that optional feature.</li>
     <li><strong>Notifications:</strong> displays active-session controls on supported Android versions.</li>
     <li><strong>Foreground service:</strong> maintains a user-started mock-location test session with a persistent notification.</li>
     <li><strong>Mock location declaration:</strong> allows Android Developer Options to list the app as a selectable mock-location application.</li>
