@@ -2,7 +2,6 @@
   'use strict';
 
   var STORAGE_KEY = 'tdl-cookie-consent';
-  var GTM_ID = 'GTM-KTV46GP6';
   var GA_MEASUREMENT_ID = 'G-77H5RENPZ3';
 
   function getConsent() {
@@ -21,49 +20,23 @@
     }
   }
 
-  function gtag() {
-    window.dataLayer.push(arguments);
-  }
-
-  function initDataLayer() {
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = window.gtag || gtag;
-  }
-
-  function insertScript(id, src) {
-    if (document.getElementById(id)) return;
-
-    var script = document.createElement('script');
-    script.async = true;
-    script.id = id;
-    script.src = src;
-    var first = document.getElementsByTagName('script')[0];
-    if (first && first.parentNode) first.parentNode.insertBefore(script, first);
-    else document.head.appendChild(script);
-  }
-
-  function loadTagManager() {
-    if (document.getElementById('google-tag-manager')) return;
-
-    initDataLayer();
-    window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-    insertScript('google-tag-manager', 'https://www.googletagmanager.com/gtm.js?id=' + GTM_ID);
-  }
-
   function loadGoogleAnalytics() {
     if (document.getElementById('google-analytics')) return;
 
-    initDataLayer();
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () {
+      window.dataLayer.push(arguments);
+    };
     window.gtag('js', new Date());
     window.gtag('config', GA_MEASUREMENT_ID);
-    insertScript('google-analytics', 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID);
-  }
 
-  function enableAnalytics() {
-    loadTagManager();
-    // GTM-KTV46GP6 is published with no tags, so GA4 still needs a direct
-    // config after consent. Remove this call if GA4 is added inside GTM.
-    loadGoogleAnalytics();
+    var script = document.createElement('script');
+    script.async = true;
+    script.id = 'google-analytics';
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+    var first = document.getElementsByTagName('script')[0];
+    if (first && first.parentNode) first.parentNode.insertBefore(script, first);
+    else document.head.appendChild(script);
   }
 
   function buildInterface() {
@@ -102,7 +75,7 @@
 
     banner.querySelector('.cookie-accept').addEventListener('click', function () {
       saveConsent('accepted');
-      enableAnalytics();
+      loadGoogleAnalytics();
       closeBanner();
     });
 
@@ -123,7 +96,7 @@
     }
   }
 
-  if (getConsent() === 'accepted') enableAnalytics();
+  if (getConsent() === 'accepted') loadGoogleAnalytics();
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', buildInterface);
