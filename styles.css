@@ -618,7 +618,7 @@ footer a { color: var(--cyan); }
   font: 800 14px/1 system-ui, sans-serif;
   cursor: pointer;
 }
-.cookie-accept { border-color: var(--yellow); color: #071526; background: var(--yellow); }
+.cookie-accept { border-color: var(--orange-2); color: #071526; background: var(--orange-2); }
 .cookie-button:hover, .cookie-button:focus-visible, .cookie-settings:hover, .cookie-settings:focus-visible { transform: translateY(-2px); outline: 3px solid rgba(44, 185, 232, .45); outline-offset: 2px; }
 .cookie-settings { position: fixed; z-index: 999; left: 12px; bottom: 12px; min-height: 34px; padding: 7px 10px; border-color: var(--line); color: var(--muted); background: #071526; font-size: 12px; }
 

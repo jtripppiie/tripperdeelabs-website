@@ -44,7 +44,7 @@
         <span class="counter-digits" id="visitor-count" role="status" aria-live="polite" aria-label="Loading total homepage visits">···</span>
         <span class="counter-sparkle" aria-hidden="true">✦</span>
       </div>
-      <div class="links"><a href="#experiments">Experiments</a><a href="#about">About</a><a href="/parked/">Parked</a><a href="/garmin/">Garmin</a><a href="/roboball/">RoboBall</a><a href="/local-lore/">Local Lore</a><a class="button" href="/contact-email">Contact</a></div>
+      <div class="links"><a href="#experiments">Experiments</a><a href="#about">About</a><a href="/parked/">Parked</a><a href="/local-lore/">Local Lore</a><a href="/mock-location/">Mock Location</a><a class="button" href="/contact-email">Contact</a></div>
     </nav>
   </header>
   <main>
@@ -85,6 +85,10 @@
             <div><p class="number">ANDROID · PRIVACY UTILITY</p><h3>Boss Button</h3><p>A discreet, on-demand visual cover for moments when you need a little screen privacy.</p><a class="lab-link" href="/boss-button/">Meet Boss Button →</a></div>
           </article>
           <article class="experiment-card blue-lab">
+            <div class="experiment-icon" aria-hidden="true">⌖</div>
+            <div><p class="number">ANDROID · TESTING UTILITY</p><h3>Mock Location</h3><p>Set a static or moving test location with Android's official mock-location capability.</p><a class="lab-link" href="/mock-location/">Meet Mock Location →</a></div>
+          </article>
+          <article class="experiment-card blue-lab">
             <div class="experiment-icon" aria-hidden="true">🧪</div>
             <div><p class="number">FIREFOX · BROWSER TOOLS</p><h3>Firefox Add-ons</h3><p>Small tools that make the web a little more useful.</p><a class="lab-link" href="https://addons.mozilla.org/en-US/firefox/user/19956782/" rel="me noopener">View add-ons →</a></div>
           </article>
@@ -102,6 +106,9 @@
           <a href="https://addons.mozilla.org/en-US/firefox/user/19956782/" rel="me noopener">View profile →</a>
         </div>
         <div class="addon-slider" aria-label="TripperDeeLabs Firefox add-ons">
+          <!-- POST CLEANER PRIVATE PREVIEW — remove this comment wrapper when ready to announce.
+          <a class="addon-slide" href="/drafts/post-cleaner/"><span>NEW · PRIVACY</span><strong>Post Cleaner for X</strong><small>Remove your own posts, replies, quotes, and likes with local-only, user-controlled cleanup.</small></a>
+          -->
           <a class="addon-slide" href="https://addons.mozilla.org/en-US/firefox/addon/force-hover/" rel="noopener"><span>01 · DEVTOOLS</span><strong>Force Hover</strong><small>Freeze elusive hover menus for inspection.</small></a>
           <a class="addon-slide" href="https://addons.mozilla.org/en-US/firefox/addon/page-guides/" rel="noopener"><span>02 · LAYOUT</span><strong>Page Guides</strong><small>Drag guides, measure gaps, and check alignment.</small></a>
           <a class="addon-slide" href="https://addons.mozilla.org/en-US/firefox/addon/playphrase-roulette/" rel="noopener"><span>03 · CHAOS</span><strong>Playphrase Roulette</strong><small>Spin for a random movie quote.</small></a>
@@ -174,7 +181,7 @@
   <footer>
     <div class="footer-row wrap">
       <span>© 2026 TripperDeeLabs · Doing TripperDee things in a TripperDee world.</span>
-      <span><a href="https://addons.mozilla.org/en-US/firefox/user/19956782/" rel="me noopener">Firefox Add-ons</a> · <a href="/parked/">Parked</a> · <a href="/garmin/">Garmin</a> · <a href="/roboball/">RoboBall</a> · <a href="/local-lore/">Local Lore</a> · <a href="/contact-email">Support</a></span>
+      <span><a href="https://addons.mozilla.org/en-US/firefox/user/19956782/" rel="me noopener">Firefox Add-ons</a> · <a href="/parked/">Parked</a> · <a href="/boss-button/">Boss Button</a> · <a href="/local-lore/">Local Lore</a> · <a href="/mock-location/">Mock Location</a> · <a href="/feedback/">Feedback</a></span>
     </div>
   </footer>
   <script>
@@ -200,6 +207,7 @@
     const experiments = [
       "/parked/",
       "/boss-button/",
+      "/mock-location/",
       "/roboball/",
       "/local-lore/",
       "/garmin/",

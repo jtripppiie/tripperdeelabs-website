@@ -5,6 +5,7 @@ Static GitHub Pages site for `tripperdeelabs.com`.
 ## Pages
 
 - `/` — TripperDeeLabs studio
+- `/feedback/` — privacy-safe product feedback form
 - `/parked/` — Parked: Find My Car product page
 - `/parked/privacy/` — Parked Google Play privacy policy
 - `/parked/support/` — Parked support and troubleshooting
@@ -14,8 +15,16 @@ Static GitHub Pages site for `tripperdeelabs.com`.
 - `/roboball/` — RoboBall product page
 - `/roboball/privacy/` — RoboBall Google Play privacy policy
 - `/roboball/support/` — RoboBall support and troubleshooting
+- `/boss-button/` — Boss Button product page
+- `/boss-button/privacy/` — Boss Button Google Play privacy policy
+- `/boss-button/support/` — Boss Button support
+- `/mock-location/` — Mock Location: Fake GPS product page
+- `/mock-location/privacy/` — Mock Location Google Play privacy policy
+- `/mock-location/support/` — Mock Location support
+- `/garmin/` — Garmin watch face gallery
+- `/salmon-tracker/privacy/` — Salmon Tracker privacy policy
 
-There is no build step, JavaScript application, analytics, account system, or backend. GitHub Pages publishes the files directly.
+There is no build step, JavaScript application, account system, or backend. Optional analytics load only after cookie consent. GitHub Pages publishes the files directly.
 
 ## Google Play URLs
 
@@ -24,6 +33,8 @@ There is no build step, JavaScript application, analytics, account system, or ba
 - Local Lore support: `https://tripperdeelabs.com/local-lore/support/`
 - Parked privacy policy: `https://tripperdeelabs.com/parked/privacy/`
 - Parked support: `https://tripperdeelabs.com/parked/support/`
+- Mock Location privacy policy: `https://tripperdeelabs.com/mock-location/privacy/`
+- Mock Location support: `https://tripperdeelabs.com/mock-location/support/`
 
 ## Search discovery
 

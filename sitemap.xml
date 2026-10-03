@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://tripperdeelabs.com/</loc><lastmod>2026-08-09</lastmod></url>
-  <url><loc>https://tripperdeelabs.com/parked/</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://tripperdeelabs.com/</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://tripperdeelabs.com/feedback/</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://tripperdeelabs.com/parked/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://tripperdeelabs.com/parked/privacy/</loc><lastmod>2026-08-09</lastmod></url>
   <url><loc>https://tripperdeelabs.com/parked/support/</loc><lastmod>2026-08-09</lastmod></url>
-  <url><loc>https://tripperdeelabs.com/local-lore/</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://tripperdeelabs.com/local-lore/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://tripperdeelabs.com/local-lore/privacy/</loc><lastmod>2026-08-09</lastmod></url>
   <url><loc>https://tripperdeelabs.com/local-lore/support/</loc><lastmod>2026-08-09</lastmod></url>
   <url><loc>https://tripperdeelabs.com/roboball/</loc><lastmod>2026-08-09</lastmod></url>
   <url><loc>https://tripperdeelabs.com/roboball/privacy/</loc><lastmod>2026-08-09</lastmod></url>
   <url><loc>https://tripperdeelabs.com/roboball/support/</loc><lastmod>2026-08-09</lastmod></url>
-  <url><loc>https://tripperdeelabs.com/boss-button/</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://tripperdeelabs.com/boss-button/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://tripperdeelabs.com/boss-button/privacy/</loc><lastmod>2026-08-09</lastmod></url>
   <url><loc>https://tripperdeelabs.com/boss-button/support/</loc><lastmod>2026-08-09</lastmod></url>
-  <url><loc>https://tripperdeelabs.com/garmin/</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://tripperdeelabs.com/mock-location/</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://tripperdeelabs.com/mock-location/privacy/</loc><lastmod>2026-08-29</lastmod></url>
+  <url><loc>https://tripperdeelabs.com/mock-location/support/</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://tripperdeelabs.com/salmon-tracker/privacy/</loc><lastmod>2026-08-29</lastmod></url>
+  <url><loc>https://tripperdeelabs.com/garmin/</loc><lastmod>2026-10-03</lastmod></url>
 </urlset>
