@@ -22,12 +22,14 @@ Static GitHub Pages site for `tripperdeelabs.com`.
 - `/mock-location/privacy/` — Mock Location Google Play privacy policy
 - `/mock-location/support/` — Mock Location support
 - `/garmin/` — Garmin watch face gallery
+- `/private-eyes/privacy/` — Private Eyes Google Play privacy policy
 - `/salmon-tracker/privacy/` — Salmon Tracker privacy policy
 
 There is no build step, JavaScript application, account system, or backend. Optional analytics load only after cookie consent. GitHub Pages publishes the files directly.
 
 ## Google Play URLs
 
+- Private Eyes privacy policy: `https://tripperdeelabs.com/private-eyes/privacy/`
 - Developer website: `https://tripperdeelabs.com/`
 - Local Lore privacy policy: `https://tripperdeelabs.com/local-lore/privacy/`
 - Local Lore support: `https://tripperdeelabs.com/local-lore/support/`

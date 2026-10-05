@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Private Eyes Privacy Policy</title>
+  <style>
+    :root { color-scheme: dark; font: 17px/1.65 system-ui, sans-serif; background: #240911; color: #fff2d8; }
+    body { max-width: 760px; margin: auto; padding: 32px 22px 64px; }
+    h1, h2 { line-height: 1.2; color: #edc875; }
+    h1 { font-size: 2rem; } h2 { margin-top: 2rem; font-size: 1.2rem; }
+    a { color: #edc875; }
+    p, li { overflow-wrap: anywhere; } li { margin-bottom: .6rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Private Eyes Privacy Policy</h1>
+  <p>Updated October 4, 2026</p>
+  <p><strong>Developer:</strong> TripperDeeLabs<br>
+     <strong>Privacy contact:</strong> feedback@tripperdeelabs.com</p>
+  <p>This policy covers the Private Eyes Android application, package <code>com.jtripppiie.privateeyes</code>. Private Eyes is a local vault for photos, videos, and documents. It has no internet permission, user account, advertising SDK, analytics SDK, or developer-operated cloud storage.</p>
+
+  <h2>Files and information processed on your device</h2>
+  <p>When you import a file, the app reads the content and information such as its name and media type from the source you select in Android's file picker. It stores an encrypted vault copy, encrypted item metadata, and, where generated, an encrypted thumbnail. The app organizes items using a locally recorded date. Imported files preserve their original bytes, which may include location or other metadata already embedded by another app.</p>
+  <p>The private camera is optional. Camera permission is used only for captures you start in the app. New captures are saved to the vault rather than published to the Gallery, and identifying capture metadata is removed before encryption. Video recording is silent; the app does not request microphone or location permission.</p>
+  <p>The app also stores local settings, notice acknowledgments, encrypted key configuration, and information needed to delay repeated incorrect unlock attempts. These support the vault and remain in the app's private storage.</p>
+
+  <h2>Unlocking and protecting the vault</h2>
+  <p>Protected files, item metadata, and stored thumbnails use AES-256-GCM authenticated encryption. Your pattern helps protect the vault key. Android Keystore provides an additional device-bound layer, with strong biometric or device screen-lock authentication required for protected key operations. Android handles that authentication; Private Eyes does not receive your fingerprint, biometric template, or phone PIN. The app processes the vault pattern locally and does not send it to the developer.</p>
+  <p>The app locks when you leave it normally, lock the phone, or choose Lock vault. Brief permission dialogs and file selection preserve the current session; file selection times out after two minutes. Production builds block screenshots and screen recording through Android's secure-window controls. Android backup and device-transfer rules exclude app data. Hardware protection and operating-system behavior vary by device. Encryption and these controls do not guarantee protection against a compromised operating system, privileged access, or every possible attack.</p>
+
+  <h2>Exports and other apps</h2>
+  <p>Exporting creates an unencrypted copy outside the vault after your confirmation. You choose its destination using Android's file picker. A selected document provider may be another app or a cloud service, which handles the exported copy under its own policy. That provider can also supply files you choose to import. Private Eyes does not automatically upload your vault to the developer or choose a cloud provider for you.</p>
+  <p>Imported originals, exports, screenshots made outside production protections, and any copies made by other apps are outside vault protection. Deleting something in Private Eyes does not remove those copies. If you separately ask the app to remove an imported original, removal depends on the source provider and its permissions; other copies or backups may remain.</p>
+
+  <h2>Diagnostics and contact</h2>
+  <p>Private Eyes has no automatic analytics or crash-report upload. Production builds do not record the personal-test event log or offer diagnostics export. Separate personal-test builds can prepare a report locally, which leaves the app only when the tester chooses to copy or save it. Such reports can include the app version, Android API level, export time, and technical event labels or code locations. They exclude patterns, file names, file contents, exception messages, and device identifiers.</p>
+  <p>If you contact the developer separately, the information you choose to send is handled through that communication channel. Do not send vault contents, unlock patterns, or device credentials. The developer cannot remotely unlock or recover your vault.</p>
+
+  <h2>Retention, deletion, and recovery</h2>
+  <p>Vault content remains on your device until you delete it. Item and case deletion have no app trash or undo. The primary vault's Settings &gt; Destroy vault action removes its keys and protected files after confirmation; an independently configured alternate vault is preserved. Disabling the alternate pattern disables access without deleting its encrypted files.</p>
+  <p>Android's Clear storage or uninstall action removes the app's local data, including both vaults and settings. These actions destroy access to protected files; do not use them to troubleshoot an important vault. Deletion cannot guarantee physical erasure of flash-storage remnants and does not delete originals, exported copies, provider backups, or previously shared material.</p>
+  <p>There is no account recovery, recovery phrase, cloud backup, or developer-held recovery key. A forgotten pattern, loss of the device or its keys, clearing app data, or removing or forcibly resetting the Android screen lock can make files permanently inaccessible. A phone PIN or fingerprint cannot replace a forgotten vault pattern. Keep independent copies of irreplaceable files.</p>
+
+  <h2>Policy changes and questions</h2>
+  <p>Changes to the app's data handling will be reflected in an updated policy and its date. For privacy questions, use feedback@tripperdeelabs.com. The policy describes the app; websites, app stores, Android system services, and document providers have their own data practices.</p>
+</main>
+</body>
+</html>
