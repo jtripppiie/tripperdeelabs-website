@@ -28,4 +28,9 @@
   <url><loc>https://tripperdeelabs.com/captain-quack/privacy/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://tripperdeelabs.com/canopy-quest/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://tripperdeelabs.com/canopy-quest/privacy/</loc><lastmod>2026-10-05</lastmod></url>
+  <url>
+    <loc>https://tripperdeelabs.com/amelia-navigator/privacy/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>
