@@ -33,6 +33,8 @@ Static GitHub Pages site for `tripperdeelabs.com`.
 
 There is no build step, JavaScript application, account system, or backend. Optional analytics and the homepage counter load only after consent. Withdrawing consent disables measurement, clears accessible analytics cookies, and reloads when the choice can be persisted. Contact links use mailto directly and remain usable without JavaScript. GitHub Pages publishes the files directly.
 
+- `/moto-thrash/privacy/` — Moto Thrash: Retro Racing Google Play privacy policy
+
 ## Google Play URLs
 
 - Private Eyes privacy policy: `https://tripperdeelabs.com/private-eyes/privacy/`
@@ -45,6 +47,8 @@ There is no build step, JavaScript application, account system, or backend. Opti
 - Mock Location support: `https://tripperdeelabs.com/mock-location/support/`
 - Canopy Quest product page: `https://tripperdeelabs.com/canopy-quest/`
 - Canopy Quest privacy policy: `https://tripperdeelabs.com/canopy-quest/privacy/`
+
+- Moto Thrash privacy policy: `https://tripperdeelabs.com/moto-thrash/privacy/`
 
 ## Search discovery
 
