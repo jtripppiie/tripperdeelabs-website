@@ -35,6 +35,7 @@ There is no build step, JavaScript application, account system, or backend. Opti
 
 - `/moto-thrash/privacy/` — Moto Thrash: Retro Racing Google Play privacy policy
 - `/dive-watch/privacy/` — Dive Watch (Wear OS watch face) Google Play privacy policy
+- `/moments/privacy/` — Moments (Wear OS photo watch face) Google Play privacy policy
 
 ## Google Play URLs
 
@@ -51,6 +52,7 @@ There is no build step, JavaScript application, account system, or backend. Opti
 
 - Moto Thrash privacy policy: `https://tripperdeelabs.com/moto-thrash/privacy/`
 - Dive Watch privacy policy: `https://tripperdeelabs.com/dive-watch/privacy/`
+- Moments privacy policy: `https://tripperdeelabs.com/moments/privacy/`
 
 ## Search discovery
 
