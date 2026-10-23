@@ -1,65 +1,36 @@
 # TripperDeeLabs website
 
-Static GitHub Pages site for `tripperdeelabs.com`.
+Static GitHub Pages site for https://tripperdeelabs.com, published from main at the repository root.
 
-## Pages
+## Catalog
 
-- `/` — TripperDeeLabs studio
-- `/feedback/` — privacy-safe product feedback form
-- `/parked/` — Parked: Find My Car product page
-- `/parked/privacy/` — Parked Google Play privacy policy
-- `/parked/support/` — Parked support and troubleshooting
-- `/local-lore/` — Local Lore product page
-- `/local-lore/privacy/` — Google Play privacy policy
-- `/local-lore/support/` — support, safety, and corrections
-- `/roboball/` — RoboBall product page
-- `/roboball/privacy/` — RoboBall Google Play privacy policy
-- `/roboball/support/` — RoboBall support and troubleshooting
-- `/boss-button/` — Boss Button product page
-- `/boss-button/privacy/` — Boss Button Google Play privacy policy
-- `/boss-button/support/` — Boss Button support
-- `/mock-location/` — Mock Location: Fake GPS product page
-- `/mock-location/privacy/` — Mock Location Google Play privacy policy
-- `/mock-location/support/` — Mock Location support
-- `/garmin/` — Garmin watch face gallery
-- `/private-eyes/` — Private Eyes product page (coming soon)
-- `/private-eyes/support/` — vault support and safe troubleshooting
-- `/privacy/` — website privacy and optional measurement details
-- `/contact-email/` — contact fallback page
-- `/private-eyes/privacy/` — Private Eyes Google Play privacy policy
-- `/canopy-quest/` — Canopy Quest: The Lost Compass product page
-- `/canopy-quest/privacy/` — Canopy Quest Google Play privacy policy
-- `/salmon-tracker/privacy/` — Salmon Tracker privacy policy
+16 public Google Play listings were verified on October 23, 2026 using the US English storefront. `data/apps.json` retains listing URLs, observed prices, icon and screenshot source URLs, and listing descriptions. Pages use editorial summaries in `scripts/build_catalog.py`. Recheck the listings before changing availability, prices, compatibility or features.
 
-There is no build step, JavaScript application, account system, or backend. Optional analytics and the homepage counter load only after consent. Withdrawing consent disables measurement, clears accessible analytics cookies, and reloads when the choice can be persisted. Contact links use mailto directly and remain usable without JavaScript. GitHub Pages publishes the files directly.
+Alaska Gold Run and Moments have informational pages but are excluded from the live-app grid: their expected public Play URLs returned 404. Alaska Gold Run's local project README also identifies it as unreleased. Do not add purchase offers or label development assets as Play screenshots without a verified public listing.
 
-- `/moto-thrash/privacy/` — Moto Thrash: Retro Racing Google Play privacy policy
-- `/dive-watch/privacy/` — Dive Watch (Wear OS watch face) Google Play privacy policy
-- `/moments/privacy/` — Moments (Wear OS photo watch face) Google Play privacy policy
+Kenai Report Data is a separate Wear OS companion app, not a phone app or watch face; its page links to the existing joint Kenai privacy policy. `/garmin/` now describes the verified Wear OS faces.
 
-## Google Play URLs
+## Build and verify
 
-- Private Eyes privacy policy: `https://tripperdeelabs.com/private-eyes/privacy/`
-- Developer website: `https://tripperdeelabs.com/`
-- Local Lore privacy policy: `https://tripperdeelabs.com/local-lore/privacy/`
-- Local Lore support: `https://tripperdeelabs.com/local-lore/support/`
-- Parked privacy policy: `https://tripperdeelabs.com/parked/privacy/`
-- Parked support: `https://tripperdeelabs.com/parked/support/`
-- Mock Location privacy policy: `https://tripperdeelabs.com/mock-location/privacy/`
-- Mock Location support: `https://tripperdeelabs.com/mock-location/support/`
-- Canopy Quest product page: `https://tripperdeelabs.com/canopy-quest/`
-- Canopy Quest privacy policy: `https://tripperdeelabs.com/canopy-quest/privacy/`
+Python 3 with CairoSVG builds static pages and 1200×630 PNG social cards:
 
-- Moto Thrash privacy policy: `https://tripperdeelabs.com/moto-thrash/privacy/`
-- Dive Watch privacy policy: `https://tripperdeelabs.com/dive-watch/privacy/`
-- Moments privacy policy: `https://tripperdeelabs.com/moments/privacy/`
+```
+python3 scripts/build_catalog.py
+python3 scripts/check_catalog.py
+```
 
-## Search discovery
+The checker also uses Beautiful Soup and Pillow. GitHub Pages serves the generated HTML directly; these packages are only needed when rebuilding/checking locally. Screenshots and icons are unchanged downloads from the official Play listings. The official Google Play badge is stored locally. Source URLs are in the catalog data.
 
-- `/sitemap.xml` lists the public product, privacy, and support pages.
-- `/robots.txt` permits normal search and search-assistant discovery while declining named AI-training and bulk-collection crawlers.
-- The homepage publishes Organization structured data, and product pages may publish SoftwareApplication structured data.
+The sitemap includes all public app, privacy, support and contact pages; draft pages are excluded. `robots.txt` points to the sitemap and retains the existing crawler preferences. Every HTML page has a canonical URL. Published debug APKs have been removed.
 
-The privacy-policy URL must remain publicly readable without a login and must have a valid HTTPS certificate before it is entered in Play Console.
+## Verification limits
 
-- `/alaska-gold-run/privacy/` — Alaska Gold Run Google Play privacy policy
+SoftwareApplication JSON-LD includes verified offers, OS, category, image, author and canonical product URL. None of the fetched listings supplied aggregate ratings. Do not fabricate ratings or reviews: Google's software-app rich result requires a genuine rating/review in addition to name and price. Local checks do not substitute for Google's interactive Rich Results Test.
+
+## Email and Search Console
+
+Public DNS inspection on October 23, 2026 found no MX or TXT answers; authoritative nameservers are ns-cloud-e1 through ns-cloud-e4.googledomains.com. This does not establish the registrar or the available account permissions.
+
+No DNS records have been changed. Email routing requires the destination Gmail address and access to the actual DNS/forwarding provider. Obtain that provider's exact MX priorities/targets and any required TXT values, and show the exact additions/removals before applying them. Preserve the website's A/CNAME records.
+
+Search Console domain verification requires an account-issued DNS token. Do not invent one. Once the account supplies its exact `google-site-verification=...` TXT value, publish it at the requested DNS name and verify in Search Console. Alternatively, an account-issued HTML verification file can verify the HTTPS URL-prefix property; it does not verify the domain property. Submit https://tripperdeelabs.com/sitemap.xml after ownership verification.

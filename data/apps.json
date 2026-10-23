@@ -1,0 +1,335 @@
+[
+  {
+    "slug": "salmon-tracker",
+    "package": "com.tripperdee.salmontracker",
+    "name": "Salmon Tracker",
+    "summary": "Kenai River fish counts for sockeye and kings, with alerts. Unofficial. No ads.",
+    "price": "0.99",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdee.salmontracker",
+    "iconSource": "https://play-lh.googleusercontent.com/Z3ooW6W8yd9h7mOSeNnvqOx6B7MjrWLqNKUEMu707R5mrP4idGSkIMIlA0iZt25o8Hao3w9ArBqL-EGHgXStBg",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/GsCjLxyLfeGEKvZrAXgFOIJLl5HbvZae2yrJd7QUQLkH13iNidt56qYkNmvudFQhWorvEpdedD6XaCrsbDqhDg=s1600",
+      "https://play-lh.googleusercontent.com/phsLnUpG3SBOx9tyGLb-0kx7zbERJUUNoucad1BkNTz3g7a5UuI576Pug3jLxOmS0CyF2qmZNp_ATnay_RsR5g=s1600",
+      "https://play-lh.googleusercontent.com/Tj0M05KO_ptUiBXSW1cnMzyVREWn1OngfVF3alGr-4fPfIBkMmSbNDdHhT9-q8YiuIZmpDs5I-FtraP5BR_G=s1600",
+      "https://play-lh.googleusercontent.com/K8ZNXZ3xrBfKUs9tIzgOGOl4-HBA3cNCnVz5UXeTwuL2enC_skEJSXrV5iHImVENPuYdgUXuC97SuzJ_WTbIrw=s1600"
+    ],
+    "listingDescription": "Salmon Tracker is a one-time $0.99 unofficial client for public Alaska Department of Fish and Game (ADF&G) fish passage counts on Kenai Peninsula runs (Kenai, Kasilof, Russian\u2014sockeye and king where reported), with optional alerts when new counts post. No ads, no account. Recently downloaded counts stay available if your connection drops. Not affiliated with or endorsed by the State of Alaska or ADF&G.\nFollow the rivers that matter\n\u2022 Kenai River sockeye (late run)\n\u2022 Kenai River king salmon\n\u2022 Kasilof River sockeye\n\u2022 Russian River sockeye (early and late runs)\n\u2022 Choose which count projects appear on your home screen\nSee today\u2019s count in context\n\u2022 Daily passage and season totals\n\u2022 Compare this year vs last year and prior seasons\n\u2022 Daily and cumulative charts with 7-day, 14-day, and season views\n\u2022 Recent-day swipe cards so you can spot warming or cooling trends\nOptional fish-count notifications\n\u2022 Alert on every newly reported count, new reporting dates, significant changes, or a daily summary\n\u2022 Quiet controls for how chatty notifications get\n\u2022 Automatic background sync on a source-friendly schedule (including every 3 hours)\n\u2022 Wi-Fi-only option if you want to save mobile data\nBuilt for the boat and the bank\n\u2022 Alaska time display\n\u2022 Keep recently downloaded counts when your connection drops\n\u2022 Manual \u201cCheck for new counts\u201d when you want a fresh pull\nPrivacy-minded and unofficial\n\u2022 No ads, subscriptions, analytics accounts, or TripperDeeLabs login\n\u2022 Unofficial client for public Alaska Department of Fish and Game (ADF&G) Fish Counts data\n\u2022 Not affiliated with or endorsed by the State of Alaska or ADF&G\n\u2022 Passage counts are useful context\u2014not a guarantee of fishing conditions or catch\n\u2022 Always check current regulations, emergency orders, and local conditions\nMade by TripperDeeLabs for Alaska salmon fishing season.",
+    "verified": "2026-10-23",
+    "os": "Android",
+    "category": "UtilitiesApplication",
+    "privacy": "/salmon-tracker/privacy/"
+  },
+  {
+    "slug": "amelia-navigator",
+    "package": "com.tripperdeelabs.amelianavigator",
+    "name": "Amelia Navigator: Pilot Face",
+    "summary": "Aviation pilot watch face for Wear OS with steps, heart rate and weather",
+    "price": "0.99",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.amelianavigator",
+    "iconSource": "https://play-lh.googleusercontent.com/CEQER8LamqtDzsqYNGKn2ZbXauwuB5QYOJYsp7tAx8D0coMqiWo4Rm9vHIzv2G1CmPOmnCe0rtcrshEhIi5Ve70",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/sY9zmlNgAg0iqzQO19L_Vq0ZnwONrL3scq5JED3Kz6j90GYuNOrYV5W-bN4FWQyoTXAjsc-wIWplXrsw2yeUtGM=s1600",
+      "https://play-lh.googleusercontent.com/63Z30BbMEDcla4DkTkTz-o_vJn83_A15Zm3zv-op-_bEKnPf6dAjvx32x34NNF2ubRWPREF5-1WSwErlnvxt=s1600",
+      "https://play-lh.googleusercontent.com/bvGtWa-iRr5OHctTcQJJbW63XYgL-0EtYUNCZpMuO7zeEwYlwgV6DC4BVieB0N7z8eo9NFDUHnjKqlEeFiUnFMc=s1600",
+      "https://play-lh.googleusercontent.com/Xwf6d_QFaivJuxv1rm9QltBGompY_GWu63Az2chy-CFQsPSFeA7FdYSzgigtH3Gt3YQqXxXgomArIjHghW63RQ=s1600"
+    ],
+    "listingDescription": "A 1930s flight instrument for your wrist, with a twin-engine Electra that arrives every hour.\nAmelia Navigator is an aviation watch face for Wear OS: a navigator-navy dial, warm brass detailing and clear digital time, with live battery, steps, heart rate and weather. One-time $0.99. No ads, no account.\nTHE DIAL\n\u2022 Deep navigator-navy dial with ivory typography\n\u2022 Engraved world map and calibrated compass-style markings\n\u2022 Warm brass detailing and balanced information registers\n\u2022 Composed for round Wear OS displays\nTHE FLIGHT\nAt the top of each hour, a twin-engine Electra approaches from the foreground and settles beneath north. The motion plays once, follows a straight northbound path and scales smoothly for a restrained sense of depth. Tap the face to replay the approach anytime.\nEVERYDAY DATA\n\u2022 Large, legible digital time in 12- or 24-hour format\n\u2022 Live seconds and AM/PM when needed\n\u2022 Day and date\n\u2022 Live battery, step count, heart rate and weather temperature from Wear OS\nSTYLE OPTIONS\n\u2022 Navigator Navy and Night Instrument dial styles\n\u2022 Brushed Brass and Monochrome outer-ring accents\n\u2022 Sparse, low-power ambient display\nCOMPATIBILITY\nBuilt with Watch Face Format 2 for Wear OS 5 and newer. Long-press the face to open the Wear OS watch-face picker. This is a pilot watch face for Wear OS watches, not a phone app.\nGOOD TO KNOW\nHealth and weather values are supplied by Wear OS; availability varies by watch, sensors, permissions and weather provider. The navigation ring is decorative and is not a live magnetic compass, so this is an aviation-style face, not a navigation instrument.\nAmelia Navigator is an independent historical tribute to the golden age of flight from TripperDeeLabs. It is not affiliated with or endorsed by any watch maker, aircraft manufacturer, estate, museum or navigation service.\nPrivacy: https://tripperdeelabs.com/amelia-navigator/privacy/",
+    "verified": "2026-10-23",
+    "os": "Wear OS",
+    "category": "UtilitiesApplication",
+    "privacy": "/amelia-navigator/privacy/"
+  },
+  {
+    "slug": "dive-watch",
+    "package": "com.tripperdeelabs.arcember.wear",
+    "name": "Dive Watch: Classic & Lume",
+    "summary": "Simple, elegant dive watch face for Wear OS with battery in the left marker",
+    "price": "0.99",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.arcember.wear",
+    "iconSource": "https://play-lh.googleusercontent.com/YvXUIsdl2pdHnLZ93CvKyoQ9btfsbMeYYu-g5VYhnKV9WLF0NHn2fSXkpnrfyfu0bYDNpaDbMYdXJ_6xWu_-ig",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/GW8y_L8WxnjvtKTHkp0YPYbOiA12Zu1qMYMVAWunfNbCZUSWdvD73a-pvFtLqyID4O7XAzdwf3BHzBaj8ltBjg=s1600",
+      "https://play-lh.googleusercontent.com/ly0c1zEkpqG2STR4KWJuLJCix9gYRRomPzp5TTF1f2tZ9clWI7e_cV99lCCKwB3ium2chcZeQFHrt017H0JJ=s1600",
+      "https://play-lh.googleusercontent.com/MKJ4Qw6ARskit7n962IrfmcjVaiA8uRQ8cHy3Q7M9TtmAhvl-WgXEIySKjPAUHr_AnGTNSx6ilX0dfQ0_UqgB4c=s1600",
+      "https://play-lh.googleusercontent.com/OuUe_orvyStuTwID0ftrqTGFmas8TKxZPLibaa6HkCxRsdjFeN99lG-9ujxkhWvKBKomlkCVlLePbOqnyi7KpjI=s1600"
+    ],
+    "listingDescription": "Simple. Elegant. Made for your wrist.\nDive Watch is a dive watch face for Wear OS that pairs a midnight-blue wave dial with sculpted hands, luminous markers and a clean, balanced layout. Choose Classic steel, Red night or Green lume to suit the moment.\nBATTERY, BUILT INTO THE DIAL\nThe wide marker on the left, at 9 o'clock, is your battery gauge. Its illuminated fill shrinks as your watch's charge falls, while the border remains visible. No extra battery dial. No clutter. Tap the marker to open battery status for the exact percentage.\nEVERYDAY DETAILS\n\u2022 Analog time with a slender seconds hand and a discreet date window.\n\u2022 A large lower steps display, with compact totals such as 12.5K.\n\u2022 Three included themes: Classic steel, Red night and Green lume.\n\u2022 Subtle luminous glow in the night themes.\n\u2022 A clear always-on display with large digital time and date.\n\u2022 Luminous or skeleton hands, optional seconds, and an optional digital time readout.\n\u2022 Wave-textured or pure-black dial finish.\n\u2022 Optional outer battery or daily-progress ring.\n\u2022 Six accent colors for the Classic steel theme.\nYOUR WATCH, YOUR DATA\nThe lower circle displays steps by default. Choose another compatible complication in the watch's Customize menu. Available providers, data updates and tap actions depend on your watch and installed apps. Some providers need permission or setup. The face displays provider data; it does not independently record activity.\nONE PURCHASE\nAll themes are included. No ads, subscriptions, login or separate phone companion app. The watch face has no analytics or developer-operated data service.\nGET STARTED\nInstall from Google Play to a compatible Wear OS watch. Touch and hold your current watch face, choose Add watch face, then select Dive Watch. Touch and hold again and choose Customize to change Watch theme, hands, dial finish or the lower data source. Tap the left battery marker for battery status, or the date for the watch's calendar handler. Long-press opens watch-face customization.\nRequires Wear OS 5 or newer. This is a Wear OS watch face, not a phone app, and it works only on Wear OS watches. Always-on display follows your watch settings; battery life varies by device and configuration.\nThe dive-inspired design does not add water resistance or provide dive-computer functions.",
+    "verified": "2026-10-23",
+    "os": "Wear OS",
+    "category": "UtilitiesApplication",
+    "privacy": "/dive-watch/privacy/"
+  },
+  {
+    "slug": "boss-button",
+    "package": "com.tripperdeelabs.bossbutton",
+    "name": "Boss Button: Screen Privacy",
+    "summary": "Floating button covers your screen with a privacy image. Works offline, no ads",
+    "price": "0.99",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.bossbutton",
+    "iconSource": "https://play-lh.googleusercontent.com/l4nftWAZpDj158oyFa4OddM0jZ2eo3FZ27w_MJ4C46OlJp74zDRMOHOPTp8ikZwgbiVQ2y6w_oN_sAiE3ufU",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/gLCaJ8U0QtygjAB8EX9bPth1OsKJQpR4dGCvq6hXgynefgPzD5w9ydqsD_pMgcxOa1VeWqGWP9k9l_YE_SCCmPo=s1600",
+      "https://play-lh.googleusercontent.com/mfv0Kp3OR5gV4ERSlp7nV8Pc1I7GIzkvreK3zxsv6wRsYYvhk0ilwEkDyxAxcL7hCjvO00b6PIOaHIQd10s6Eg=s1600",
+      "https://play-lh.googleusercontent.com/oT276PFlpNnvb2j-jzhxcu-HKpyPVdrcx3EEADnhbFGimSE_OR_ySiNi3rmVMd9GZEKod347A1_hmfJVhVcZmsk=s1600"
+    ],
+    "listingDescription": "Boss Button adds a small, draggable floating button for quick screen privacy, and it works fully offline. Double-tap to open a labeled full-screen cover (built-in or your own local image); triple-tap to return. One-time $0.99. No ads, no account, no internet permission.\nUse the built-in privacy screen or your own local image. Adjust the floating button's size, visibility, color, and position so it stays easy to reach. Optional biometric or device-unlock confirmation can protect dismissal.\nUse Boss Button for quick visual privacy during interruptions, presentations, screen sharing, or shoulder surfing. Your current app stays open underneath the screen cover, ready when you return.\nPRIVATE BY DESIGN\nBoss Button has no advertising, analytics, account, or internet permission. Custom cover images stay on your device. The app does not record your screen, close other apps, erase history, clear caches, or function as a device lock.\nKEY FEATURES\n\u2022 Discreet floating button that snaps to either screen edge\n\u2022 Fast screen cover with double-tap activation\n\u2022 Triple-tap dismissal to reduce accidental exits\n\u2022 Clearly labeled built-in privacy screen\n\u2022 Portrait and landscape support\n\u2022 Custom screen covers using an image from your device\n\u2022 Optional biometric or device-unlock dismissal\n\u2022 Adjustable button size, color, transparency, and position\n\u2022 Optional automatic start after reboot\n\u2022 No ads, analytics, account, or internet permission\n\u2022 Works offline, no internet needed: covers and settings stay on your device\nHOW IT WORKS\n1. Allow Display over other apps access.\n2. Position and customize the floating button.\n3. Double tap the button whenever you want a screen cover.\n4. Triple tap the cover to return to your app.\nBoss Button requires Android's Display over other apps access to show the floating control. While it is enabled, Android displays a persistent foreground-service notification with a Stop action, so you always remain in control.",
+    "verified": "2026-10-23",
+    "os": "Android",
+    "category": "UtilitiesApplication",
+    "privacy": "/boss-button/privacy/"
+  },
+  {
+    "slug": "canopy-quest",
+    "package": "com.tripperdeelabs.canopyquest",
+    "name": "Canopy Quest: Jungle Adventure",
+    "summary": "Offline play jungle platformer: swing, climb and whip through 90 rooms",
+    "price": "0.99",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.canopyquest",
+    "iconSource": "https://play-lh.googleusercontent.com/YGq1nzlepnpzUrCMZ8rhJ-k1y-U0X1mNdO_Unx3scgF8y20hssbfxvWzal0zLCyJelEFGns088t08xGXVXbH",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/ZiufhZ4uDlBJHa4c2BAaljo9x5TMWssyyvjaEtGuD4noP5k6W_U9LGHTxurI8sSdzlsnlcMjjsWsIOx5s-ES5VQ=s1600",
+      "https://play-lh.googleusercontent.com/Taj3ozrGbr1xyfHLe_dnO2rvsBvQGfAY64fbFYMkWwu9oI_kOKkEh1id235PpczLT8wPmU3nejS7StBldgQ=s1600",
+      "https://play-lh.googleusercontent.com/bH2b8BS-Uvv-3HANylNDxaelAaCREWtA9cNLZBCDiCI7zGXS0phRZB7X0d1AIhHot0gCqr4Rm55WkY91bunm=s1600",
+      "https://play-lh.googleusercontent.com/aGDlsV_PQ-2ekIYQXUHsFHCoI6mAqtJvtT3ALRg2owGRes8xFW7LWNc6vewUidR5v3dpE5Qy5tOBNg-WZtWt=s1600"
+    ],
+    "listingDescription": "Swing on vines, crack your whip and recover 45 lost relics in a retro jungle platformer with offline play.\nCanopy Quest follows the trail of the Lost Compass across 90 connected rooms above and below the jungle floor. No internet needed, and no ads, accounts or in-app purchases.\nEXPLORE THE JUNGLE\n\u2022 Three regions of caverns, moonlit forests and ancient temples\n\u2022 90 connected surface and underground rooms\n\u2022 45 relics to recover\n\u2022 A field map to plan your route\n\u2022 Every room links to the next, so the jungle opens up as you find new paths\nWHY PLAYERS DIG IN\nCanopy Quest is a compact exploration platformer: learn the routes, master the vine swing and whip timing, and see how many relics you can bring home before the expedition clock runs out. Every run teaches you a faster way through.\nTIME YOUR MOVES\n\u2022 Swing across gaps on vines\n\u2022 Climb into hidden underground passages\n\u2022 Use your whip to clear small enemies or briefly stun crocodiles\n\u2022 Watch the whip recovery meter and choose when to strike\nPLAN YOUR EXPEDITION\n\u2022 Start with six lives and a 45-minute expedition clock\n\u2022 Reach camps to set retry points; your first visit restores up to two lives\n\u2022 Autosave keeps your relics and remaining resources\n\u2022 Continue returns you to your latest camp\n\u2022 Pause whenever you need a break\n\u2022 Offline play: autosave keeps your relics on your device, no internet needed\nPLAY YOUR WAY\n\u2022 Landscape touch controls\n\u2022 Keyboard controls\n\u2022 Controller navigation\n\u2022 An in-game field guide explains movement, climbing and whip timing\nOFFLINE BY DESIGN\nThis jungle adventure needs no internet connection, no account and no ads, so it is ready on a flight, a road trip or anywhere without signal. Game progress stays on your device; clearing app storage or uninstalling removes local saves.\nMade by TripperDeeLabs.\nSupport: feedback@tripperdeelabs.com",
+    "verified": "2026-10-23",
+    "os": "Android",
+    "category": "GameApplication",
+    "privacy": "/canopy-quest/privacy/"
+  },
+  {
+    "slug": "captain-quack",
+    "package": "com.tripperdeelabs.captainquack",
+    "name": "Captain Quack: Cosmic Flight",
+    "summary": "Arcade space shooter with offline play: guide a duck past aliens and bosses",
+    "price": "0.99",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.captainquack",
+    "iconSource": "https://play-lh.googleusercontent.com/GXE9Ewe4_s7Bi5pf8fA_evJAeG_bYaHmItR3WNiFtqhXUfm0tUNMZ-7FmRlqRKLVZ8nkoAI270CtkzFtPSV1Rw",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/OlAuRMK_AhE9DxLu9hUIcVZKuuW5fxlLCxSx2psqT516NrCo02Qx401QP35s2U06ui6dB9MRYVvba_AGuGVsSw=s1600",
+      "https://play-lh.googleusercontent.com/09A8976uXtzXLcOtchD6u-bLlqnb3lhSkEzBC6PY8Zki5IkEi3LgDWgTarJ4G0JGmiIEM7a2PyDa51QDj5hZUXs=s1600",
+      "https://play-lh.googleusercontent.com/Jd8C_c7kMYY4hFmMnG9wk0JN1Hx_3cVUFdgckKQ8gIq9f-GX4DRYE62MQZyDUxeE4GxHzlZGZadb1dtSoaFm=s1600",
+      "https://play-lh.googleusercontent.com/Wiwyyy2Xpf1RZGCw4_gg93deYjWObkLeHwRy-OJA3ETbxMPfCWU9D1hkukRm0miqnjhRRIR20-FnBjxnmOlR1Q=s1600"
+    ],
+    "listingDescription": "A duck, a spaceship and a sky full of aliens. Offline play, no internet needed.\nCaptain Quack is a colorful arcade space shooter. Dodge asteroids, break up alien formations and escape gravity wells as each run grows harder. No ads, no in-app purchases and no account.\n\u2022 Touch joystick and a dedicated fire button\n\u2022 Shield, rapid-fire, wide-shot, and extra-life pickups\n\u2022 Bonuses for clearing complete alien formations\n\u2022 Local top-five scores and career ranks\n\u2022 Music and sound controls\n\u2022 Pause and resume your run\n\u2022 Offline play: high scores and career ranks stay on your device\nNo ads, no in-app purchases, and no account required. Scores and settings stay on your device. Clearing app storage or uninstalling removes local progress.\nDeveloped by TripperDeeLabs.\nSupport: feedback@tripperdeelabs.com",
+    "verified": "2026-10-23",
+    "os": "Android",
+    "category": "GameApplication",
+    "privacy": "/captain-quack/privacy/"
+  },
+  {
+    "slug": "kenai-fishing-report",
+    "package": "com.tripperdeelabs.kenaifishingreport",
+    "name": "Kenai Fishing Report Face",
+    "summary": "Wear OS watch face with Kenai sockeye counts, water temp and tides. Unofficial.",
+    "price": "0.99",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.kenaifishingreport",
+    "iconSource": "https://play-lh.googleusercontent.com/J7ssfpf-qawKIZNCX_sdXUpIaJMzzt6GHIq_SpcQW8UlxGcv2YKNs9v7b0Vp_2flW5FshxoR6n46c3ZEIzx2wQ",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/6BmPZtWrWhLO6g3lEzJpFKb9WK-kO_TjbtuGZYNUoE0MBDsm3Nvh7h3nWnAu3nk3ZwEaR1OF_n326n21D4Rpz_A=s1600",
+      "https://play-lh.googleusercontent.com/Pzw0gDYnNv4EUNTZMkr9ltA_ACrwQrTq5pgoWMMBmBJfmIXlAiZmqoCiOFAyDO9ZHEB00KZVaijG19Je1Vp1fw=s1600",
+      "https://play-lh.googleusercontent.com/b_ogjtpgu0h-Z1JJLctMOL_GgVH44KQDAVotaMK1p68ae6-pNSU43XTWEdXzIJwh9K2AxNkFbX36b3uGBlqNWw=s1600",
+      "https://play-lh.googleusercontent.com/bJ2ajKrgEiAI_6ko_qklfgdgUpgEChCCqFnKKAYRJvOLPOGZDUtfwjQL2Ut9XCpWN6O0KaOY8JOeksl8TmUY0g=s1600"
+    ],
+    "listingDescription": "Kenai sockeye counts, river temperature and the next tide, right on your wrist.\nKenai Fishing Report is a customizable Wear OS watch face for Kenai Peninsula anglers. Its companion, Kenai Report Data, provides Kenai complications with public fishing report data. Unofficial; not affiliated with any agency.\nSETUP\nInstall the separate Kenai Report Data app on the same watch. It provides the Kenai complication providers; select Kenai Fishing Report as your face and assign them if they aren't selected automatically. Internet access is needed for updates. No phone app or account required.\nKENAI READINGS (WITH KENAI REPORT DATA)\n\u2022 Latest daily late-run sockeye count and season total from ADF&G\n\u2022 Count date with visible stale-report labeling\n\u2022 USGS Soldotna water temperature\n\u2022 Next NOAA Cape Kasilof high or low tide, in Alaska time\n\u2022 Tap for details, fetch times, flow/gauge observations and official links\n\u2022 Reminder to verify current ADF&G rules\nTHE FACE\n\u2022 River dawn, deeper river or plain black backdrop\n\u2022 Glacier, salmon coral or warm brass accents\n\u2022 Centered digital time, optional seconds; follow-watch, 12-hour, 24-hour or military time\n\u2022 Date, battery percentage and moon phase\n\u2022 Minimal time-only always-on display\n\u2022 Optional native steps and heart rate in place of the river/tide row\nUPDATES\nReports refresh about every 30 minutes (Wear OS may defer); refresh is also in the data app. Old reports are marked stale and missing data shows a dash, never an invented reading. Off-season, the latest count may not change for a long time.\nCOMPATIBILITY\nWear OS 5 or later with Watch Face Format 2. For Wear OS watches only, not phones or other watch platforms. The face does not start heart-rate measurements or record workouts and is not a medical device.\nNo ads, subscriptions, account or developer-operated tracking. Artwork is decorative, not a map or verified river conditions.\nINDEPENDENT APP\nTripperDeeLabs is not affiliated with or endorsed by ADF&G, USGS, NOAA, the State of Alaska or any government entity. Public data may be delayed, preliminary or revised. Fish passage is not a catch forecast, and Cape Kasilof tides are predictions, not Kenai River levels. Always check current regulations, emergency orders and local conditions. Official source links are available in the app.\nSupport: feedback@tripperdeelabs.com",
+    "verified": "2026-10-23",
+    "os": "Wear OS",
+    "category": "UtilitiesApplication",
+    "privacy": "/kenai-fishing-report/privacy/"
+  },
+  {
+    "slug": "kenai-report-data",
+    "package": "com.tripperdeelabs.kenaifishingreport.data",
+    "name": "Kenai Report Data",
+    "summary": "Fish counts, Soldotna river readings and Cape Kasilof tide complications.",
+    "price": "0",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.kenaifishingreport.data",
+    "iconSource": "https://play-lh.googleusercontent.com/nZGjd9raqC7dz36Hr3bOxOaLSOnc5QuLmZ4JkK0Hu9YUKwHX8OQ-Vvx9fALNa5LhYhMbklkLFyVeffxtS-Ad",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/uMB6ypJpas8RxV6CM19Gwz_mnNyb3x1Dl2_zKvBGK2ZpKVKSJQBxCjpBUYXvj_O2CO_2YqjZWe_JyuWGLbKdrg=s1600",
+      "https://play-lh.googleusercontent.com/SxcKFmtxFhqtouXrsnQ6d2k4K9UhNTN8JlnjAuN1TIba3jcXV6CyQrmidyaXmERbm75qzLsp6fAZEP6Hm8Xu=s1600",
+      "https://play-lh.googleusercontent.com/Sk3tYaW_plyZIU19uf5UYxqPhDNBL0ICv44bh8j6Z3FQjU8S3dorj5C8pd3hhZsjGEfRq0zbDjCIZzwcrHVRidQ=s1600",
+      "https://play-lh.googleusercontent.com/DOPAOiqXjjKJ55iIjiy-xSBsbQC5R-hYvNNg0dq5pn7EnaM_az4VmpAWONe7QgQTOiSuplIlmJcTXJ0q_XNEDA=s1600"
+    ],
+    "listingDescription": "Kenai Report Data supplies fishing-report complications for compatible Wear OS watch faces, including Kenai Fishing Report.\nThis is the separate DATA APP, not a watch face. Install it on the same watch as your chosen compatible face, then select its providers in the complication settings. Kenai Fishing Report is available as a separate watch-face app. Kenai Report Data can also be used with other faces that accept its text complications.\nREADINGS\n\u2022 ADF&G Kenai late-run sockeye: latest daily count, count date, and season total.\n\u2022 USGS Soldotna: water temperature, with flow and gauge observations in details.\n\u2022 NOAA Cape Kasilof: next predicted high/low tide, height and Alaska-local time.\n\u2022 ADF&G rule-verification reminder and official source links.\nOpen the watch app or tap a Kenai complication to read its report and fetch time. Refresh requests updates immediately, with a short throttle to avoid repeated requests. Automatic complication update requests are approximately every 30 minutes and may be deferred by Wear OS. Forecast and observation availability depends on the source and your connection.\nReports are fetched directly over HTTPS and cached locally after successful validation. Old or failed readings are identified; missing values are never replaced with fabricated counts. Out-of-season fish counts may remain unchanged. The rules reminder does not decide whether fishing is permitted.\nPRIVACY\nNo accounts, advertising SDKs, analytics SDKs, subscription, developer backend, location permission or health permission. Public reports and update status are stored on your watch. Government source servers receive normal network connection metadata, such as IP address and an app User-Agent, under their own privacy practices. Clearing app storage or uninstalling removes the local cache. Read Privacy & sources inside the app for details.\nRequires Wear OS 5 or later and internet access for updates. A watch browser is needed to open source websites directly; their URLs remain visible if no browser is installed. This app does not display a phone UI or provide fishing alerts.\nOFFICIAL SOURCES\nADF&G Kenai late-run sockeye counts:\nhttps://www.adfg.alaska.gov/sf/FishCounts/index.cfm?ADFG=main.displayResults&COUNTLOCATIONID=40&SPECIESID=420\nUSGS Kenai River at Soldotna, station 15266300:\nhttps://waterdata.usgs.gov/monitoring-location/15266300/\nNOAA Cape Kasilof tide predictions, station 9455711:\nhttps://tidesandcurrents.noaa.gov/stationhome.html?id=9455711\nADF&G emergency orders:\nhttps://www.adfg.alaska.gov/sf/EONR/index.cfm?ADFG=Region.R2\nINDEPENDENT APP\nTripper Dee Labs does not represent, and is not affiliated with or endorsed by, ADF&G, USGS, NOAA, the State of Alaska, or any government entity. Public information may be delayed, preliminary, revised, or unavailable. Fish passage is not a catch forecast. Cape Kasilof tides are predictions, not measured Kenai River levels. Always verify current fishing regulations, emergency orders, and local conditions.\nSupport: feedback@tripperdeelabs.com",
+    "verified": "2026-10-23",
+    "os": "Wear OS",
+    "category": "UtilitiesApplication",
+    "privacy": "/kenai-fishing-report/privacy/"
+  },
+  {
+    "slug": "launch-vector",
+    "package": "com.tripperdeelabs.launchvector.watchface",
+    "name": "Launch Vector Watch Face",
+    "summary": "Rocket launch countdown watch face for Wear OS with weather and health data",
+    "price": "0",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.launchvector.watchface",
+    "iconSource": "https://play-lh.googleusercontent.com/n_GAi-2hjgkJETBibWQg9NbXkJy393_zCDUEhW1xX8QY3TkqNNmb8cyyDUTD0-UG4NTUBzlTeqAqd_FDo384_A",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/te-BLABphNHTfbS_higdUP2Iln3BExiJWo_eiCft-2ygFoIL-aVWWdKDrJWOOQCC9KneF6yqXiUQB_c0k5UNFg=s1600",
+      "https://play-lh.googleusercontent.com/NJZ724eEXpPAuIqsNksSvjqKDlNQIBOCvA7h76ye-xlAp0jFcNOGkWtQwo-MGjpDdoqYZeBR2QKqFAhYnVVOXYI=s1600",
+      "https://play-lh.googleusercontent.com/541Z_QXG1qoDWaR7OW6KLA5IM84fHI1Ir8kQ6pw_2Fa2_EAf2P7KsP8pRA5fx6qwgEmTm_0oL0rrQxr3I468CQ=s1600",
+      "https://play-lh.googleusercontent.com/jC3r1nuJOYfDR2XmcVqd-0pTAa2Vcvuppc1FCi_-IpoGZavwoA1EXhA9UCagNQodBn9IS-yHEjiqT2nwJFlC=s1600"
+    ],
+    "listingDescription": "Launch Vector is a free Wear OS watch face that puts the next launch countdown on your wrist\u2014time, weather, battery, steps, and heart rate from Wear OS, plus launch schedule data from the Launch Vector Data Provider companion.\nIndependent tribute styling inspired by launch aesthetics. Not affiliated with or endorsed by SpaceX.\nInstall the free Launch Vector Data Provider companion so the face can refresh launch schedules. The watch face itself does not request location.\nFeatures: launch countdown and status, interactive and ambient modes, 12/24-hour time, rocket flight animation, Wear OS health/weather complications.",
+    "verified": "2026-10-23",
+    "os": "Wear OS",
+    "category": "UtilitiesApplication",
+    "privacy": "/launch-vector/privacy/"
+  },
+  {
+    "slug": "local-lore",
+    "package": "com.tripperdeelabs.locallore",
+    "name": "Local Lore: History Near Me",
+    "summary": "Nearby history, landmarks and local legends, with sources, on a map or list",
+    "price": "0",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.locallore",
+    "iconSource": "https://play-lh.googleusercontent.com/cEPzrWiBGg-b_WcMkjBYLyQ4eiNu-Dy8zUPntVSADPKzY5fTOVQyNeEEEfdKyj_4mgCtyBFJrSJhMpSOAtsT2w",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/_A22l4L29lna9bJXExR4OYfWuhzqY-DqBUej5rKiplNcYeYFxuulFAblFOgeXcqaTa0wFtoV5-_-baRwNC2j8w=s1600",
+      "https://play-lh.googleusercontent.com/6nvvi9oJwCOLtfnThSg84EO242OE5SCQ654k8vlf06F7oYDDwwJ4fSP2DnDpNds1CwnpDgPEiXFhusfGPCdtGQ=s1600",
+      "https://play-lh.googleusercontent.com/Niavi0nTxQCDRRNTbv3JQu_0JOsb-auS_3d2Yebcz4o6iM4pLFusLt9eqX7Ssqqaf5q2Cmu6n-KC398Iv3SBQPw=s1600",
+      "https://play-lh.googleusercontent.com/0-wUUEBITvaeVbc0qSo5jB1IDkCq5y2hN2aJdGlI5oZS4cWjdhDeIRMZepm3GpAtXq8tqJl4ajxic2EmabHf=s1600"
+    ],
+    "listingDescription": "Discover the history near you: sourced stories, landmarks and local legends around where you stand, or anywhere you search.\nLocal Lore is a nearby history explorer with no ads and no TripperDeeLabs account. Browse on a map or in a list, filter by theme, and open the sources when something hooks you.\nWHAT YOU'LL FIND\n\u2022 Local history and historical landmarks\n\u2022 Local legends and curious local facts\n\u2022 Wildlife and nature notes\n\u2022 Film locations\n\u2022 Linked sources so you can dig deeper\nEXPLORE AROUND YOU\n\u2022 Browse nearby lore on a map and in a list\n\u2022 Filter by themes like history, landmarks, nature and more\n\u2022 Quick reads you can skim on a walk, a lunch break or a road trip\nPLAN A TRIP\n\u2022 Search another city or neighborhood before you go\n\u2022 Line up the landmarks and stories you want to see\n\u2022 Great for road trips, weekend getaways and new-to-town walks\nBUILT FOR CURIOUS PEOPLE\nWhether you're a traveler in a new city or a local who has walked the same street for years, Local Lore helps you learn the story behind a place: why a building matters, what happened on a corner, or which legend is tied to a nearby spot. Every entry links to its sources, so you can read more when you want the full history.\nPRIVACY-MINDED\n\u2022 No TripperDeeLabs account required\n\u2022 No ads and no tracking for advertising\n\u2022 Clear privacy policy on the TripperDeeLabs site\nSHAPE WHAT COMES NEXT\nLocal Lore is young, and early users decide what it becomes. Use Send feedback in the app, or email feedback@tripperdeelabs.com, with ideas, bugs, missing places or local stories you'd love to see.\nLocal Lore is made by TripperDeeLabs for people who like knowing the story behind a place.",
+    "verified": "2026-10-23",
+    "os": "Android",
+    "category": "UtilitiesApplication",
+    "privacy": "/local-lore/privacy/"
+  },
+  {
+    "slug": "mock-location",
+    "package": "com.tripperdeelabs.mocklocation",
+    "name": "Mock Location: GPS Simulator",
+    "summary": "Fake GPS and mock location for app testing and QA. Walk or drive presets. No ads",
+    "price": "0.99",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.mocklocation",
+    "iconSource": "https://play-lh.googleusercontent.com/J3CrhKxPYUKQA-XHmLJlFQHLvlQBGl3k6OWmEzgVa8oQR8hBDNErDD7T0LwOLCXZ1KfUhKV67lq86fPN1F9F",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/Htnt4pKHNUN-h8GwIbOkqjVIe2UAwO-XCnU6qdEdBhe05gppYTrnqZMieMSCkBqnpOGayrfYKiL3fH1-eN28cw=s1600",
+      "https://play-lh.googleusercontent.com/0bvcSKUqrjC4icb1Qci3LeoO6iIY5Fx-LjEOYGZUEqgrz6F54acR4s_u7fMHsDoJbZQ0DV-Y2zZFlgRhlj1p=s1600",
+      "https://play-lh.googleusercontent.com/-GOfPx08wjgmlD3A43bCRWp81qfdmC61_HDG95R3bN0wUZBJmSgdsOaJkoex7jw8YY6begH4cwDrcawY6CF7=s1600"
+    ],
+    "listingDescription": "Mock Location: Fake GPS is a one-time $0.99 utility for Android development, QA, demos, and other authorized testing. It uses Android\u2019s official Developer Options mock-location workflow\u2014pick a map point, search, enter coordinates, or use a local bookmark; run fixed location or steady movement. No ads, no account, no TripperDeeLabs tracking. Not for deceiving people or services.\nCompatibility with third-party apps is not guaranteed. Dating, gaming, banking, delivery, streaming, and other fraud-sensitive services may detect or reject Android mock locations. This app does not bypass those checks.\nCORE FEATURES\n\u2022 OpenStreetMap-based map powered by MapLibre  \n\u2022 Address and place suggestions while typing  \n\u2022 Latitude and longitude entry  \n\u2022 Long-press the map to create a bookmark  \n\u2022 Five local bookmark slots  \n\u2022 Fixed-location testing  \n\u2022 Walking, running, cycling, and driving movement presets  \n\u2022 Start, pause, resume, and stop controls  \n\u2022 Persistent notification controls during active sessions  \n\u2022 First-run Developer Options setup instructions  \n\u2022 Built-in Android mock-location setup check  \nPRIVACY FIRST\n\u2022 No advertisements  \n\u2022 No subscription  \n\u2022 No account  \n\u2022 No first-party analytics  \n\u2022 No behavioral tracking  \n\u2022 No advertising ID  \n\u2022 Bookmarks and settings remain in private app storage  \n\u2022 No developer-operated location-history server  \nMap resources and address search require an internet connection. See the privacy policy for details about OpenFreeMap and Photon network processing.\nSETUP\n1. Enable Android Developer Options by tapping Build number seven times.  \n2. Open Developer Options.  \n3. Choose Select mock location app.  \n4. Select Mock Location: Fake GPS.  \n5. Return to the app, choose a point, and start the session.\nAndroid marks generated positions as mock. Other applications may reject mock locations or estimate location from Wi-Fi, cellular networks, IP address, account history, or other signals. This app does not hide Android\u2019s mock-location status or provide anti-detection functionality.\nUse this utility only for application development, QA, demonstrations, or devices and services you are authorized to test. Do not use it to deceive people or services, commit fraud, evade security or eligibility controls, falsify work or attendance, or affect emergency, commercial, navigation, or safety-critical uses.\nNo ads. No subscription. No tracking by TripperDeeLabs.",
+    "verified": "2026-10-23",
+    "os": "Android",
+    "category": "UtilitiesApplication",
+    "privacy": "/mock-location/privacy/"
+  },
+  {
+    "slug": "moto-thrash",
+    "package": "com.tripperdeelabs.motothrash",
+    "name": "Moto Thrash: Retro Motocross",
+    "summary": "Retro motocross, offline play: race 24 tracks, jump buses, build your courses",
+    "price": "0.99",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.motothrash",
+    "iconSource": "https://play-lh.googleusercontent.com/Adl1XV8F2uhFYdfwIqaIQGyquXpPayxEXUiYnTkqaSuhhGJMhemvexgV_0KLb5w2Wm1C8QdqXrG_zLlSkMyb1A",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/HuiQloptj7ER0rbeJGWZ5oFjzI1nFLqNJEGtIM43asF1uvLS28LNe_t0h2tqCUhChaPtjuXm2GzthRTup4Wh=s1600",
+      "https://play-lh.googleusercontent.com/UI-zy_Apgeq1VNCCNtxDGbXN1Zu3P6yUW2iijpmmHXAJ-YhiRsAK1LCYAB3irp40c2RggFSFdohywLoQggjvp-0=s1600",
+      "https://play-lh.googleusercontent.com/Qnh1lY0xyDLrCfR0jfr_2_uX5BAyJ2W8rN8oea0lVSe285OPQ5_vG6qeWt6bdbZwrFhoRFBlFpnC3haL-C9t=s1600",
+      "https://play-lh.googleusercontent.com/B_oJgHj6uaNCh7gUP6pGxcEeiC5K_vxXAsWbCAq0Q99LTmm-czlfmR3dWDAu1bCGpiHsHHKIktSrSp2QNqo=s1600"
+    ],
+    "listingDescription": "Big jumps, wheelies and pixel dirt. Race 24 tracks, then build your own. Offline play, no internet needed.\nMoto Thrash is an arcade motocross game built around big jumps, bike balance and boost timing. No ads, no in-app purchases and no account.\nRACE 24 TRACKS\n\u2022 Four cups to work through\n\u2022 Race computer opponents and chase your best times\n\u2022 Manage engine heat and boost timing\n\u2022 Change lanes and lean into clean landings\nBALANCE ON THE EDGE\n\u2022 Pull rear-wheel wheelies and front-wheel balances with the directional pad\n\u2022 Push too far and you lose stability\n\u2022 Keep your dirt bike level in the air to stick the landing\nBUILD YOUR OWN COURSES\n\u2022 Six local save slots for custom tracks\n\u2022 Place ramps, bumps, oil, mud, boost pads and jump hazards\n\u2022 Add water, rivers, crocodiles, lava, cars and buses\n\u2022 Ride every course you design\n\u2022 Offline play: custom tracks save to six local slots on your device\nTAKE ON STUNT SHOW\n\u2022 Line up as many as 20 buses\n\u2022 Set your launch ramp and run-up speed\n\u2022 Attempt a clean landing, earn points and beat your personal best\nRETRO STYLE, TOUCH CONTROLS\n\u2022 Pixel riders, trackside trees and an unusual stadium crowd\n\u2022 On-screen directional pad and boost button\n\u2022 Animated engine feedback and synthesized arcade sound effects\nOFFLINE PLAY, ANYWHERE\nThis retro motocross game needs no internet connection, so it is ready on a flight, a road trip or anywhere without signal. Progress and custom courses stay on your device. Single-player only: custom tracks are saved locally, with no online sharing or cloud saves.\nMade by TripperDeeLabs.\nSupport: feedback@tripperdeelabs.com",
+    "verified": "2026-10-23",
+    "os": "Android",
+    "category": "GameApplication",
+    "privacy": "/moto-thrash/privacy/"
+  },
+  {
+    "slug": "parked",
+    "package": "com.tripperdeelabs.parkpin",
+    "name": "Parked: Find My Car Widget",
+    "summary": "Parking reminder widget that works offline: save your spot, walk back to it",
+    "price": "0.99",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.parkpin",
+    "iconSource": "https://play-lh.googleusercontent.com/SrNeyxk8qf5nri5n4f_YVcj6vJaEwag1WzLRFRGe5aNz3PHGeyxa24_DRxSoDI7kJNxi2SE-9DV4LdKQzrvHJQ",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/hP9KMrMxwfyFWKpcO4icH0I74msnKb6IkjQGD7kz2t_tXYUAe-1Sjur__hLRKDxkntBti3383mEOPpgDBJPVoQ=s1600",
+      "https://play-lh.googleusercontent.com/nTKkNwXpcMb3isCCw3vKD92lveyX4I2QWYtbPiIXP78PSsnAv97rzKVy9fDi_k7XbBDKreGx39s8BxmOz5ljug=s1600",
+      "https://play-lh.googleusercontent.com/N2E6TAf9SDCcBAlQt0eEfO_QFvRzTtupaYg1Xax2sd4z-1Dol0dWX0Cx_WjEXfniZFzZomsYkLpF8lIYeAiMvYo=s1600"
+    ],
+    "listingDescription": "Save your parking spot with one tap, even with no signal, then walk straight back to your car.\nParked is a one-time $0.99 find my parked car app with a home-screen parking reminder widget. It works offline: saving your spot uses your phone's GPS, with no internet needed. No account, no ads and no TripperDeeLabs tracking.\nHOW IT WORKS\n\u2022 Tap Park Here when you leave the car\n\u2022 Tap Dude, Where's My Car? for walking directions back to your saved spot\n\u2022 See when you saved the spot and how accurate the fix was\n\u2022 Works offline in garages and remote lots; walking directions open in your maps app, which may need a connection\nHOME-SCREEN PARKING WIDGET\n\u2022 Add the compact widget so you never dig through menus after you park\n\u2022 One-tap park and find controls right on your home screen\n\u2022 Open the app for share, replace, clear and feedback\nA SIMPLE CAR LOCATOR FOR EVERYDAY PARKING\n\u2022 Shopping malls and big-box lots\n\u2022 Parking garages and decks\n\u2022 Airport parking\n\u2022 Street parking in a new neighborhood\n\u2022 Stadiums, concerts and theme parks\nNever wonder where did I park my car again: one tap when you arrive, one tap when you leave.\nSHARE OR CLEAR YOUR PIN\n\u2022 Share a map link when someone needs to meet you at the car\n\u2022 Replace the saved spot the next time you park\n\u2022 Clear the saved location anytime\nPRIVACY-FIRST CAR FINDER\n\u2022 No TripperDeeLabs account, ads, subscriptions, analytics or tracking\n\u2022 No background location access\n\u2022 The developer cannot see your location\n\u2022 Coordinates leave the app only if you choose Directions or Share\nGOOD TO KNOW\nParked is a convenient parking reminder, not an emergency or personal-safety tool. GPS accuracy varies by phone, buildings and multi-level parking structures, so in a garage it helps to note the level too.\nMade by TripperDeeLabs for drivers who want a private, no-nonsense find my car widget.",
+    "verified": "2026-10-23",
+    "os": "Android",
+    "category": "UtilitiesApplication",
+    "privacy": "/parked/privacy/"
+  },
+  {
+    "slug": "private-eyes",
+    "package": "com.tripperdeelabs.privateeyes",
+    "name": "Private Eyes: Photo Vault Lock",
+    "summary": "Offline encrypted photo vault and private camera. No ads, no internet needed",
+    "price": "0.99",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.privateeyes",
+    "iconSource": "https://play-lh.googleusercontent.com/ADKchd2HyvGXAfxW7b3WXimc-ETXhR-YpiWBDy0js4b8qx4kOHySJ7m7CeK4juzv2nA2y_udWVX4t1pLWK-i",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/CXHikAtDJXZFT0edOjP1CSq-3rE1J3_h_6HHhQayKUKDexr7UsnAKABeKxu6mKXUefKM7MQ3XTZANEc1QxkuLlA=s1600",
+      "https://play-lh.googleusercontent.com/SprZfpaE21oeGRAeup8sez0HU0VisXhbxj0SBD-rb-a5Nl43V-Z-wFxnhLAcV4hzYrJ-jMdDTt8TLol7sDk_vQ=s1600",
+      "https://play-lh.googleusercontent.com/w6L075tQuAffH3zqjcSodqC1A1Ktlb9WvQ0n0TSu6F_iCcAV9oPsIjNyqQ-mynPnWLP3WW6U7J8Wy3b8rZqY6M4=s1600",
+      "https://play-lh.googleusercontent.com/G7wqPwwchnBIydcAa1bAaIHxO9bRzZfqhu44fsJpTR1RUWu5P4BtIc7dF4KeQoutHm_Sha2_BQ11qL9WWZONMQ=s1600"
+    ],
+    "listingDescription": "$0.99 once. No ads. Your encrypted photo vault works offline and stays on your phone.\nPrivate Eyes is a one-time $0.99 purchase with no ads and no internet permission, so nothing third-party is loaded into an app built to keep personal files private.\nWHY PRIVATE EYES\n\u2022 $0.99 once: no ads, no subscription, no account\n\u2022 On-device vault: no developer-operated cloud storage and no analytics SDK\n\u2022 The developer never receives your vault contents or holds a recovery key\n\u2022 AES-256-GCM authenticated encryption for files, item details and thumbnails\n\u2022 Works offline: the app has no internet permission and never uploads your vault\nPRIVATE CAMERA BUILT IN\n\u2022 Take photos and short, silent videos straight into the vault instead of your Gallery\n\u2022 Use available focus, exposure, timer and zoom controls on supported devices\nORGANIZE YOUR VAULT\n\u2022 Import selected files with Android's file picker, including DNG and common camera RAW files\n\u2022 Browse daily case folders, search filenames, filter by media type and sort\n\u2022 Zoom photos and play supported videos inside the vault\nCONTROL ACCESS AND EXPORTS\n\u2022 Locks when you leave the app, turn off the screen or tap Lock vault\n\u2022 Optional one- or five-minute inactivity lock\n\u2022 Screenshots and screen recording are blocked\n\u2022 Export warnings, plus optional metadata removal for JPEG exports\n\u2022 Optional separate alternate vault with its own pattern\nImporting creates a protected vault copy; it does not hide or delete the original from your Gallery, Downloads or other apps. Manage those originals separately.\nKNOW THE LIMITS\nRequires Android 13 or later and a device screen lock. Imports up to 1 GB per file; camera videos are silent and up to two minutes. There is no recovery phrase, password reset or cloud backup: losing your pattern or device can mean permanent loss, so don't keep the only copy of irreplaceable files here. Deletion has no undo and cannot guarantee physical erasure from flash storage. The alternate vault does not provide forensic invisibility, and Private Eyes has not been independently certified secure.\nDeveloped by TripperDeeLabs. Support: feedback@tripperdeelabs.com",
+    "verified": "2026-10-23",
+    "os": "Android",
+    "category": "UtilitiesApplication",
+    "privacy": "/private-eyes/privacy/"
+  },
+  {
+    "slug": "roboball",
+    "package": "com.tripperdeelabs.roboball",
+    "name": "RoboBall: Arcade Basketball",
+    "summary": "Arcade basketball with offline play: time your shot and beat moving hoops",
+    "price": "0.99",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.roboball",
+    "iconSource": "https://play-lh.googleusercontent.com/LgxUJJjb6q_JM6kJoK6lY4YOq6_Bf8QGpggkVz3VXGUGQHZq7CPTC80jEcs-s4szhxwXZ0LB5J75TmNAobRIJQ",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/JeVJOkMILyUb5IdsJWyC8bKQlSwNU_RVCvG4KfGsbLBiPnW0e3AnnIYqLIWxIVufdJtQRoLNPHWj5VaqAz2VSg=s1600",
+      "https://play-lh.googleusercontent.com/8s5VoXnl59jmnrvuvX67AKTVrNvRIP0qo7B78fRgRbyEyL5AX52S2RnZBZbM6q0sPWXDWP4j8tmJ4RbJHfoxHFs=s1600",
+      "https://play-lh.googleusercontent.com/Lvwa2phsxj3S_Xjkmvh8urkEQTGxd4KilPeEq_b8hu4wi_z6WixzR8uZZCC_uEn8cTBULOVi1bHlxE0bsCIE6Q=s1600",
+      "https://play-lh.googleusercontent.com/XX-qlQuxYc_EfpqggSrU9f7cT7ZPdIl6HTir68-7kzV49GpxYGC30TZBb5PChsYfUxShv_aA_1XgyHuHLwbJLw=s1600"
+    ],
+    "listingDescription": "Time the meter, release, and watch physics decide the shot. Offline play, no internet needed.\nRoboBall is a first-person arcade basketball game built on timing, aim and real ball physics. It runs fully offline, with no ads, no subscriptions and no account, for a one-time $0.99.\nHOW IT PLAYS\nFollow the moving power meter, release at the right moment, and watch each ball react to the rim, backboard, chain net and the obstacles around the hoop. Moving baskets, wind and gravity mean no two shots feel the same.\nWORLDS TO SHOOT THROUGH\n\u2022 Classic arcade cabinets\n\u2022 Moving hoops and trick-shot challenges\n\u2022 Planetary gravity courts\n\u2022 City stages, rooftops and railways\n\u2022 Underwater courts\n\u2022 Kenai Salmon Shot, and more\nPRACTICE, THEN CHASE STARS\n\u2022 Untimed practice and guided practice to learn the release\n\u2022 Larger illustrated world cards\n\u2022 Earn eight offline trophies\n\u2022 Review your results and replay for more stars\n\u2022 Optional automatic next-level play\n\u2022 Offline play anywhere: scores, stars and trophies save on your device\nMADE FOR PHONES\n\u2022 Clear on-phone controls and shooting feedback\n\u2022 Adjustable audio, haptics, contrast, HUD and aiming guide\n\u2022 Motion settings for comfortable play\n\u2022 Automatic pause when you're interrupted\n\u2022 Optional player name with a docked keyboard\nYOUR GAME STAYS ON YOUR DEVICE\nHigh scores, progression and trophies are saved locally. No account, no ads and no internet needed, so this basketball arcade game is ready on a flight, a commute or anywhere without signal.\nMade by TripperDeeLabs.\nSupport and privacy: feedback@tripperdeelabs.com \u00b7 https://tripperdeelabs.com/roboball/",
+    "verified": "2026-10-23",
+    "os": "Android",
+    "category": "GameApplication",
+    "privacy": "/roboball/privacy/"
+  },
+  {
+    "slug": "summit-line",
+    "package": "com.tripperdeelabs.summitline.watchface",
+    "name": "Summit Line",
+    "summary": "Mountain views, bold time, and everyday essentials for your Wear OS watch.",
+    "price": "0.99",
+    "currency": "USD",
+    "play": "https://play.google.com/store/apps/details?id=com.tripperdeelabs.summitline.watchface",
+    "iconSource": "https://play-lh.googleusercontent.com/LJnIwMSfHXxkZcKUmMMfuoaaiQxfarERAUUn525Wl0oBgyYpH43A-jBFSlhoxjfWY6cLbQZ7FQkCoojy63kBOm0",
+    "screenshotSources": [
+      "https://play-lh.googleusercontent.com/nj3QhFn2PuM_upaoBrYumBxsRO-hrkRBuJQNWT1eRyViXYxOz3yJF_2x_DEMopIVYn9NvmRYGjt3LpArzMJL=s1600",
+      "https://play-lh.googleusercontent.com/9fqCUX8HMmjulIGteQg8I1XiqRFaT084XI0rL0y41CtRYjV-lODNkCaZFl9W7lSBENxJRzkuRpK-XtGNu4bW0g=s1600",
+      "https://play-lh.googleusercontent.com/xe0M_CnVf8pENzpBx9iqMgxCNmAGNPkNu62z7m09qxnrE4EwVgOaZ05uLGl7trCgj2xe9IK3Nn-c6X_KzN4210M=s1600",
+      "https://play-lh.googleusercontent.com/nrsWhp56I1hCL6AzUvo_rNhb3iwSzbVgtac8iMmuBPx0U6-eydy5qXVpFuF0nh6VGjS6VoIZHQ60nrsFfqHA=s1600"
+    ],
+    "listingDescription": "Bring the mountains to your wrist with Summit Line, a scenic digital watch face for Wear OS.\nA bright sunrise trail, dramatic granite peaks, and alpine scenery create a view worth checking. Large digital time, a centered colon, and softly shaded information areas keep your everyday essentials easy to read.\nMAKE IT YOURS\n\u2022 Choose Sunrise Hike, Whitney Trail, Alpine, Night Trail, or Pure Black.\n\u2022 Choose automatic morning, daytime, and night scenery based on local time.\n\u2022 Follow your daily steps with an outer progress ring. Choose a 5,000, 8,000, 10,000, 15,000, or 20,000-step goal, or turn it off. Reach the goal for a subtle completion cue.\n\u2022 Select Glacier, Amber, Pine, or White accents.\n\u2022 Choose 12-hour, 24-hour, military-style, or device time formatting, with two-digit hours.\n\u2022 See the current moon phase above the time, with an option to hide it.\n\u2022 Show or hide seconds.\n\u2022 On Wear OS 6, choose a personal photo using the supported system photo customization flow.\nEVERYDAY ESSENTIALS\nSee the date, battery percentage, steps, temperature, and heart rate when available from your watch or selected providers. A minimal always-on display keeps the time visible on supported devices.\nCUSTOMIZABLE DATA\nChoose a steps tap shortcut and a compatible temperature complication. An additional optional slot can display information from installed providers, such as compass or elevation data when a compatible provider is available. Summit Line does not contain its own compass, altitude sensor service, GPS navigation, or hike recorder.\nQUICK ACCESS\nTap supported fields to open system destinations or the selected complication's app. Available destinations and actions depend on your watch and installed apps. Long-press the face to open Wear OS customization.\nCOMPATIBILITY\nRequires Wear OS 5 or later and Watch Face Format support. Personal-photo customization requires Wear OS 6 and a supported watch/paired-phone system flow. It is not included in the Wear OS 5 version. This listing is for Wear OS, not Garmin or Apple Watch.\nData availability depends on device sensors, system settings, permissions granted to providers, and installed apps. Missing readings may appear as dashes. The ring and steps number use the same native watch step count, with a goal chosen in Summit; it does not synchronize your health app goal. Automatic scenery uses fixed local-time periods, not calculated sunrise or sunset. Summit Line displays available heart-rate data; it does not initiate a measurement and is not a medical device. Mountain artwork is decorative and is not a navigation map.\nNo ads, accounts, or subscriptions. No separate Summit phone app is required.\nSupport: feedback@tripperdeelabs.com",
+    "verified": "2026-10-23",
+    "os": "Wear OS",
+    "category": "UtilitiesApplication",
+    "privacy": "/summit-line/privacy/"
+  }
+]
