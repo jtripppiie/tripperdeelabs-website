@@ -61,3 +61,5 @@ There is no build step, JavaScript application, account system, or backend. Opti
 - The homepage publishes Organization structured data, and product pages may publish SoftwareApplication structured data.
 
 The privacy-policy URL must remain publicly readable without a login and must have a valid HTTPS certificate before it is entered in Play Console.
+
+- `/alaska-gold-run/privacy/` — Alaska Gold Run Google Play privacy policy
