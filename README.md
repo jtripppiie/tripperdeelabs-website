@@ -37,4 +37,8 @@ Search Console domain verification requires an account-issued DNS token. Do not 
 
 ## Wonder Cascade preparation
 
-`/wonder-cascade/privacy/` covers the offline Android build 0.10.1 and is linked from the privacy directory and sitemap. Advertising is planned but is not integrated in that build; update disclosures before enabling AdMob. Wonder Cascade is not yet in the public Play catalog. The root `app-ads.txt` contains the supplied Google publisher record for `pub-2800097170975983`.
+`/wonder-cascade/privacy/` covers the current Android AdMob/UMP/Billing integration and the browser feedback preview. The Android internal-test candidate is 0.11.2; real Play purchase testing remains pending. Wonder Cascade is not in the public Play catalog. The root `app-ads.txt` contains the supplied publisher record for `pub-2800097170975983`.
+
+`/wonder-cascade/play/` is an unlisted, noindex browser feedback preview. It uses the actual Godot game, with no ads, purchases or analytics. Its service worker is scoped to this directory and uses a Wonder Cascade-specific cache prefix. Progress stays in browser storage; feedback opens an email draft only when the player chooses. It is deliberately absent from the app grid and sitemap. Browser compatibility still depends on WebGL 2, WebAssembly, service workers and cross-origin isolation support.
+
+Export source and reproducible staging script live in the adjacent android-chain workspace: `python3 prepare-web-preview.py --stage`. Generated files stay below GitHub's individual file limit. Run the site catalog checker and browser checks before committing updates. Never add signing credentials, APKs or AABs to the website.

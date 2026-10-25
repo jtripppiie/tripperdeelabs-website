@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#162a53">
+<meta name="description" content="Try the Wonder Cascade browser preview and help shape the game. No install, ads or purchases.">
+<link rel="canonical" href="https://tripperdeelabs.com/wonder-cascade/play/">
+<title>Play Wonder Cascade · Feedback preview</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:#142346;color:#f1f6ff;font-family:system-ui,-apple-system,sans-serif}body{height:100dvh;display:grid;grid-template-rows:auto minmax(0,1fr) auto;background:radial-gradient(ellipse at 20% 10%,#614ba0,transparent 60%),radial-gradient(ellipse at 90% 80%,#187a94,transparent 60%),#142346}button,a{ -webkit-tap-highlight-color:transparent}button,.action{font:inherit;font-weight:650;border:1px solid #b9d1f250;border-radius:12px;background:#294573;color:white;min-height:44px;padding:10px 14px;cursor:pointer;text-decoration:none}button:hover,.action:hover{background:#3c5e94}button:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid #ffdc7e;outline-offset:3px}button:disabled{opacity:.65;cursor:wait}.topbar{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:calc(8px + env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) 8px max(12px,env(safe-area-inset-left));box-shadow:0 1px #fff2}.brand{font-weight:750;letter-spacing:.02em}.brand span{display:block;font-size:11px;letter-spacing:.08em;color:#d0dff5;text-transform:uppercase}.actions{display:flex;gap:8px;align-items:center}.actions button{font-size:13px;white-space:nowrap}#frame{position:relative;min-height:0;width:100%;height:100%;overflow:hidden}#canvas{display:block;touch-action:none;width:100%;height:100%;outline:none}footer{padding:8px 12px calc(9px + env(safe-area-inset-bottom));font-size:12px;text-align:center;color:#d1e0f6;line-height:1.5}footer a{color:#e4edff}#loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;background:radial-gradient(ellipse at top,#51457c,#173454 70%);text-align:center}.welcome{max-width:440px;width:100%}.gem{width:105px;height:105px;border-radius:24px;box-shadow:0 0 60px #55dbec55;margin-bottom:14px}h1{font-size:clamp(26px,6vw,38px);line-height:1.1;margin:12px 0}p{line-height:1.6;color:#dce9fa}.primary{background:linear-gradient(#ffe18a,#eaa828);border-color:#ffe39c;color:#483005;box-shadow:0 5px 0 #92621b;padding:15px 28px;font-size:20px}.primary:hover{background:#ffdc73}progress{display:block;width:100%;height:14px;accent-color:#77e8ee;margin:20px auto}#notice{font-size:14px;min-height:24px}#update{background:#ffd26b;color:#453215}dialog{border:1px solid #b9cde8;border-radius:22px;background:#f1f7ff;color:#182d50;width:min(94vw,480px);max-height:90dvh;padding:25px;box-shadow:0 24px 100px #0008}dialog::backdrop{background:#0d163dcc}dialog h2{margin:0 0 12px}dialog p{color:#3b5574;font-size:14px}dialog a{color:#1d5890}dialog label{font-size:15px;font-weight:650}textarea{display:block;width:100%;min-height:150px;resize:vertical;border:1px solid #93abc9;border-radius:10px;margin:10px 0 16px;padding:12px;font:16px/1.5 system-ui;background:#fff;color:#183252}.dialog-actions{display:flex;flex-wrap:wrap;gap:9px}#feedback-status{min-height:22px}.fine{font-size:12px!important}#loading[hidden],button[hidden]{display:none}@media(max-width:430px){.brand{font-size:13px}.brand span{font-size:10px}.actions{gap:5px}.actions button{padding:8px 10px;font-size:12px}.topbar{padding-left:9px;padding-right:9px}footer{font-size:11px}}@media(prefers-reduced-motion:no-preference){.gem{animation:float 3s ease-in-out infinite}@keyframes float{50%{transform:translateY(-6px)}}}
+</style>
+<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
+<link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
+<link rel="manifest" href="index.manifest.json">
+
+</head>
+<body>
+<header class="topbar"><div class="brand">Wonder Cascade<span>Preview · Work in progress</span></div><div class="actions"><button id="update" hidden>Update preview</button><button id="fullscreen" aria-label="Toggle fullscreen">Full screen</button><button id="feedback">Send feedback</button></div></header>
+<main id="frame"><canvas id="canvas" tabindex="0" aria-label="Wonder Cascade puzzle game">This game needs a browser with canvas support.</canvas><div id="loading"><div class="welcome"><img class="gem" src="preview-icon.png" alt=""><h1>A little wonder.<br>A satisfying cascade.</h1><p>Swap neighboring gems. Match three or more.<br>Clear the gold before your moves run out.</p><button id="start" class="primary" disabled>Preparing preview…</button><progress id="progress" hidden></progress><p id="notice" role="status" aria-live="polite">Getting things ready for your first visit.</p><p class="fine">Free feedback preview · Ages 13+<br>No ads. No purchases. The tutorial shows you how.</p></div></div></main>
+<footer>Progress stays in this browser; private browsing may not save. <a href="../privacy/" target="_blank" rel="noopener">Privacy</a></footer>
+<dialog id="feedback-dialog" aria-labelledby="feedback-title"><h2 id="feedback-title">Help shape Wonder Cascade</h2><p>What felt fun, confusing, too easy or frustrating? A level number helps.</p><label for="feedback-text">Your feedback</label><textarea id="feedback-text" placeholder="I tried level…\nI liked…\nI got stuck when…"></textarea><p class="fine">This opens your email app. Nothing is sent automatically. The draft includes the preview version, level and browser details.</p><div class="dialog-actions"><button id="email">Open email draft</button><button id="copy">Copy feedback</button><button id="close-feedback">Back to game</button></div><p id="feedback-status" role="status"></p><p class="fine">Email: <a href="mailto:feedback@tripperdeelabs.com">feedback@tripperdeelabs.com</a></p></dialog>
+<noscript>This preview needs JavaScript enabled. You can send feedback to feedback@tripperdeelabs.com.</noscript>
+<script src="index.js"></script>
+<script>
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":0,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":28959716,"index.wasm":38820072},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"index.service.worker.js"};
+const engine = new Engine(GODOT_CONFIG);
+const canvas = document.getElementById('canvas');
+const start = document.getElementById('start');
+const notice = document.getElementById('notice');
+const progress = document.getElementById('progress');
+const dialog = document.getElementById('feedback-dialog');
+let running = false;
+function resizeCanvas(){const r=document.getElementById('frame').getBoundingClientRect();const scale=Math.min(window.devicePixelRatio||1,2);canvas.width=Math.round(r.width*scale);canvas.height=Math.round(r.height*scale);}
+new ResizeObserver(resizeCanvas).observe(document.getElementById('frame'));resizeCanvas();
+window.wonderFeedback={open(){if(!dialog.open)dialog.showModal();document.getElementById('feedback-text').focus();}};
+document.getElementById('feedback').onclick=window.wonderFeedback.open;
+document.getElementById('close-feedback').onclick=()=>dialog.close();
+dialog.addEventListener('close',()=>{if(running)canvas.focus();});
+function feedbackBody(){const s=window.wonderPreviewStatus||{};return document.getElementById('feedback-text').value.trim()+'\n\nWonder Cascade web preview 0.11.2-web.1\nLevel: '+(s.level||'Not started')+'\nScreen: '+(s.screen||'Loading')+'\nBrowser: '+navigator.userAgent+'\nDisplay: '+innerWidth+'×'+innerHeight;}
+document.getElementById('email').onclick=()=>{location.href='mailto:feedback@tripperdeelabs.com?subject='+encodeURIComponent('Wonder Cascade preview feedback')+'&body='+encodeURIComponent(feedbackBody());document.getElementById('feedback-status').textContent='If no email app opens, copy your feedback and email it to us.';};
+document.getElementById('copy').onclick=async()=>{try{await navigator.clipboard.writeText(feedbackBody());document.getElementById('feedback-status').textContent='Copied. Paste into an email to feedback@tripperdeelabs.com.';}catch(_){document.getElementById('feedback-text').select();document.getElementById('feedback-status').textContent='Select and copy your feedback, then email it to us.';}};
+document.getElementById('fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();}catch(_){document.getElementById('fullscreen').textContent='Use portrait';}};
+function fail(error){console.error(error);notice.textContent='The preview could not start. Try a current Chrome, Edge, Firefox or Safari browser, or send us feedback.';start.textContent='Reload preview';start.disabled=false;start.onclick=()=>location.reload();progress.hidden=true;}
+async function prepare(){try{
+ if(!window.isSecureContext)throw new Error('Secure connection required');
+ if(!window.crossOriginIsolated){
+  if(!('serviceWorker' in navigator))throw new Error('Service workers unavailable');
+  if(sessionStorage.getItem('wonder-isolation-retry'))throw new Error('Browser isolation unavailable');
+  await engine.installServiceWorker();await navigator.serviceWorker.ready;
+  sessionStorage.setItem('wonder-isolation-retry','1');location.reload();return;
+ }
+ sessionStorage.removeItem('wonder-isolation-retry');
+ const missing=Engine.getMissingFeatures({threads:true});if(missing.length)throw new Error(missing.join(', '));
+ const registration=await navigator.serviceWorker.getRegistration();
+ if(registration){const update=()=>{if(registration.waiting){const b=document.getElementById('update');b.hidden=false;b.onclick=()=>registration.waiting.postMessage('update');}};update();registration.addEventListener('updatefound',()=>{const worker=registration.installing;if(worker)worker.addEventListener('statechange',update);});registration.update().catch(()=>{});}
+ start.disabled=false;start.textContent='Play preview';notice.textContent='Your first visit downloads the game. Sound starts after you tap Play.';
+}catch(error){fail(error);}}
+start.onclick=async()=>{start.disabled=true;start.textContent='Opening your garden…';progress.hidden=false;try{await engine.startGame({canvas,canvasResizePolicy:0,onProgress(current,total){if(total>0){progress.max=total;progress.value=current;notice.textContent='Loading '+Math.round(current/total*100)+'%';}},onExit(){running=false;document.getElementById('loading').hidden=false;fail('Game closed');}});running=true;document.getElementById('loading').hidden=true;resizeCanvas();canvas.focus();}catch(error){fail(error);}};
+prepare();
+</script>
+</body>
+</html>
