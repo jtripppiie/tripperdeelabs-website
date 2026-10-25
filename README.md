@@ -34,3 +34,7 @@ Public DNS inspection on October 23, 2026 found no MX or TXT answers; authoritat
 No DNS records have been changed. Email routing requires the destination Gmail address and access to the actual DNS/forwarding provider. Obtain that provider's exact MX priorities/targets and any required TXT values, and show the exact additions/removals before applying them. Preserve the website's A/CNAME records.
 
 Search Console domain verification requires an account-issued DNS token. Do not invent one. Once the account supplies its exact `google-site-verification=...` TXT value, publish it at the requested DNS name and verify in Search Console. Alternatively, an account-issued HTML verification file can verify the HTTPS URL-prefix property; it does not verify the domain property. Submit https://tripperdeelabs.com/sitemap.xml after ownership verification.
+
+## Wonder Cascade preparation
+
+`/wonder-cascade/privacy/` covers the offline Android build 0.10.1 and is linked from the privacy directory and sitemap. Advertising is planned but is not integrated in that build; update disclosures before enabling AdMob. Wonder Cascade is not yet in the public Play catalog. The root `app-ads.txt` contains the supplied Google publisher record for `pub-2800097170975983`.
