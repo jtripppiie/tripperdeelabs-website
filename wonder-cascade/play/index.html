@@ -24,7 +24,7 @@
 <noscript>This preview needs JavaScript enabled. You can send feedback to feedback@tripperdeelabs.com.</noscript>
 <script src="index.js"></script>
 <script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":0,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":28962276,"index.wasm":38820072},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"index.service.worker.js"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":0,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":28995168,"index.wasm":38820072},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"index.service.worker.js"};
 const engine = new Engine(GODOT_CONFIG);
 const canvas = document.getElementById('canvas');
 const start = document.getElementById('start');
@@ -38,7 +38,7 @@ window.wonderFeedback={open(){if(!dialog.open)dialog.showModal();document.getEle
 document.getElementById('feedback').onclick=window.wonderFeedback.open;
 document.getElementById('close-feedback').onclick=()=>dialog.close();
 dialog.addEventListener('close',()=>{if(running)canvas.focus();});
-function feedbackBody(){const s=window.wonderPreviewStatus||{};return document.getElementById('feedback-text').value.trim()+'\n\nWonder Cascade web preview 0.11.3-web.1\nLevel: '+(s.level||'Not started')+'\nScreen: '+(s.screen||'Loading')+'\nBrowser: '+navigator.userAgent+'\nDisplay: '+innerWidth+'×'+innerHeight;}
+function feedbackBody(){const s=window.wonderPreviewStatus||{};return document.getElementById('feedback-text').value.trim()+'\n\nWonder Cascade web preview 0.12.0-web.1\nLevel: '+(s.level||'Not started')+'\nMind puzzle: '+(s.mind_id||'None')+'\nScreen: '+(s.screen||'Loading')+'\nBrowser: '+navigator.userAgent+'\nDisplay: '+innerWidth+'×'+innerHeight;}
 document.getElementById('email').onclick=()=>{location.href='mailto:feedback@tripperdeelabs.com?subject='+encodeURIComponent('Wonder Cascade preview feedback')+'&body='+encodeURIComponent(feedbackBody());document.getElementById('feedback-status').textContent='If no email app opens, copy your feedback and email it to us.';};
 document.getElementById('copy').onclick=async()=>{try{await navigator.clipboard.writeText(feedbackBody());document.getElementById('feedback-status').textContent='Copied. Paste into an email to feedback@tripperdeelabs.com.';}catch(_){document.getElementById('feedback-text').select();document.getElementById('feedback-status').textContent='Select and copy your feedback, then email it to us.';}};
 document.getElementById('fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();}catch(_){document.getElementById('fullscreen').textContent='Use portrait';}};
