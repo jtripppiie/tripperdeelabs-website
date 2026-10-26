@@ -43,6 +43,7 @@ def social(a,title):
  text=''.join(f'<tspan x="390" y="{210+i*58}">{E(line)}</tspan>' for i,line in enumerate(lines))
  svg=f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630"><rect width="1200" height="630" fill="#0b1827"/><rect x="48" y="48" width="1104" height="534" rx="28" fill="#142a3a"/><image x="90" y="180" width="240" height="240" xlink:href="data:image/png;base64,{icon}"/><text fill="#f5f3e9" font-family="DejaVu Sans" font-size="44" font-weight="bold">{text}</text><text x="390" y="480" fill="#8ed8c0" font-family="DejaVu Sans" font-size="26">{E(a["os"])} · TripperDeeLabs</text><text x="90" y="550" fill="#bdcbd3" font-family="DejaVu Sans" font-size="22">tripperdeelabs.com/{a["slug"]}/</text></svg>'
  (p/'social.svg').write_text(svg);cairosvg.svg2png(bytestring=svg.encode(),write_to=str(p/'social.png'))
+from private_eyes_content import product_extra, build_guides
 for a in apps:
  slug=a['slug'];title,p1,p2,features=COPY[slug];social(a,title)
  desc=p1
@@ -51,6 +52,7 @@ for a in apps:
  body=f'<section class="catalog-hero"><img class="app-icon" src="/assets/apps/{slug}/icon.png" width="112" height="112" alt=""><p class="eyebrow">{E(a["os"])}</p><h1>{E(a["name"])}</h1><p class="lead">{E(title)}</p><p>{E(p1)}</p><p>{E(p2)}</p>'+badge(a)+f'<p class="price">{price} on the US Play listing · Checked October 23, 2026. Prices and availability may vary by region.</p></section><section><h2>Features</h2><ul>'+''.join('<li>'+E(f)+'</li>' for f in features)+'</ul></section><section><h2>From the Google Play listing</h2><div class="screenshots">'
  body+=''.join(f'<a href="/assets/apps/{slug}/screenshot-{i+1}.png"><img src="/assets/apps/{slug}/screenshot-{i+1}.png" alt="{E(a["name"])} — Google Play screenshot {i+1}" loading="lazy"></a>' for i in range(len(a['screenshotSources'])))+'</div></section>'
  body+=f'<p><a href="{a["privacy"]}">App privacy policy</a> · <a href="/feedback/?product={slug}">Support</a></p>'
+ if slug=='private-eyes':body=body.replace('<section><h2>From the Google Play listing</h2>',product_extra()+'<section><h2>From the Google Play listing</h2>')+badge(a)
  if slug=='kenai-fishing-report':body+='<p><a href="/kenai-report-data/">Get the Kenai Report Data companion</a></p>'
  page('/'+slug+'/',title,desc,body,BASE+'/assets/apps/'+slug+'/social.png',schema)
 groups=[('Phone games',[a for a in apps if a['category']=='GameApplication']),('Phone apps',[a for a in apps if a['os']=='Android' and a['category']!='GameApplication']),('Wear OS watch faces',[a for a in apps if a['os']=='Wear OS' and a['slug']!='kenai-report-data']),('Wear OS companion apps',[a for a in apps if a['slug']=='kenai-report-data'])]
@@ -64,6 +66,7 @@ page('/garmin/','Wear OS Watch Faces','Explore TripperDeeLabs watch faces for We
 for slug,name,desc,features in [('alaska-gold-run','Alaska Gold Run','An Alaska-themed Android runner in development. Change lanes, jump and slide through the course.',['Three-lane running','Swipe movement controls','Alaska-themed environments']),('moments','Moments','A photo watch face project for Wear OS. Its public Google Play listing could not be verified.',['Photo watch face concept','Wear OS project','Privacy information available'])]:
  social({'slug':slug,'os':'Android' if slug=='alaska-gold-run' else 'Wear OS'},name)
  page('/'+slug+'/',name+' for '+('Android' if slug=='alaska-gold-run' else 'Wear OS'),desc,f'<section class="catalog-hero"><h1>{name}</h1><p>{desc}</p><p>Not currently verified as available on Google Play. Store screenshots, pricing and a download link will be added when the public listing is available.</p><h2>Project overview</h2><ul>'+''.join('<li>'+f+'</li>' for f in features)+f'</ul><p><a href="/{slug}/privacy/">Privacy policy</a></p></section>',BASE+'/assets/apps/'+slug+'/social.png')
+build_guides(page)
 # Preserve existing policy/support text, adding any missing canonical URLs.
 for p in ROOT.rglob('*.html'):
  if '.git' in p.parts:continue
@@ -72,7 +75,7 @@ for p in ROOT.rglob('*.html'):
 urls=[]
 for p in sorted(ROOT.rglob('index.html')):
  rel=p.relative_to(ROOT).as_posix()
- if rel.startswith(('drafts/','.git/')):continue
+ if rel.startswith(('drafts/','.git/')) or 'noindex' in p.read_text().lower():continue
  urls.append(BASE+'/'+rel[:-10])
 (ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+u+'</loc></url>\n' for u in urls)+'</urlset>\n')
 print(f'Built {len(apps)} verified app pages, 2 unreleased pages, home, watch gallery and sitemap ({len(urls)} URLs).')
