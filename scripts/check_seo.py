@@ -15,7 +15,8 @@ for slug in [*PAGES,'canopy-quest','you-rush-alaska']:
  path='/'+slug+'/';s=BeautifulSoup((ROOT/slug/'index.html').read_text(),'html.parser')
  assert home.select_one(f'a[href="{path}"]'),slug+' home link'
  assert BASE+path in urls,slug+' sitemap'
- assert robot.can_fetch('Googlebot',BASE+path),slug+' robots'
+ for crawler in ['Googlebot','Bingbot','OAI-SearchBot','Claude-SearchBot','PerplexityBot']:
+  assert robot.can_fetch(crawler,BASE+path),(slug,crawler,'robots')
  assert s.select_one('link[rel="canonical"]')['href']==BASE+path
  assert not s.select_one('meta[name="robots"][content*="noindex"]')
  assert len(s.select('h1'))==1
@@ -49,6 +50,10 @@ for p in ROOT.rglob('index.html'):
  rel=p.relative_to(ROOT).as_posix()
  if rel.startswith(('.git/','drafts/')):continue
  s=BeautifulSoup(p.read_text(),'html.parser');url=BASE+'/'+rel[:-10]
+ if 'noindex' not in p.read_text().lower():
+  assert s.select_one('html[lang]') and s.select_one('title') and s.select_one('meta[name=description]'),rel
+  assert s.select_one('a.skip-link[href="#main-content"]') and s.select_one('main#main-content[tabindex="-1"]'),rel
+  ids=[n['id'] for n in s.select('[id]')];assert len(ids)==len(set(ids)),rel+' duplicate IDs'
  assert (url in urls)==('noindex' not in p.read_text().lower()),rel+' sitemap coverage'
  for node in s.select('a[href],img[src],link[href],script[src]'):
   raw=node.get('href',node.get('src',''));u=urlsplit(raw)

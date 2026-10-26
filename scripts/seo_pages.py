@@ -24,7 +24,7 @@ def build(page,apps,badge,copy):
   os=a['os'] if a else ('Wear OS 6 or newer' if slug=='moments' else 'Android')
   # Prices in FAQ answers follow the verified catalog rather than frozen draft prices.
   faqs=[(q,ans.replace('$0.50', '$'+a['price']) if a else ans) for q,ans in c['faq']]
-  app_schema={'@context':'https://schema.org','@type':'SoftwareApplication','name':name,'operatingSystem':os,'url':BASE+'/'+slug+'/','applicationCategory':a['category'] if a else ('GameApplication' if slug in ['wonder-cascade','alaska-gold-run'] else 'UtilitiesApplication')}
+  app_schema={'@context':'https://schema.org','@type':'SoftwareApplication','name':name,'@id':BASE+'/'+slug+'/#app','publisher':{'@id':BASE+'/#studio'},'description':c['description'],'operatingSystem':os,'url':BASE+'/'+slug+'/','applicationCategory':a['category'] if a else ('GameApplication' if slug in ['wonder-cascade','alaska-gold-run'] else 'UtilitiesApplication')}
   if a:app_schema.update(offers={'@type':'Offer','price':a['price'],'priceCurrency':a['currency'],'url':a['play']},installUrl=a['play'])
   faq_schema={'@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':ans}} for q,ans in faqs]}
   schema={'@context':'https://schema.org','@graph':[app_schema,faq_schema]}
@@ -40,7 +40,7 @@ def build(page,apps,badge,copy):
   if a:body+=badge(a)+f'<p class="price">'+('Free' if float(a['price'])==0 else '$'+a['price']+' USD')+f' · US Play listing checked {a["verified"]}. Regional price and availability may vary.</p>'
   body+='</section><section class="seo-copy" aria-label="How it works">'+''.join(f'<h2>{E(h)}</h2><p>{E(p)}</p>' for h,p in c['sections'])+'</section>'
   body+=gallery(slug,c['screenshots'],upcoming)
-  body+='<section class="seo-faq"><h2>Frequently asked questions</h2>'+''.join(f'<h3>{E(q)}</h3><p>{E(ans)}</p>' for q,ans in faqs)+'</section>'
+  body+='<section class="seo-faq"><h2>Frequently asked questions</h2>'+''.join(f'<h3 id="faq-{i}">{E(q)}</h3><p>{E(ans)}</p>' for i,(q,ans) in enumerate(faqs,1))+'</section>'
   if slug=='private-eyes':
    from private_eyes_content import links
    body+='<section><h2>Android photo privacy guides</h2>'+links()+'</section>'

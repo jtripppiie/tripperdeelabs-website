@@ -92,3 +92,34 @@ Alaska Gold Run update: owner confirmed submission and Play Console “Changes i
 review” status, last updated October 24, 2026. Added a full homepage game card,
 467-word landing page, three real desktop gameplay captures from release
 preparation, and matching FAQ schema. No public download or purchase offer yet.
+
+SEARCH / ANSWER DISCOVERY / ACCESSIBILITY — October 26, 2026
+Added studio, website and page identity markup on generated pages, visible
+breadcrumbs with BreadcrumbList schema, app publisher references, and stable
+FAQ answer anchors. FAQs remain visible and match their structured data.
+Public content works without JavaScript; no special AI-only copy or hidden
+keyword content was added. Filled the missing Private Eyes policy description.
+Search robot checks cover Googlebot, Bingbot, OAI-SearchBot, Claude-SearchBot and
+PerplexityBot. Existing separate training-crawler exclusions remain unchanged.
+Search Console ownership, sitemap submission, indexing, and account-level AI
+search settings are not verified. Structured data does not guarantee rich
+results, ranking, traffic, or inclusion in an AI-generated answer.
+
+Accessibility changes: skip links on all 55 public pages; visible keyboard
+focus; larger navigation targets; non-overlay cookie controls; reduced-motion
+support; wrapping at enlarged text sizes; corrected Wear OS heading order and
+Parked support button contrast. Existing policy prose is preserved.
+Browser interaction checks passed at 320px and 1440px: skip-link focus, consent
+choice persistence, reopening and returning focus, no optional analytics
+requests after declining, and representative pages at 200% root text size.
+First-visit cookie controls passed automated accessibility checks at both widths.
+These checks are not a full WCAG certification or a human screen-reader audit.
+
+Guidance consulted:
+https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+https://developers.google.com/search/docs/appearance/ai-features
+https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/
+Final axe-core 4.10.3 scan: all 55 sitemap pages at 390px passed WCAG 2 A/AA,
+2.1 AA, 2.2 AA and best-practice automated rules with zero detected violations
+and no page overflow. Catalog, SEO, local-link, schema JSON and sitemap checks
+passed. Browser tools were used only for local QA; no audit scripts ship to visitors.

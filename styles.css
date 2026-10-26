@@ -627,3 +627,25 @@ footer a { color: var(--cyan); }
   .cookie-actions { margin-top: 16px; }
   .cookie-button { flex: 1; }
 }
+
+/* Keyboard navigation and unobscured content, including at high zoom. */
+.skip-link{position:fixed;top:8px;left:8px;z-index:2000;transform:translateY(-200%);padding:12px 18px;background:#071526;color:#fff;border:3px solid #f9d269;border-radius:6px}
+.skip-link:focus{transform:none}
+:focus-visible{outline:3px solid #f9d269;outline-offset:4px}
+main:focus{outline:none}
+.site-header{position:relative}
+html{scroll-padding-block:16px}
+a,button,input,select,textarea{scroll-margin-block:20px}
+.links a,.studio-footer-nav a,.directory-more{display:inline-flex;align-items:center;min-height:44px}
+.cookie-banner{position:relative;inset:auto;width:min(calc(100% - 32px),920px);margin:16px auto}
+.cookie-settings{position:static;display:block;min-height:44px;margin:20px auto 0;font-size:14px}
+.cookie-button{min-height:44px}
+.cookie-button:focus-visible,.cookie-settings:focus-visible{outline:3px solid #f9d269;outline-offset:4px;transform:none}
+.breadcrumbs{padding-top:24px;font-size:.9rem;line-height:1.7;overflow-wrap:anywhere}
+.breadcrumbs a{display:inline-flex;align-items:center;min-height:44px}
+p,li,a{overflow-wrap:anywhere}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important}}
+@media(forced-colors:active){:focus-visible{outline-color:Highlight}.skip-link{border-color:Highlight}}
+.links a.button{color:#071526}
+.links a.button.secondary{color:var(--white)}
+h1,h2,h3,h4{overflow-wrap:anywhere}

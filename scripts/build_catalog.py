@@ -34,6 +34,15 @@ def page(path,title,desc,body,image=None,schema=None):
  if '/social.png' in image:tags+='<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
  for name,val in [('twitter:card','summary_large_image'),('twitter:title',title),('twitter:description',desc),('twitter:image',image),('twitter:image:alt',title)]:tags+=f'<meta name="{name}" content="{E(val)}">'
  if schema:tags+='<script type="application/ld+json">'+json.dumps(schema).replace('<','\\u003c')+'</script>'
+ # Stable studio/site identity helps consumers connect each page to its publisher.
+ organization={'@type':'Organization','@id':BASE+'/#studio','name':'TripperDeeLabs','url':BASE+'/','logo':BASE+'/assets/tripperdeelabs-logo.png','email':'feedback@tripperdeelabs.com'}
+ website={'@type':'WebSite','@id':BASE+'/#website','url':BASE+'/','name':'TripperDeeLabs','publisher':{'@id':BASE+'/#studio'},'inLanguage':'en'}
+ webpage={'@type':'WebPage','@id':url+'#webpage','url':url,'name':title,'description':desc,'isPartOf':{'@id':BASE+'/#website'},'publisher':{'@id':BASE+'/#studio'},'inLanguage':'en'}
+ identity={'@context':'https://schema.org','@graph':[organization,website,webpage]}
+ if path!='/':
+  identity['@graph'].append({'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':BASE+'/'},{'@type':'ListItem','position':2,'name':title,'item':url}]})
+  body='<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">'+E(title)+'</span></nav>'+body
+ tags+='<script type="application/ld+json">'+json.dumps(identity).replace('<','\\u003c')+'</script>'
  doc='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+tags+'<link rel="icon" href="/assets/tripperdeelabs-logo.png" type="image/png"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/catalog.css"><script defer src="/cookie-consent.js"></script></head><body>'+HEADER+'<main class="wrap">'+body+'</main>'+FOOTER+'</body></html>'
  out=ROOT/path.strip('/')/'index.html';out.parent.mkdir(exist_ok=True,parents=True);out.write_text(doc+'\n')
 def badge(a):
@@ -64,7 +73,7 @@ for name,items in groups:body+='<section><h2>'+name+'</h2><div class="catalog-gr
 body+='</div><section><h2>Other projects</h2><p><a href="/alaska-gold-run/">Alaska Gold Run</a> · <a href="/moments/">Moments</a></p></section><section id="about"><h2>About TripperDeeLabs</h2><p>I’m the independent developer behind TripperDeeLabs. I make Android games, practical phone apps and Wear OS watch faces, with projects ranging from Alaska fish reports to retro arcade games.</p><p>For questions or feedback, visit the <a href="/feedback/">feedback page</a>.</p></section>'
 page('/','Android Apps, Games and Wear OS Watch Faces','Explore TripperDeeLabs Android games, useful phone apps and Wear OS watch faces, with screenshots, Google Play links and privacy information.',body)
 faces=groups[2][1]
-page('/garmin/','Wear OS Watch Faces','Explore TripperDeeLabs watch faces for Wear OS, including Dive Watch, Summit Line, Amelia Navigator, Kenai Fishing Report and Launch Vector.','<section class="catalog-hero"><h1>Wear OS watch faces</h1><p>These current Google Play releases are for compatible Wear OS watches. They do not run on Garmin watches.</p></section><div class="catalog-grid">'+''.join(card(a) for a in faces)+'</div><p><a href="/kenai-report-data/">Kenai Report Data companion app</a></p>')
+page('/garmin/','Wear OS Watch Faces','Explore TripperDeeLabs watch faces for Wear OS, including Dive Watch, Summit Line, Amelia Navigator, Kenai Fishing Report and Launch Vector.','<section class="catalog-hero"><h1>Wear OS watch faces</h1><p>These current Google Play releases are for compatible Wear OS watches. They do not run on Garmin watches.</p></section><div class="catalog-grid">'+''.join(card(a).replace('<h3>','<h2>').replace('</h3>','</h2>') for a in faces)+'</div><p><a href="/kenai-report-data/">Kenai Report Data companion app</a></p>')
 # Unreleased pages make no purchase, pricing or store-screenshot claims.
 for slug,name,desc,features in [('alaska-gold-run','Alaska Gold Run','An Alaska-themed Android runner in development. Change lanes, jump and slide through the course.',['Three-lane running','Swipe movement controls','Alaska-themed environments']),('moments','Moments','A photo watch face project for Wear OS. Its public Google Play listing could not be verified.',['Photo watch face concept','Wear OS project','Privacy information available'])]:
  social({'slug':slug,'os':'Android' if slug=='alaska-gold-run' else 'Wear OS'},name)
@@ -78,6 +87,16 @@ for p in ROOT.rglob('*.html'):
  if '.git' in p.parts:continue
  s=p.read_text();rel=p.relative_to(ROOT).as_posix();url=BASE+'/'+(rel[:-10] if rel.endswith('index.html') else rel)
  if 'rel="canonical"' not in s:s=s.replace('</head>',f'<link rel="canonical" href="{url}"></head>');p.write_text(s)
+# Enhance the existing public documents without rewriting policy/support content.
+for p in ROOT.rglob('index.html'):
+ rel=p.relative_to(ROOT).as_posix()
+ if rel.startswith(('drafts/','.git/')):continue
+ s=p.read_text()
+ if 'noindex' in s.lower() or '<main' not in s:continue
+ if 'class="skip-link"' not in s:
+  s=re.sub(r'(<body[^>]*>)',r'\1<a class="skip-link" href="#main-content">Skip to main content</a>',s,count=1)
+  s=re.sub(r'<main(?=[ >])', '<main id="main-content" tabindex="-1"',s,count=1)
+ p.write_text(s)
 urls=[]
 for p in sorted(ROOT.rglob('index.html')):
  rel=p.relative_to(ROOT).as_posix()

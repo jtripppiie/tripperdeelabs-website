@@ -103,7 +103,11 @@
     banner.querySelector('.cookie-accept').addEventListener('click', function () { choose('accepted'); });
     banner.querySelector('.cookie-decline').addEventListener('click', function () { choose('declined'); });
     settings.addEventListener('click', openBanner);
-    document.body.appendChild(banner); document.body.appendChild(settings);
+    var skip = document.querySelector('.skip-link');
+    if (skip) skip.insertAdjacentElement('afterend', banner);
+    else document.body.prepend(banner);
+    var footer = document.querySelector('footer');
+    (footer || document.body).appendChild(settings);
     var value = stored();
     if (value === 'accepted') enable(); else disable();
     if (value === 'accepted' || value === 'declined') settings.hidden = false;

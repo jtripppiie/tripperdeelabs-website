@@ -117,3 +117,21 @@ logo (`assets/tripperdeelabs-logo.png`) belongs in navigation and prominently in
 the home hero. Keep “Doing TripperDee things in a TripperDee world.” and the
 first-person independent-developer introduction. SEO work is not permission to
 remove the owner’s branding, personal copy, or existing useful app information.
+
+## Search, answer discovery, and accessibility
+
+The October 26 pass added stable Organization/WebSite/WebPage identity markup,
+visible breadcrumbs with matching structured data, app publisher references, and
+linkable FAQ answers. Public content remains static HTML and readable with
+JavaScript disabled. Existing robots rules allow search/retrieval crawlers while
+retaining the separate training-crawler restrictions. No ranking or AI-citation
+guarantee is implied; Search Console verification and account settings remain
+unconfirmed.
+
+All 55 public pages have a keyboard skip link. Shared styles provide visible
+focus, enlarged navigation targets, reduced-motion support, and wrapping for
+large text. Cookie controls are in the document flow, with settings in the
+footer, to avoid covering content or keyboard focus. Keep policy prose intact
+when changing shared navigation. Run `python3 scripts/check_seo.py` as well as
+the catalog check after builds. Browser accessibility checks supplement these
+checks; they do not establish full WCAG conformance or screen-reader usability.
