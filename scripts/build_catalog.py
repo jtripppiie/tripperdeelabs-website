@@ -35,7 +35,9 @@ def page(path,title,desc,body,image=None,schema=None):
  if schema:tags+='<script type="application/ld+json">'+json.dumps(schema).replace('<','\\u003c')+'</script>'
  doc='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+tags+'<link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/catalog.css"><script defer src="/cookie-consent.js"></script></head><body>'+HEADER+'<main class="wrap">'+body+'</main>'+FOOTER+'</body></html>'
  out=ROOT/path.strip('/')/'index.html';out.parent.mkdir(exist_ok=True,parents=True);out.write_text(doc+'\n')
-def badge(a):return f'<a class="play-link" href="{E(a["play"])}"><img class="play-badge" src="/assets/google-play-badge.png" width="194" height="75" alt="Get {E(a["name"])} on Google Play"></a>'
+def badge(a):
+ if a.get("status")=="maintenance":return '<p class="availability">Under maintenance</p>'
+ return f'<a class="play-link" href="{E(a["play"])}"><img class="play-badge" src="/assets/google-play-badge.png" width="194" height="75" alt="Get {E(a["name"])} on Google Play"></a>'
 def card(a):return f'<article class="app-card"><a href="/{a["slug"]}/"><img class="app-icon" src="/assets/apps/{a["slug"]}/icon.png" width="96" height="96" alt="" loading="lazy"><h3>{E(a["name"])}</h3></a><p>{E(COPY[a["slug"]][1].split(". ")[0])}.</p>'+badge(a)+'</article>'
 def social(a,title):
  p=ROOT/'assets/apps'/a['slug'];p.mkdir(parents=True,exist_ok=True);icon=base64.b64encode(((p/'icon.png') if (p/'icon.png').exists() else ROOT/'assets/tripperdeelabs-logo.png').read_bytes()).decode()
@@ -49,7 +51,7 @@ for a in apps:
  desc=p1
  schema={'@context':'https://schema.org','@type':'SoftwareApplication','name':a['name'],'operatingSystem':a['os'],'applicationCategory':a['category'],'offers':{'@type':'Offer','price':a['price'],'priceCurrency':a['currency'],'url':a['play']},'url':BASE+'/'+slug+'/','image':BASE+'/assets/apps/'+slug+'/social.png','author':{'@type':'Organization','name':'TripperDeeLabs','url':BASE+'/'}}
  price='Free' if float(a['price'])==0 else '$'+a['price']+' USD'
- body=f'<section class="catalog-hero"><img class="app-icon" src="/assets/apps/{slug}/icon.png" width="112" height="112" alt=""><p class="eyebrow">{E(a["os"])}</p><h1>{E(a["name"])}</h1><p class="lead">{E(title)}</p><p>{E(p1)}</p><p>{E(p2)}</p>'+badge(a)+f'<p class="price">{price} on the US Play listing · Checked October 23, 2026. Prices and availability may vary by region.</p></section><section><h2>Features</h2><ul>'+''.join('<li>'+E(f)+'</li>' for f in features)+'</ul></section><section><h2>From the Google Play listing</h2><div class="screenshots">'
+ body=f'<section class="catalog-hero"><img class="app-icon" src="/assets/apps/{slug}/icon.png" width="112" height="112" alt=""><p class="eyebrow">{E(a["os"])}</p><h1>{E(a["name"])}</h1><p class="lead">{E(title)}</p><p>{E(p1)}</p><p>{E(p2)}</p>'+badge(a)+f'<p class="price">{price} on the US Play listing · Checked {a["verified"]}. Prices and availability may vary by region.</p></section><section><h2>Features</h2><ul>'+''.join('<li>'+E(f)+'</li>' for f in features)+'</ul></section><section><h2>From the Google Play listing</h2><div class="screenshots">'
  body+=''.join(f'<a href="/assets/apps/{slug}/screenshot-{i+1}.png"><img src="/assets/apps/{slug}/screenshot-{i+1}.png" alt="{E(a["name"])} — Google Play screenshot {i+1}" loading="lazy"></a>' for i in range(len(a['screenshotSources'])))+'</div></section>'
  body+=f'<p><a href="{a["privacy"]}">App privacy policy</a> · <a href="/feedback/?product={slug}">Support</a></p>'
  if slug=='private-eyes':body=body.replace('<section><h2>From the Google Play listing</h2>',product_extra()+'<section><h2>From the Google Play listing</h2>')+badge(a)
@@ -66,6 +68,9 @@ page('/garmin/','Wear OS Watch Faces','Explore TripperDeeLabs watch faces for We
 for slug,name,desc,features in [('alaska-gold-run','Alaska Gold Run','An Alaska-themed Android runner in development. Change lanes, jump and slide through the course.',['Three-lane running','Swipe movement controls','Alaska-themed environments']),('moments','Moments','A photo watch face project for Wear OS. Its public Google Play listing could not be verified.',['Photo watch face concept','Wear OS project','Privacy information available'])]:
  social({'slug':slug,'os':'Android' if slug=='alaska-gold-run' else 'Wear OS'},name)
  page('/'+slug+'/',name+' for '+('Android' if slug=='alaska-gold-run' else 'Wear OS'),desc,f'<section class="catalog-hero"><h1>{name}</h1><p>{desc}</p><p>Not currently verified as available on Google Play. Store screenshots, pricing and a download link will be added when the public listing is available.</p><h2>Project overview</h2><ul>'+''.join('<li>'+f+'</li>' for f in features)+f'</ul><p><a href="/{slug}/privacy/">Privacy policy</a></p></section>',BASE+'/assets/apps/'+slug+'/social.png')
+social({'slug':'wonder-cascade','os':'Android'},'Wonder Cascade')
+from seo_pages import build as build_seo
+build_seo(page,apps,badge,COPY)
 build_guides(page)
 # Preserve existing policy/support text, adding any missing canonical URLs.
 for p in ROOT.rglob('*.html'):
@@ -78,4 +83,4 @@ for p in sorted(ROOT.rglob('index.html')):
  if rel.startswith(('drafts/','.git/')) or 'noindex' in p.read_text().lower():continue
  urls.append(BASE+'/'+rel[:-10])
 (ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+u+'</loc></url>\n' for u in urls)+'</urlset>\n')
-print(f'Built {len(apps)} verified app pages, 2 unreleased pages, home, watch gallery and sitemap ({len(urls)} URLs).')
+print(f'Built catalog and SEO pages, maintenance/preview pages, guides and sitemap ({len(urls)} URLs).')

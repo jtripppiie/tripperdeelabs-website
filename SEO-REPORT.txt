@@ -1,0 +1,88 @@
+TripperDeeLabs web SEO rollout — October 26, 2026
+
+Owner approved publication after reviewing the home, Parked, and Salmon Tracker
+samples. Canopy Quest retains its information and screenshots, with a prominent
+Under maintenance notice and no unavailable Play purchase link.
+
+PAGES AND URLS
+https://tripperdeelabs.com/ — home directory and contact email
+https://tripperdeelabs.com/parked/
+https://tripperdeelabs.com/local-lore/
+https://tripperdeelabs.com/roboball/
+https://tripperdeelabs.com/you-rush-alaska/ — coming soon
+https://tripperdeelabs.com/salmon-tracker/
+https://tripperdeelabs.com/wonder-cascade/ — development preview
+https://tripperdeelabs.com/private-eyes/
+https://tripperdeelabs.com/moto-thrash/
+https://tripperdeelabs.com/captain-quack/
+https://tripperdeelabs.com/summit-line/
+https://tripperdeelabs.com/launch-vector/
+https://tripperdeelabs.com/kenai-fishing-report/
+https://tripperdeelabs.com/amelia-navigator/
+https://tripperdeelabs.com/dive-watch/
+https://tripperdeelabs.com/moments/ — development preview
+https://tripperdeelabs.com/canopy-quest/ — under maintenance
+
+The existing privacy URLs remain unchanged, including /alaska-rush/privacy/.
+Boss Button, Mock Location, Kenai Report Data, Alaska Gold Run and the Private
+Eyes guides remain linked. No published privacy text was altered by this rollout.
+
+CONTENT AND TECHNICAL CHECKS
+14 detailed landing pages: 300–600 words each, unique search-intent H1/title and
+meta description, 2–3 actual screenshots, four visible FAQs with matching FAQPage
+schema, SoftwareApplication schema, home/privacy/support links. Available apps
+have Google Play badges and verified US prices. No ratings or reviews invented.
+Canopy Quest retains four screenshots plus its existing game description and
+features. Its maintenance status overrides the old catalog availability.
+You Rush Alaska is intentionally a short coming-soon notice: no verified product
+screenshots or detailed identity have been supplied. Do not invent its features.
+Wonder Cascade and Moments use labeled development captures and omit unverifiable
+purchase offers and broken Play links. Their final release availability is pending.
+
+44 compressed WebP screenshot derivatives total approximately 1.55 MB across the
+site; the largest is about 110 KB. Pages lazy-load screenshots with dimensions.
+No new runtime scripts or web fonts. Existing optional analytics remains gated
+behind consent. Images are preserved as real screenshots, not AI reconstructions.
+All 17 home/requested-app/maintenance pages passed mobile and desktop browser
+checks at 390px and 1440px: no page overflow, broken loaded images, JS errors, or
+external requests after declining analytics. Representative renderings inspected.
+Both catalog and SEO validation scripts passed. Internal links and fragment
+anchors resolve. All 55 public index pages appear in sitemap.xml; noindex browser
+previews and private local review drafts stay excluded. Googlebot is allowed by
+robots.txt, which points to the sitemap. Canonicals match intended public URLs.
+Field Core Web Vitals and Google indexing are not established by these checks.
+Query intent is editorially selected; no measured search volumes are claimed.
+
+SEARCH CONSOLE — STILL NEEDS ACCOUNT ACCESS
+Status: unconfirmed, not asserted unverified. Public DNS returned no verification
+TXT record; live homepage had no verification meta tag. Other ownership methods
+are possible. No authenticated Search Console connection is available here.
+No DNS changes made and no sitemap submission has been performed by this work.
+
+Owner action: open https://search.google.com/search-console in the intended Google
+account. If tripperdeelabs.com is already present, check its verification status.
+Otherwise add a Domain property for tripperdeelabs.com and obtain its TXT value.
+The proposed DNS operation is ADD (not replace):
+  Name: @ / tripperdeelabs.com
+  Type: TXT
+  Value: exact google-site-verification value supplied by Google
+  TTL: DNS provider default
+Keep existing A/CNAME/MX/TXT records. Exact value and provider access are still
+needed. An alternative is Google's exact HTML verification file at the site root
+for the URL-prefix property https://tripperdeelabs.com/ (not a Domain property).
+After verification, submit https://tripperdeelabs.com/sitemap.xml in Search Console.
+Do not send passwords. Google's verification token/file is sufficient to prepare
+the website/DNS change once the actual supported access path is available.
+https://support.google.com/webmasters/answer/9008080?hl=en
+https://support.google.com/webmasters/answer/7451001
+
+Google stopped showing FAQ rich results in May 2026. The requested schema is
+included without promising a search enhancement or guaranteed traffic.
+https://developers.google.com/search/updates#may-2026
+
+BUILD
+python3 scripts/build_catalog.py
+python3 scripts/check_catalog.py
+python3 scripts/check_seo.py
+Publication uses the existing GitHub Pages main/root deployment. See the delivery
+message for the observed deployment result; a local build alone is not proof.
