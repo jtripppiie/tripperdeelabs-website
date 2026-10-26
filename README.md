@@ -97,3 +97,8 @@ live HTML; a local build is not evidence of deployment.
 Google discontinued FAQ rich results in May 2026. The requested FAQPage schema
 remains useful machine-readable content, but no FAQ search enhancement, ranking,
 or steady traffic is promised. See https://developers.google.com/search/updates.
+
+Homepage app cards now use compressed, lazy-loaded real screenshot previews,
+generated as `assets/apps/<app>/home-preview.webp`. Keep availability labels
+visible with the imagery; You Rush Alaska has a coming-soon panel until its
+product artwork is confirmed.

@@ -61,6 +61,18 @@ def build(page,apps,badge,copy):
  for slug,label in labels.items():
   desc=PAGES[slug]['h1'] if slug in PAGES else ('Release information will appear here when ready.' if slug=='you-rush-alaska' else 'Offline jungle platforming with a field map and camp saves.')
   status={'canopy-quest':'Under maintenance','you-rush-alaska':'Coming soon','wonder-cascade':'In development','moments':'In development'}.get(slug)
-  body+=f'<li><strong><a href="/{slug}/">{E(label)}</a></strong><p>{E(desc)}</p>'+(f'<p class="availability">{status}</p>' if status else '')+'</li>'
+  preview=''
+  if slug!='you-rush-alaska':
+   index,alt=(PAGES[slug]['screenshots'][0] if slug in PAGES else (1,'Canopy Quest jungle platformer at a saved camp'))
+   # Favor the close-up watch captures where supplied by the actual listing.
+   if slug in ['summit-line','kenai-fishing-report','parked']:
+    index,alt=PAGES[slug]['screenshots'][-1]
+   source=ROOT/f'assets/apps/{slug}/screenshot-{index}.png'
+   thumb=ROOT/f'assets/apps/{slug}/home-preview.webp'
+   im=Image.open(source).convert('RGB');im.thumbnail((640,480));im.save(thumb,'WEBP',quality=82,method=6)
+   preview=f'<a class="directory-preview" href="/{slug}/" tabindex="-1"><img src="/assets/apps/{slug}/home-preview.webp" width="{im.width}" height="{im.height}" alt="{E(alt)}" loading="lazy" decoding="async"></a>'
+  else:
+   preview='<div class="directory-preview coming-soon-art" aria-hidden="true"><span>Coming soon</span></div>'
+  body+=f'<li>{preview}<div class="directory-copy"><strong><a href="/{slug}/">{E(label)}</a></strong><p>{E(desc)}</p>'+(f'<p class="availability">{status}</p>' if status else '')+'</div></li>'
  body+='</ul></section><section><h2>More tools and projects</h2><p><a href="/boss-button/">Boss Button</a> · <a href="/mock-location/">Mock Location</a> · <a href="/kenai-report-data/">Kenai Report Data</a> · <a href="/alaska-gold-run/">Alaska Gold Run (in development)</a></p></section><section id="about"><h2>About the studio</h2><p>Built by an independent developer. Each app page explains its purpose, connection requirements, and privacy choices, so you can decide whether it fits your needs.</p><p>Questions or feedback? Email <a href="mailto:feedback@tripperdeelabs.com">feedback@tripperdeelabs.com</a>.</p></section>'
  page('/','Android Apps, Games and Wear OS Watch Faces','Explore TripperDeeLabs Android apps, offline games and Wear OS watch faces. Find screenshots, privacy details, download links and project availability.',body)
