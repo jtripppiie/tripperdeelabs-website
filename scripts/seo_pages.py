@@ -87,6 +87,14 @@ def build(page,apps,badge,copy):
     preview=f'<a class="directory-preview" href="/{slug}/" tabindex="-1"><img src="/assets/apps/{slug}/home-preview.webp" width="{im.width}" height="{im.height}" alt="{E(alt)}" loading="lazy" decoding="async"></a>'
    else:
     preview='<div class="directory-preview coming-soon-art" aria-hidden="true"><span>Coming soon</span></div>'
+   if slug=='kenai-report-data':
+    preview='<div class="companion-visual"><p class="companion-kicker">REPORTS ON YOUR WRIST</p><div class="companion-screens">'
+    for number,caption in [(1,'Fish counts'),(2,'River conditions')]:
+     source=ROOT/f'assets/apps/{slug}/screenshot-{number}.png'
+     target=ROOT/f'assets/apps/{slug}/home-detail-{number}.webp'
+     im=Image.open(source).convert('RGB');im.save(target,'WEBP',quality=88,method=6)
+     preview+=f'<figure><div class="watch-bezel"><div class="watch-screen"><img src="/assets/apps/{slug}/home-detail-{number}.webp" width="900" height="1600" loading="lazy" decoding="async" alt="Kenai Report Data actual watch screen: {caption.lower()}"></div></div><figcaption>{caption}</figcaption></figure>'
+    preview+='</div><p class="companion-caption">Actual app screens · Example reports, not live readings</p></div>'
    body+=f'<li>{preview}<div class="directory-copy"><h3><a href="/{slug}/">{E(label)}</a></h3>'+(f'<p class="availability">{status}</p>' if status else '')+f'<p>{E(desc)}</p><p>{E(detail)}</p><p><a href="/{slug}/">Explore {E(label)} →</a></p>'
    if slug in lookup and not status:body+=badge(lookup[slug])
    body+='</div></li>'
