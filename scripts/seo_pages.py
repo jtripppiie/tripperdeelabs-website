@@ -55,24 +55,41 @@ def build(page,apps,badge,copy):
  page('/canopy-quest/',title+' — Under maintenance','Canopy Quest is under maintenance. Read about its offline jungle platforming, field map, camps and local progress, and view screenshots and privacy details.',body,BASE+'/assets/apps/canopy-quest/social.png',{'@context':'https://schema.org','@type':'SoftwareApplication','name':a['name'],'operatingSystem':a['os'],'applicationCategory':a['category'],'url':BASE+'/canopy-quest/'})
  # No claimed features or screenshots for an identity not yet verified against assets.
  page('/you-rush-alaska/','You Rush Alaska — Coming soon','You Rush Alaska is coming soon from TripperDeeLabs. Check this page for release information, read the existing Alaska Rush privacy policy, or contact us.', '<section class="catalog-hero"><p class="eyebrow">TripperDeeLabs · In development</p><h1>You Rush Alaska — Coming soon</h1><p>This app is not yet available on Google Play. We will add release information and a verified download link here when it is ready.</p><p>No release date or price has been announced on this page.</p></section><section><h2>Questions about the project?</h2><p>Email <a href="mailto:feedback@tripperdeelabs.com">feedback@tripperdeelabs.com</a> for questions or feedback.</p><p><a href="/alaska-rush/privacy/">Existing Alaska Rush privacy policy</a> · <a href="/">Studio home</a></p></section>')
- # Home follows the approved editorial directory and includes all requested products.
- labels={'parked':'Parked','local-lore':'Local Lore','roboball':'RoboBall','you-rush-alaska':'You Rush Alaska','salmon-tracker':'Salmon Tracker','wonder-cascade':'Wonder Cascade','private-eyes':'Private Eyes','moto-thrash':'Moto Thrash','captain-quack':'Captain Quack','summit-line':'Summit Line','launch-vector':'Launch Vector','kenai-fishing-report':'Kenai Fishing Report','amelia-navigator':'Amelia Navigator','dive-watch':'Dive Watch','moments':'Moments','canopy-quest':'Canopy Quest'}
- body='<section class="catalog-hero"><p class="eyebrow">Independent Android studio</p><h1>Useful Android apps.<br>Games and watch faces.</h1><p class="lead">TripperDeeLabs makes practical Android apps, offline games, and Wear OS watch faces, with clear privacy information for each product.</p><p><a href="#apps">Find an app</a> · <a href="mailto:feedback@tripperdeelabs.com">feedback@tripperdeelabs.com</a></p></section><section id="apps"><h2>Explore the apps</h2><ul class="app-directory">'
- for slug,label in labels.items():
-  desc=PAGES[slug]['h1'] if slug in PAGES else ('Release information will appear here when ready.' if slug=='you-rush-alaska' else 'Offline jungle platforming with a field map and camp saves.')
-  status={'canopy-quest':'Under maintenance','you-rush-alaska':'Coming soon','wonder-cascade':'In development','moments':'In development'}.get(slug)
-  preview=''
-  if slug!='you-rush-alaska':
-   index,alt=(PAGES[slug]['screenshots'][0] if slug in PAGES else (1,'Canopy Quest jungle platformer at a saved camp'))
-   # Favor the close-up watch captures where supplied by the actual listing.
-   if slug in ['summit-line','kenai-fishing-report','parked']:
-    index,alt=PAGES[slug]['screenshots'][-1]
-   source=ROOT/f'assets/apps/{slug}/screenshot-{index}.png'
-   thumb=ROOT/f'assets/apps/{slug}/home-preview.webp'
-   im=Image.open(source).convert('RGB');im.thumbnail((640,480));im.save(thumb,'WEBP',quality=82,method=6)
-   preview=f'<a class="directory-preview" href="/{slug}/" tabindex="-1"><img src="/assets/apps/{slug}/home-preview.webp" width="{im.width}" height="{im.height}" alt="{E(alt)}" loading="lazy" decoding="async"></a>'
-  else:
-   preview='<div class="directory-preview coming-soon-art" aria-hidden="true"><span>Coming soon</span></div>'
-  body+=f'<li>{preview}<div class="directory-copy"><strong><a href="/{slug}/">{E(label)}</a></strong><p>{E(desc)}</p>'+(f'<p class="availability">{status}</p>' if status else '')+'</div></li>'
- body+='</ul></section><section><h2>More tools and projects</h2><p><a href="/boss-button/">Boss Button</a> · <a href="/mock-location/">Mock Location</a> · <a href="/kenai-report-data/">Kenai Report Data</a> · <a href="/alaska-gold-run/">Alaska Gold Run (in development)</a></p></section><section id="about"><h2>About the studio</h2><p>Built by an independent developer. Each app page explains its purpose, connection requirements, and privacy choices, so you can decide whether it fits your needs.</p><p>Questions or feedback? Email <a href="mailto:feedback@tripperdeelabs.com">feedback@tripperdeelabs.com</a>.</p></section>'
+ # Keep the informative catalog summaries alongside the visual cards.
+ labels={'parked':'Parked','local-lore':'Local Lore','roboball':'RoboBall','you-rush-alaska':'You Rush Alaska','salmon-tracker':'Salmon Tracker','wonder-cascade':'Wonder Cascade','private-eyes':'Private Eyes','moto-thrash':'Moto Thrash','captain-quack':'Captain Quack','summit-line':'Summit Line','launch-vector':'Launch Vector','kenai-fishing-report':'Kenai Fishing Report','amelia-navigator':'Amelia Navigator','dive-watch':'Dive Watch','moments':'Moments','canopy-quest':'Canopy Quest','boss-button':'Boss Button','mock-location':'Mock Location','kenai-report-data':'Kenai Report Data'}
+ groups=[('phone-apps','Phone apps',['parked','local-lore','salmon-tracker','private-eyes','boss-button','mock-location']),('phone-games','Phone games',['roboball','moto-thrash','captain-quack','canopy-quest']),('watch-faces','Wear OS watch faces',['summit-line','launch-vector','kenai-fishing-report','amelia-navigator','dive-watch']),('watch-data','Wear OS companion apps',['kenai-report-data']),('in-development','In development',['wonder-cascade','moments','you-rush-alaska'])]
+ body='<section class="catalog-hero"><p class="eyebrow">Independent Android studio</p><h1>Useful Android apps.<br>Games and watch faces.</h1><p class="lead">TripperDeeLabs makes practical Android apps, offline games, and Wear OS watch faces, with clear privacy information for each product.</p><p>Find a saved parking spot, explore local history, follow Alaska salmon counts, or keep selected photos in an encrypted vault. For downtime, explore arcade games; for your wrist, choose a watch face built around the information you want to see.</p><p><a href="#phone-apps">Phone apps</a> · <a href="#phone-games">Games</a> · <a href="#watch-faces">Watch faces</a> · <a href="#in-development">Coming soon</a></p></section><div id="apps">'
+ for anchor,heading,slugs in groups:
+  body+=f'<section id="{anchor}"><h2>{heading}</h2><ul class="app-directory">'
+  for slug in slugs:
+   label=labels[slug]
+   if slug in copy:
+    desc,detail=copy[slug][1:3]
+   elif slug=='wonder-cascade':
+    desc='Wonder Cascade is a match-3 puzzle game in development. Swap gems, combine powers, and plan a sequence of moves through finite-board challenges.'
+    detail='The preview includes Strategy Stops, Mind puzzles, and a relaxed pace without countdown timers. Screenshots show the development build; a public Google Play release is not yet available.'
+   elif slug=='moments':
+    desc='Moments is a personal-photo watch face project for Wear OS 6. A curved image panel sits beside digital time, battery information, and customizable data fields.'
+    detail='Photo selection uses the supported paired-phone system flow. Development screenshots are available; a public Google Play listing has not been confirmed.'
+   else:
+    desc='You Rush Alaska is coming soon from TripperDeeLabs.'
+    detail='Visit its project page for release information when available. No public download, release date, or price has been announced here.'
+   status={'canopy-quest':'Under maintenance','you-rush-alaska':'Coming soon','wonder-cascade':'In development','moments':'In development'}.get(slug)
+   preview=''
+   if slug!='you-rush-alaska':
+    if slug in PAGES:
+     index,alt=PAGES[slug]['screenshots'][-1] if slug in ['summit-line','kenai-fishing-report','parked'] else PAGES[slug]['screenshots'][0]
+    else:
+     index,alt={'canopy-quest':(1,'Canopy Quest jungle platformer at a saved camp'),'boss-button':(2,'Boss Button app with floating-button setup and privacy-cover controls'),'mock-location':(1,'Mock Location app showing five local coordinate bookmark slots'),'kenai-report-data':(1,'Kenai Report Data watch app displaying sockeye count and report date')}[slug]
+    source=ROOT/f'assets/apps/{slug}/screenshot-{index}.png'
+    thumb=ROOT/f'assets/apps/{slug}/home-preview.webp'
+    im=Image.open(source).convert('RGB');im.thumbnail((640,480));im.save(thumb,'WEBP',quality=82,method=6)
+    preview=f'<a class="directory-preview" href="/{slug}/" tabindex="-1"><img src="/assets/apps/{slug}/home-preview.webp" width="{im.width}" height="{im.height}" alt="{E(alt)}" loading="lazy" decoding="async"></a>'
+   else:
+    preview='<div class="directory-preview coming-soon-art" aria-hidden="true"><span>Coming soon</span></div>'
+   body+=f'<li>{preview}<div class="directory-copy"><h3><a href="/{slug}/">{E(label)}</a></h3>'+(f'<p class="availability">{status}</p>' if status else '')+f'<p>{E(desc)}</p><p>{E(detail)}</p><p><a href="/{slug}/">Explore {E(label)} →</a></p>'
+   if slug in lookup and not status:body+=badge(lookup[slug])
+   body+='</div></li>'
+  body+='</ul></section>'
+ body+='</div><section><h2>Other projects</h2><p><a href="/alaska-gold-run/">Alaska Gold Run</a> is an Alaska-themed Android runner in development, with lane changes, jumping, and sliding. Its project page includes an overview and privacy information.</p></section><section id="about"><h2>About TripperDeeLabs</h2><p>I’m the independent developer behind TripperDeeLabs. I make Android games, practical phone apps and Wear OS watch faces, with projects ranging from Alaska fish reports to retro arcade games.</p><p>Each app page explains what the app does, who it is for, and what stays on your device. Offline games save progress locally. Apps that use maps, public reports, or launch schedules need a connection for fresh information. Watch readings depend on the device and the providers you choose.</p><p>Read the app’s privacy policy for its specific permissions, storage, and external services. For questions, ideas, or support, email <a href="mailto:feedback@tripperdeelabs.com">feedback@tripperdeelabs.com</a> or visit the <a href="/feedback/">feedback page</a>.</p></section>'
  page('/','Android Apps, Games and Wear OS Watch Faces','Explore TripperDeeLabs Android apps, offline games and Wear OS watch faces. Find screenshots, privacy details, download links and project availability.',body)

@@ -102,3 +102,7 @@ Homepage app cards now use compressed, lazy-loaded real screenshot previews,
 generated as `assets/apps/<app>/home-preview.webp`. Keep availability labels
 visible with the imagery; You Rush Alaska has a coming-soon panel until its
 product artwork is confirmed.
+
+Keep the homepage informative: retain full app summaries and connection/storage
+limits alongside images, category headings, Play links for available apps, and
+the studio description. Do not reduce cards to titles or taglines in later edits.
