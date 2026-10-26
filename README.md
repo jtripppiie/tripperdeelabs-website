@@ -103,9 +103,10 @@ generated as `assets/apps/<app>/home-preview.webp`. Keep availability labels
 visible with the imagery; You Rush Alaska has a coming-soon panel until its
 product artwork is confirmed.
 
-Keep the homepage informative: retain full app summaries and connection/storage
-limits alongside images, category headings, Play links for available apps, and
-the studio description. Do not reduce cards to titles or taglines in later edits.
+Homepage cards show exactly one useful descriptive paragraph per item, with
+images, category headings, availability labels and links. Keep detailed features
+and connection/storage limits on the app landing pages. Preserve the studio
+description and personal introduction; do not reduce summaries to mere titles.
 
 The homepage Wear OS companion section uses a dedicated two-column feature
 layout with CSS-framed close-ups of actual Kenai Report Data screens. The

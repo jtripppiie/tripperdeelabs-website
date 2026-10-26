@@ -95,7 +95,7 @@ def build(page,apps,badge,copy):
      im=Image.open(source).convert('RGB');im.save(target,'WEBP',quality=88,method=6)
      preview+=f'<figure><div class="watch-bezel"><div class="watch-screen"><img src="/assets/apps/{slug}/home-detail-{number}.webp" width="900" height="1600" loading="lazy" decoding="async" alt="Kenai Report Data actual watch screen: {caption.lower()}"></div></div><figcaption>{caption}</figcaption></figure>'
     preview+='</div><p class="companion-caption">Actual app screens · Example reports, not live readings</p></div>'
-   body+=f'<li>{preview}<div class="directory-copy"><h3><a href="/{slug}/">{E(label)}</a></h3>'+(f'<p class="availability">{status}</p>' if status else '')+f'<p>{E(desc)}</p><p>{E(detail)}</p><p><a href="/{slug}/">Explore {E(label)} →</a></p>'
+   body+=f'<li>{preview}<div class="directory-copy"><h3><a href="/{slug}/">{E(label)}</a></h3>'+(f'<div class="availability">{status}</div>' if status else '')+f'<p class="app-summary">{E(desc)}</p><a class="directory-more" href="/{slug}/">Explore {E(label)} →</a>'
    if slug in lookup and not status:body+=badge(lookup[slug])
    body+='</div></li>'
   body+='</ul></section>'
