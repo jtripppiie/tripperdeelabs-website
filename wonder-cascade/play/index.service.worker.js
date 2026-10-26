@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1792988033|3715337';
+const CACHE_VERSION = '1792989303|4784220';
 /** @type {string} */
 const CACHE_PREFIX = 'wonder-cascade-feedback-preview-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
