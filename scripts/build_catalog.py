@@ -33,7 +33,7 @@ def page(path,title,desc,body,image=None,schema=None):
  if '/social.png' in image:tags+='<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
  for name,val in [('twitter:card','summary_large_image'),('twitter:title',title),('twitter:description',desc),('twitter:image',image),('twitter:image:alt',title)]:tags+=f'<meta name="{name}" content="{E(val)}">'
  if schema:tags+='<script type="application/ld+json">'+json.dumps(schema).replace('<','\\u003c')+'</script>'
- doc='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+tags+'<link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/catalog.css"><script defer src="/cookie-consent.js"></script></head><body>'+HEADER+'<main class="wrap">'+body+'</main>'+FOOTER+'</body></html>'
+ doc='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+tags+'<link rel="icon" href="/assets/tripperdeelabs-logo.png" type="image/png"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/catalog.css"><script defer src="/cookie-consent.js"></script></head><body>'+HEADER+'<main class="wrap">'+body+'</main>'+FOOTER+'</body></html>'
  out=ROOT/path.strip('/')/'index.html';out.parent.mkdir(exist_ok=True,parents=True);out.write_text(doc+'\n')
 def badge(a):
  if a.get("status")=="maintenance":return '<p class="availability">Under maintenance</p>'
