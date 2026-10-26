@@ -1,0 +1,10 @@
+{
+  "source": "alaska-gold-run/artifacts/store",
+  "screenshots": [
+    "06-downhill.png",
+    "05-tunnel.png",
+    "07-frozen-lake.png"
+  ],
+  "capture": "Real Windows Godot 0.18.73 gameplay captures, October 22, 2026; release preparation for 0.18.75. Not Android device captures.",
+  "status": "Owner supplied Play Console status: Changes in review; last updated October 24, 2026."
+}

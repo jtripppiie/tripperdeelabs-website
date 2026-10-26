@@ -6,7 +6,7 @@ Static GitHub Pages site for https://tripperdeelabs.com, published from main at 
 
 Historical baseline: 16 public Google Play listings were verified on October 23, 2026 using the US English storefront. See the October 26 rollout below for current availability and prices. `data/apps.json` retains listing URLs, observed prices, icon and screenshot source URLs, and listing descriptions. Pages use editorial summaries in `scripts/build_catalog.py`. Recheck the listings before changing availability, prices, compatibility or features.
 
-Alaska Gold Run and Moments have informational pages but are excluded from the live-app grid: their expected public Play URLs returned 404. Alaska Gold Run's local project README also identifies it as unreleased. Do not add purchase offers or label development assets as Play screenshots without a verified public listing.
+Alaska Gold Run has a full homepage game card and SEO page. The owner confirmed Play Console status ‘Changes in review,’ last updated October 24, 2026, for com.tripperdeelabs.alaskagoldrun. Its public listing is not available yet. Real desktop gameplay captures come from the release-preparation assets; see assets/apps/alaska-gold-run/provenance.json. Moments remains a development preview. Do not add purchase offers or label development assets as Play screenshots without a verified public listing.
 
 Kenai Report Data is a separate Wear OS companion app, not a phone app or watch face; its page links to the existing joint Kenai privacy policy. `/garmin/` now describes the verified Wear OS faces.
 

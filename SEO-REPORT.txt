@@ -22,13 +22,14 @@ https://tripperdeelabs.com/amelia-navigator/
 https://tripperdeelabs.com/dive-watch/
 https://tripperdeelabs.com/moments/ — development preview
 https://tripperdeelabs.com/canopy-quest/ — under maintenance
+https://tripperdeelabs.com/alaska-gold-run/ — submitted; changes in review (Oct 24)
 
 The existing privacy URLs remain unchanged, including /alaska-rush/privacy/.
 Boss Button, Mock Location, Kenai Report Data, Alaska Gold Run and the Private
 Eyes guides remain linked. No published privacy text was altered by this rollout.
 
 CONTENT AND TECHNICAL CHECKS
-14 detailed landing pages: 300–600 words each, unique search-intent H1/title and
+15 detailed landing pages: 300–600 words each, unique search-intent H1/title and
 meta description, 2–3 actual screenshots, four visible FAQs with matching FAQPage
 schema, SoftwareApplication schema, home/privacy/support links. Available apps
 have Google Play badges and verified US prices. No ratings or reviews invented.
@@ -86,3 +87,8 @@ python3 scripts/check_catalog.py
 python3 scripts/check_seo.py
 Publication uses the existing GitHub Pages main/root deployment. See the delivery
 message for the observed deployment result; a local build alone is not proof.
+
+Alaska Gold Run update: owner confirmed submission and Play Console “Changes in
+review” status, last updated October 24, 2026. Added a full homepage game card,
+467-word landing page, three real desktop gameplay captures from release
+preparation, and matching FAQ schema. No public download or purchase offer yet.
