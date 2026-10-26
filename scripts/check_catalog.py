@@ -6,6 +6,15 @@ import json,xml.etree.ElementTree as ET
 root=Path(__file__).resolve().parents[1];apps=json.loads((root/'data/apps.json').read_text());errors=[]
 def check(ok,msg):
  if not ok:errors.append(msg)
+# Generated landing pages must retain the consent-gated analytics entry point.
+# Policy pages with an explicit no-analytics promise are intentionally excluded.
+landing_pages=['index.html','garmin/index.html','alaska-gold-run/index.html','moments/index.html']+[a['slug']+'/index.html' for a in apps]
+for rel in landing_pages:
+ soup=BeautifulSoup((root/rel).read_text(),'html.parser')
+ loaders=soup.select('script[src="/cookie-consent.js"]')
+ check(len(loaders)==1 and loaders[0].has_attr('defer'),rel+' missing/duplicate consent loader or missing defer')
+ check(not soup.select('script[src*="googletagmanager.com"]'),rel+' bypasses consent with a direct Google tag')
+check("var GA_ID = 'G-77H5RENPZ3';" in (root/'cookie-consent.js').read_text(),'unexpected Analytics measurement ID')
 titles=set();descriptions=set()
 for a in apps:
  slug=a['slug'];p=root/slug/'index.html';s=BeautifulSoup(p.read_text(),'html.parser')
