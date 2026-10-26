@@ -110,3 +110,9 @@ the studio description. Do not reduce cards to titles or taglines in later edits
 The homepage Wear OS companion section uses a dedicated two-column feature
 layout with CSS-framed close-ups of actual Kenai Report Data screens. The
 source captures remain unchanged; phone layouts show one readable watch view.
+
+Preserve the studio identity during SEO/layout edits: the original fox-scientist
+logo (`assets/tripperdeelabs-logo.png`) belongs in navigation and prominently in
+the home hero. Keep “Doing TripperDee things in a TripperDee world.” and the
+first-person independent-developer introduction. SEO work is not permission to
+remove the owner’s branding, personal copy, or existing useful app information.
