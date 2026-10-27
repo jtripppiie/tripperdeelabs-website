@@ -154,7 +154,7 @@ PAGES['alaska-gold-run']['status']='Submitted to Google Play · Changes in revie
 
 add('stick-sprint','Stick Sprint — Offline stick-figure runner for Android',
 'Dodge, jump and slide through Stick Sprint, an offline Android runner with changing weather, comic mishaps and colorful run themes. Coming soon to Google Play.',
-'One stick figure. Three lanes. Plenty of questionable decisions. Chase your best score, collect coins and try to keep those knees moving in Stick Sprint, an offline arcade runner from TripperDeeLabs.',[
+'One stick figure. Three lanes. Plenty of questionable decisions. Chase your best score, collect coins and try to keep those knees moving in Stick Sprint, an offline endless runner from TripperDeeLabs.',[
 ('Find your rhythm','Tap the left or right side to change lanes, swipe up to jump and swipe down to slide. Dodge obstacles and watch for trapdoors as the course narrows from three lanes to two or one. Park Circuit, Switchback Sprint and Trapdoor Trail offer 18 named sections across three repeating chapters, mixing slalom patterns, hurdle hops, duck gates and coin breaks. Runs end with a score summary and a comic quip. Coins and milestone rewards unlock runner styles.'),
 ('Pick your atmosphere','Choose high-contrast monochrome, neon, moonlit, Blackout or the glowing Grid Run arena. Day turns to night, rain moves in, and monsoon sections bring rising water and slippery steering. Normal, Light Speed and Plaid Speed offer different paces.'),
 ('Made for a quick run','Play in portrait or landscape on Android 13 or newer. The current development build works offline, with scores, coins, styles and settings saved on your device. It has no ads, account registration or in-app purchases.'),
