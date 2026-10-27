@@ -150,3 +150,17 @@ add('alaska-gold-run','Offline Alaska runner game for Android',
 ('Are there ads or purchases for gold?','The submitted release has no ads or in-app purchases. Gold, outfits, and gear are earned through gameplay. The intended model is a one-time purchase.'),
 ('Will an account restore my progress on another phone?','There is no game account or cloud-save service. Progress stays locally, and clearing storage or uninstalling can remove it.')],[(1,'Alaska Gold Run downhill skiing route with snowy obstacles beneath an aurora'),(2,'Alaska Gold Run railway tunnel with three lanes, gold pickups, and a runner'),(3,'Alaska Gold Run frozen-lake skating route with ice hazards and gold pickups')])
 PAGES['alaska-gold-run']['status']='Submitted to Google Play · Changes in review'
+
+
+add('stick-sprint','Stick Sprint — Offline stick-figure runner for Android',
+'Dodge, jump and slide through Stick Sprint, an offline Android runner with changing weather, comic mishaps and colorful run themes. Coming soon to Google Play.',
+'One stick figure. Three lanes. Plenty of questionable decisions. Chase your best score, collect coins and try to keep those knees moving in Stick Sprint, an offline arcade runner from TripperDeeLabs.',[
+('Find your rhythm','Tap the left or right side to change lanes, swipe up to jump and swipe down to slide. Dodge obstacles and watch for trapdoors as the course narrows from three lanes to two or one. Park Circuit, Switchback Sprint and Trapdoor Trail offer 18 named sections across three repeating chapters, mixing slalom patterns, hurdle hops, duck gates and coin breaks. Runs end with a score summary and a comic quip. Coins and milestone rewards unlock runner styles.'),
+('Pick your atmosphere','Choose high-contrast monochrome, neon, moonlit, Blackout or the glowing Grid Run arena. Day turns to night, rain moves in, and monsoon sections bring rising water and slippery steering. Normal, Light Speed and Plaid Speed offer different paces.'),
+('Made for a quick run','Play in portrait or landscape on Android 13 or newer. The current development build works offline, with scores, coins, styles and settings saved on your device. It has no ads, account registration or in-app purchases.'),
+('Coming soon to Google Play','Stick Sprint is in development and is not published yet. This page will carry the verified Google Play link when it launches. No release date or price has been announced.')],[
+('Can I download Stick Sprint now?','A public download is not available yet. Check this page for the Google Play release link when the game launches.'),
+('Does it need internet to play?','No. Gameplay is offline. Opening the website or sharing through another app uses that app and may require a connection.'),
+('Will my progress move to another phone?','There is no game account or cloud-sync service. Progress stays in local app storage; uninstalling or clearing storage can remove it.'),
+('How do I get help or send feedback?','Email feedback@tripperdeelabs.com with Stick Sprint in the subject. Include your device model, Android version and what happened. Please do not send passwords or other sensitive information.')],[(1,'Grid Run with the themed HUD and Light Speed — Android tablet development build 0.13.0; device overlays visible'),(2,'Monochrome course and articulated runner — earlier Android development build 0.8.2; HUD has since changed')])
+PAGES['stick-sprint']['status']='Coming soon to Google Play · In development'

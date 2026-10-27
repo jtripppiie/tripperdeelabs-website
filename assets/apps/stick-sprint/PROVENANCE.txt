@@ -1,0 +1,2 @@
+Actual Lenovo TB710FU Android tablet capture, Stick Sprint 0.13.0, Grid Run / Light Speed. Source: android-hockey-fps/build/validation/0.13.0-themed-hud.png. Captured during development on 2026-10-27. Device overlays retained; no gameplay content altered. Not a final Play Store screenshot. Web derivatives resize/compress only.
+Screenshot 2: actual Lenovo tablet capture of 0.8.2 from build/validation/0.8.2-closer-runner.png. Earlier development build; HUD differs from current version. Original pixels preserved.

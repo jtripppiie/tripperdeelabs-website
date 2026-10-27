@@ -135,3 +135,7 @@ footer, to avoid covering content or keyboard focus. Keep policy prose intact
 when changing shared navigation. Run `python3 scripts/check_seo.py` as well as
 the catalog check after builds. Browser accessibility checks supplement these
 checks; they do not establish full WCAG conformance or screen-reader usability.
+
+## Stick Sprint — October 27, 2026
+
+Coming-soon game page, app-specific privacy policy and support guide: `/stick-sprint/`, `/stick-sprint/privacy/`, `/stick-sprint/support/`. Sources: `seo_content.py`, `seo_pages.py`, `stick_sprint_pages.py`. No Play availability, price, ratings or release date claimed. Development screenshots and provenance are in `assets/apps/stick-sprint/`. Preserve these sources when regenerating the site.

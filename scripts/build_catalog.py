@@ -82,6 +82,8 @@ social({'slug':'wonder-cascade','os':'Android'},'Wonder Cascade')
 from seo_pages import build as build_seo
 build_seo(page,apps,badge,COPY)
 build_guides(page)
+from stick_sprint_pages import build as build_stick_sprint
+build_stick_sprint(page)
 # Preserve existing policy/support text, adding any missing canonical URLs.
 for p in ROOT.rglob('*.html'):
  if '.git' in p.parts:continue
