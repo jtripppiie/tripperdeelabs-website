@@ -20,11 +20,11 @@ def build(page,apps,badge,copy):
  lookup={a['slug']:a for a in apps}
  for slug,c in PAGES.items():
   a=lookup.get(slug);upcoming=a is None
-  name=a['name'] if a else {'stick-sprint':'Stick Sprint','moments':'Moments','wonder-cascade':'Wonder Cascade','alaska-gold-run':'Alaska Gold Run'}[slug]
+  name=a['name'] if a else {'math-sprint-castle':'Math Sprint Castle','stick-sprint':'Stick Sprint','moments':'Moments','wonder-cascade':'Wonder Cascade','alaska-gold-run':'Alaska Gold Run'}[slug]
   os=a['os'] if a else ('Wear OS 6 or newer' if slug=='moments' else 'Android')
   # Prices in FAQ answers follow the verified catalog rather than frozen draft prices.
   faqs=[(q,ans.replace('$0.50', '$'+a['price']) if a else ans) for q,ans in c['faq']]
-  app_schema={'@context':'https://schema.org','@type':'SoftwareApplication','name':name,'@id':BASE+'/'+slug+'/#app','publisher':{'@id':BASE+'/#studio'},'description':c['description'],'operatingSystem':os,'url':BASE+'/'+slug+'/','applicationCategory':a['category'] if a else ('GameApplication' if slug in ['stick-sprint','wonder-cascade','alaska-gold-run'] else 'UtilitiesApplication')}
+  app_schema={'@context':'https://schema.org','@type':'SoftwareApplication','name':name,'@id':BASE+'/'+slug+'/#app','publisher':{'@id':BASE+'/#studio'},'description':c['description'],'operatingSystem':os,'url':BASE+'/'+slug+'/','applicationCategory':a['category'] if a else ('GameApplication' if slug in ['math-sprint-castle','stick-sprint','wonder-cascade','alaska-gold-run'] else 'UtilitiesApplication')}
   if a:app_schema.update(offers={'@type':'Offer','price':a['price'],'priceCurrency':a['currency'],'url':a['play']},installUrl=a['play'])
   faq_schema={'@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':ans}} for q,ans in faqs]}
   schema={'@context':'https://schema.org','@graph':[app_schema,faq_schema]}
@@ -56,8 +56,8 @@ def build(page,apps,badge,copy):
  # No claimed features or screenshots for an identity not yet verified against assets.
  page('/you-rush-alaska/','You Rush Alaska — Coming soon','You Rush Alaska is coming soon from TripperDeeLabs. Check this page for release information, read the existing Alaska Rush privacy policy, or contact us.', '<section class="catalog-hero"><p class="eyebrow">TripperDeeLabs · In development</p><h1>You Rush Alaska — Coming soon</h1><p>This app is not yet available on Google Play. We will add release information and a verified download link here when it is ready.</p><p>No release date or price has been announced on this page.</p></section><section><h2>Questions about the project?</h2><p>Email <a href="mailto:feedback@tripperdeelabs.com">feedback@tripperdeelabs.com</a> for questions or feedback.</p><p><a href="/alaska-rush/privacy/">Existing Alaska Rush privacy policy</a> · <a href="/">Studio home</a></p></section>')
  # Keep the informative catalog summaries alongside the visual cards.
- labels={'stick-sprint':'Stick Sprint','alaska-gold-run':'Alaska Gold Run','parked':'Parked','local-lore':'Local Lore','roboball':'RoboBall','you-rush-alaska':'You Rush Alaska','salmon-tracker':'Salmon Tracker','wonder-cascade':'Wonder Cascade','private-eyes':'Private Eyes','moto-thrash':'Moto Thrash','captain-quack':'Captain Quack','summit-line':'Summit Line','launch-vector':'Launch Vector','kenai-fishing-report':'Kenai Fishing Report','amelia-navigator':'Amelia Navigator','dive-watch':'Dive Watch','moments':'Moments','canopy-quest':'Canopy Quest','boss-button':'Boss Button','mock-location':'Mock Location','kenai-report-data':'Kenai Report Data'}
- groups=[('phone-apps','Phone apps',['parked','local-lore','salmon-tracker','private-eyes','boss-button','mock-location']),('phone-games','Phone games',['roboball','moto-thrash','captain-quack','canopy-quest','alaska-gold-run']),('watch-faces','Wear OS watch faces',['summit-line','launch-vector','kenai-fishing-report','amelia-navigator','dive-watch']),('watch-data','Wear OS companion apps',['kenai-report-data']),('in-development','In development',['stick-sprint','wonder-cascade','moments','you-rush-alaska'])]
+ labels={'math-sprint-castle':'Math Sprint Castle','stick-sprint':'Stick Sprint','alaska-gold-run':'Alaska Gold Run','parked':'Parked','local-lore':'Local Lore','roboball':'RoboBall','you-rush-alaska':'You Rush Alaska','salmon-tracker':'Salmon Tracker','wonder-cascade':'Wonder Cascade','private-eyes':'Private Eyes','moto-thrash':'Moto Thrash','captain-quack':'Captain Quack','summit-line':'Summit Line','launch-vector':'Launch Vector','kenai-fishing-report':'Kenai Fishing Report','amelia-navigator':'Amelia Navigator','dive-watch':'Dive Watch','moments':'Moments','canopy-quest':'Canopy Quest','boss-button':'Boss Button','mock-location':'Mock Location','kenai-report-data':'Kenai Report Data'}
+ groups=[('phone-apps','Phone apps',['parked','local-lore','salmon-tracker','private-eyes','boss-button','mock-location']),('phone-games','Phone games',['roboball','moto-thrash','captain-quack','canopy-quest','alaska-gold-run']),('watch-faces','Wear OS watch faces',['summit-line','launch-vector','kenai-fishing-report','amelia-navigator','dive-watch']),('watch-data','Wear OS companion apps',['kenai-report-data']),('in-development','In development',['math-sprint-castle','stick-sprint','wonder-cascade','moments','you-rush-alaska'])]
  body='<section class="catalog-hero home-hero"><div class="home-intro"><div><p class="eyebrow">Independent Android studio</p><h1>Useful Android apps.<br>Games and watch faces.</h1><p class="lead">TripperDeeLabs makes practical Android apps, offline games, and Wear OS watch faces, with clear privacy information for each product.</p><p>Find a saved parking spot, explore local history, follow Alaska salmon counts, or keep selected photos in an encrypted vault. For downtime, explore arcade games; for your wrist, choose a watch face built around the information you want to see.</p><p><a href="#phone-apps">Phone apps</a> · <a href="#phone-games">Games</a> · <a href="#watch-faces">Watch faces</a> · <a href="#in-development">Coming soon</a></p></div><img class="studio-logo" src="/assets/tripperdeelabs-logo.png" width="200" height="200" alt="TripperDeeLabs fox scientist logo" fetchpriority="high"></div></section><div id="apps">'
  for anchor,heading,slugs in groups:
   body+=f'<section id="{anchor}"><h2>{heading}</h2><ul class="app-directory">'
@@ -67,6 +67,8 @@ def build(page,apps,badge,copy):
     desc='Alaska Gold Run is an offline Android runner with three-lane swiping, jumping, sliding, skiing, and frozen-lake skating. Collect gold, earn gear, and explore snowy trails, railway tunnels, and ice caves. Submitted to Google Play; changes are in review as of October 24, 2026.'
    elif slug in copy:
     desc,detail=copy[slug][1:3]
+   elif slug=='math-sprint-castle':
+    desc='A castle-themed endless runner where math earns more play time. Dodge knights, duck lances, avoid wizard spells and dragon fire, and learn from a watchable computer preview. In development for Android.'
    elif slug=='stick-sprint':
     desc='An offline stick-figure runner with comic mishaps, changing weather and monochrome, neon and glowing grid themes. Coming soon to Google Play.'
    elif slug=='wonder-cascade':
@@ -78,7 +80,7 @@ def build(page,apps,badge,copy):
    else:
     desc='You Rush Alaska is coming soon from TripperDeeLabs.'
     detail='Visit its project page for release information when available. No public download, release date, or price has been announced here.'
-   status={'stick-sprint':'Coming soon','alaska-gold-run':'Changes in review','canopy-quest':'Under maintenance','you-rush-alaska':'Coming soon','wonder-cascade':'In development','moments':'In development'}.get(slug)
+   status={'math-sprint-castle':'In development','stick-sprint':'Coming soon','alaska-gold-run':'Changes in review','canopy-quest':'Under maintenance','you-rush-alaska':'Coming soon','wonder-cascade':'In development','moments':'In development'}.get(slug)
    preview=''
    if slug!='you-rush-alaska':
     if slug in PAGES:

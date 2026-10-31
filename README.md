@@ -139,3 +139,7 @@ checks; they do not establish full WCAG conformance or screen-reader usability.
 ## Stick Sprint — October 27, 2026
 
 Coming-soon game page, app-specific privacy policy and support guide: `/stick-sprint/`, `/stick-sprint/privacy/`, `/stick-sprint/support/`. Sources: `seo_content.py`, `seo_pages.py`, `stick_sprint_pages.py`. No Play availability, price, ratings or release date claimed. Development screenshots and provenance are in `assets/apps/stick-sprint/`. Preserve these sources when regenerating the site.
+
+## Math Sprint Castle (October31,2026)
+
+`/math-sprint-castle/` is a development preview, with actual local gameplay/computer-mode screenshots and no public download or purchase offer. Home lists it under In development. The game, support and privacy pages use the shared studio footer. Copy lives in `scripts/seo_content.py` and `scripts/math_sprint_pages.py`; screenshot provenance is in `assets/apps/math-sprint-castle/provenance.json`. Current All Access is preview-only, not working billing.

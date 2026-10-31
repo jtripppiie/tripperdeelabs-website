@@ -8,7 +8,7 @@ def check(ok,msg):
  if not ok:errors.append(msg)
 # Generated landing pages must retain the consent-gated analytics entry point.
 # Policy pages with an explicit no-analytics promise are intentionally excluded.
-landing_pages=['index.html','garmin/index.html','alaska-gold-run/index.html','moments/index.html']+[a['slug']+'/index.html' for a in apps]
+landing_pages=['math-sprint-castle/index.html','index.html','garmin/index.html','alaska-gold-run/index.html','moments/index.html']+[a['slug']+'/index.html' for a in apps]
 for rel in landing_pages:
  soup=BeautifulSoup((root/rel).read_text(),'html.parser')
  loaders=soup.select('script[src="/cookie-consent.js"]')

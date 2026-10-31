@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-31",
+  "source": "Math Sprint Castle local Godot development builds0.22 and0.23",
+  "screenshots": "Actual desktop captures, not Play listing images; device appearance may differ",
+  "files": {
+    "screenshot-1.png": "local-0-22/opening-guards.png",
+    "screenshot-2.png": "local-0-22/wizard-cast.png",
+    "screenshot-3.png": "local-0-23/computer-running.png",
+    "screenshot-4.png": "local-0-23/computer-math.png"
+  },
+  "icon": "Project castle_icon.png"
+}

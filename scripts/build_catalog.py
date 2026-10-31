@@ -79,11 +79,14 @@ for slug,name,desc,features in [('alaska-gold-run','Alaska Gold Run','An Alaska-
  social({'slug':slug,'os':'Android' if slug=='alaska-gold-run' else 'Wear OS'},name)
  page('/'+slug+'/',name+' for '+('Android' if slug=='alaska-gold-run' else 'Wear OS'),desc,f'<section class="catalog-hero"><h1>{name}</h1><p>{desc}</p><p>Not currently verified as available on Google Play. Store screenshots, pricing and a download link will be added when the public listing is available.</p><h2>Project overview</h2><ul>'+''.join('<li>'+f+'</li>' for f in features)+f'</ul><p><a href="/{slug}/privacy/">Privacy policy</a></p></section>',BASE+'/assets/apps/'+slug+'/social.png')
 social({'slug':'wonder-cascade','os':'Android'},'Wonder Cascade')
+social({'slug':'math-sprint-castle','os':'Android'},'Math Sprint Castle')
 from seo_pages import build as build_seo
 build_seo(page,apps,badge,COPY)
 build_guides(page)
 from stick_sprint_pages import build as build_stick_sprint
 build_stick_sprint(page)
+from math_sprint_pages import build as build_math_sprint
+build_math_sprint(page)
 # Preserve existing policy/support text, adding any missing canonical URLs.
 for p in ROOT.rglob('*.html'):
  if '.git' in p.parts:continue
