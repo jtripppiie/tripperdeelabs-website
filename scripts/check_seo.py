@@ -3,7 +3,7 @@ from pathlib import Path
 from urllib.parse import urlsplit,unquote
 from urllib.robotparser import RobotFileParser
 from bs4 import BeautifulSoup
-import json,xml.etree.ElementTree as ET
+import json,re,xml.etree.ElementTree as ET
 from seo_content import PAGES
 ROOT=Path(__file__).resolve().parents[1];BASE='https://tripperdeelabs.com'
 apps={a['slug']:a for a in json.loads((ROOT/'data/apps.json').read_text())}
@@ -14,6 +14,19 @@ assert "Android Apps, Offline Games" in home.h1.get_text(" ",strip=True)
 assert home.select_one('a[href="/wear-os/"]')
 assert BASE+"/wear-os/" in urls and BASE+"/garmin/" not in urls
 robot=RobotFileParser();robot.parse((ROOT/'robots.txt').read_text().splitlines())
+
+# Verify that the optional AI-readable index links to actual public pages.
+llms=(ROOT/'llms.txt').read_text(encoding='utf-8')
+assert llms.startswith('# TripperDeeLabs\n')
+llms_urls=set(re.findall(r'\]\((https://tripperdeelabs\.com/[^)]+)\)',llms))
+assert llms_urls, 'Empty llms.txt index'
+for llms_url in llms_urls:
+ page_path=ROOT/urlsplit(llms_url).path.lstrip('/')/'index.html'
+ assert page_path.exists(),('Broken llms.txt link',llms_url)
+for app in apps.values():
+ assert BASE+'/'+app['slug']+'/' in llms_urls,('App missing from llms.txt',app['slug'])
+assert robot.can_fetch('OAI-SearchBot',BASE+'/llms.txt')
+
 for slug in [*PAGES,'canopy-quest','you-rush-alaska']:
  path='/'+slug+'/';s=BeautifulSoup((ROOT/slug/'index.html').read_text(),'html.parser')
  assert home.select_one(f'a[href="{path}"]'),slug+' home link'
