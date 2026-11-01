@@ -18,6 +18,10 @@ Kenai Report Data is a separate Wear OS companion app, not a phone app or watch 
 - US listing prices rechecked for Private Eyes, Salmon Tracker, Moto Thrash and Captain Quack: $0.99. Other prices were not rechecked.
 - Rebuild and test with `python3 scripts/build_catalog.py`, `python3 scripts/check_catalog.py` and `python3 scripts/check_seo.py`.
 
+## LLM-friendly directory
+
+The root `llms.txt` is a short Markdown guide to official product pages, Wear OS watch faces, apps under maintenance, development projects, and privacy/support information. The links are checked by `scripts/check_seo.py` against local pages and the 16-entry app catalog. Keep the directory updated when product URLs or availability change. The directory intentionally omits prices and does not override `robots.txt`. Google Search currently ignores `llms.txt` as a ranking signal; the file is for third-party tools that choose to use it.
+
 ## Build and verify
 
 Python 3 with CairoSVG builds static pages and 1200×630 PNG social cards:
