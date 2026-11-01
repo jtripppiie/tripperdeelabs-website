@@ -1,0 +1,58 @@
+# TripperDeeLabs
+
+> Independent developer of Android utility apps, mobile games, and Wear OS watch faces. This is a curated guide to official product pages, privacy information, and development projects.
+
+Use individual product pages as the source for features, compatibility, screenshots, privacy details, and direct Google Play links. Prices and availability may change; check the linked Google Play listings for current details. Some products require internet for updates. Wear OS watch faces are not Garmin watch faces. Development previews and maintenance pages do not imply that an app is available to download.
+
+## Studio and catalogs
+
+- [TripperDeeLabs homepage](https://tripperdeelabs.com/): Official studio homepage, Android apps, games, and watch faces.
+- [Wear OS watch faces](https://tripperdeelabs.com/wear-os/): Catalog of watch faces for compatible Wear OS watches.
+
+
+## Android utility apps
+
+- [Parked: Find My Car Widget](https://tripperdeelabs.com/parked/): Save your parking spot and get walking directions back to your car.
+- [Local Lore: History Near Me](https://tripperdeelabs.com/local-lore/): Explore local landmarks, history, and sourced stories.
+- [Salmon Tracker: Kenai Counts](https://tripperdeelabs.com/salmon-tracker/): Unofficial Alaska salmon passage counts, charts, and optional alerts.
+- [Private Eyes: Photo Vault Lock](https://tripperdeelabs.com/private-eyes/): Offline encrypted photo and file vault with private camera and recovery limitations.
+- [Boss Button: Screen Privacy](https://tripperdeelabs.com/boss-button/): Floating privacy cover for Android; does not lock the device.
+- [Mock Location: GPS Simulator](https://tripperdeelabs.com/mock-location/): Android Developer Options mock-location utility for testing.
+
+## Android games
+
+- [RoboBall: Arcade Basketball](https://tripperdeelabs.com/roboball/): Offline arcade basketball with moving hoops and timing challenges.
+- [Moto Thrash: Retro Motocross](https://tripperdeelabs.com/moto-thrash/): Retro motocross racing and track-building game.
+- [Captain Quack: Space Shooter](https://tripperdeelabs.com/captain-quack/): Arcade space shooter.
+
+## Wear OS watch faces
+
+- [Amelia Navigator: Pilot Face](https://tripperdeelabs.com/amelia-navigator/): Aviation-inspired Wear OS watch face.
+- [Dive Watch: Classic & Lume](https://tripperdeelabs.com/dive-watch/): Analog dive-inspired watch face with integrated battery indicator.
+- [Kenai Fishing Report Face](https://tripperdeelabs.com/kenai-fishing-report/): Wear OS salmon reports, water temperature and tides; uses a separate companion.
+- [Launch Vector Watch Face](https://tripperdeelabs.com/launch-vector/): Wear OS rocket-launch countdown watch face.
+- [Summit Line](https://tripperdeelabs.com/summit-line/): Mountain-themed Wear OS digital watch face.
+
+## Wear OS companion app
+
+- [Kenai Report Data](https://tripperdeelabs.com/kenai-report-data/): Separate Wear OS complication data provider; not a watch face.
+
+## Under maintenance
+
+- [Canopy Quest: Jungle Adventure](https://tripperdeelabs.com/canopy-quest/): Under maintenance; downloads are currently unavailable.
+
+## In development
+
+- [Alaska Gold Run](https://tripperdeelabs.com/alaska-gold-run/): Alaska-themed runner; public Google Play availability not verified.
+- [Math Sprint Castle](https://tripperdeelabs.com/math-sprint-castle/): Math puzzles and castle-themed runner project.
+- [Stick Sprint](https://tripperdeelabs.com/stick-sprint/): Offline stick-figure running game project.
+- [Wonder Cascade](https://tripperdeelabs.com/wonder-cascade/): Match-3 puzzle game project.
+- [Moments](https://tripperdeelabs.com/moments/): Personal-photo Wear OS watch face project.
+- [You Rush Alaska](https://tripperdeelabs.com/you-rush-alaska/): Coming-soon Android game project.
+
+## Privacy and support
+
+- [Website privacy policy](https://tripperdeelabs.com/privacy/): Privacy information for the website; individual app pages link to their policies.
+- [Android photo privacy guides](https://tripperdeelabs.com/private-eyes/guides/): Practical guides on photo encryption, imports, originals, capture, and recovery.
+- [Feedback](https://tripperdeelabs.com/feedback/): Contact the developer or send product feedback.
+
