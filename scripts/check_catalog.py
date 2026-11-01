@@ -8,13 +8,18 @@ def check(ok,msg):
  if not ok:errors.append(msg)
 # Generated landing pages must retain the consent-gated analytics entry point.
 # Policy pages with an explicit no-analytics promise are intentionally excluded.
-landing_pages=['math-sprint-castle/index.html','index.html','garmin/index.html','alaska-gold-run/index.html','moments/index.html']+[a['slug']+'/index.html' for a in apps]
+landing_pages=['math-sprint-castle/index.html','index.html','wear-os/index.html','alaska-gold-run/index.html','moments/index.html']+[a['slug']+'/index.html' for a in apps]
 for rel in landing_pages:
  soup=BeautifulSoup((root/rel).read_text(),'html.parser')
  loaders=soup.select('script[src="/cookie-consent.js"]')
  check(len(loaders)==1 and loaders[0].has_attr('defer'),rel+' missing/duplicate consent loader or missing defer')
  check(not soup.select('script[src*="googletagmanager.com"]'),rel+' bypasses consent with a direct Google tag')
 check("var GA_ID = 'G-77H5RENPZ3';" in (root/'cookie-consent.js').read_text(),'unexpected Analytics measurement ID')
+
+alias=BeautifulSoup((root/"garmin/index.html").read_text(),"html.parser")
+check("noindex" in alias.select_one('meta[name="robots"]')["content"],"legacy URL noindex")
+check(alias.select_one('link[rel="canonical"]')["href"]=="https://tripperdeelabs.com/wear-os/","legacy canonical")
+check("url=/wear-os/" in alias.select_one('meta[http-equiv="refresh"]')["content"],"legacy redirect")
 titles=set();descriptions=set()
 for a in apps:
  slug=a['slug'];p=root/slug/'index.html';s=BeautifulSoup(p.read_text(),'html.parser')

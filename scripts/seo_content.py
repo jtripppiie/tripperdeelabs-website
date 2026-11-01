@@ -6,7 +6,7 @@ PAGES=deepcopy(PILOTS)
 def add(slug,title,description,intro,sections,faq,shots):
  PAGES[slug]=dict(title=title,h1=title,description=description,intro=intro,sections=sections,faq=faq,screenshots=shots)
 
-add('local-lore','Local history and landmarks near you',
+add('local-lore','Local Lore: Local History and Landmarks Near You',
 'Discover nearby history, landmarks and local legends with Local Lore for Android. Browse maps, explore another town, and follow the original sources.',
 'Local Lore is an Android app for discovering the stories around a place. Browse local history, landmarks, legends, wildlife notes, and film locations in a list or on a map. It is for curious residents as well as travelers: you can explore a familiar neighborhood or look up somewhere you plan to visit.',[
 ('Start with a place, then follow your curiosity','Choose nearby discovery or search for another town, address, or postal code. The app retrieves information about the area and lets you narrow the results by theme. Read a short entry to decide what interests you, then open its linked sources for more detail. You can save favorites on your device to revisit places that caught your attention.'),
@@ -17,7 +17,7 @@ add('local-lore','Local history and landmarks near you',
 ('Does Local Lore work entirely offline?','No. New discoveries, maps, and external source pages need internet access. Favorites and a recently retrieved area cache are stored locally, but they are not a complete offline travel guide.'),
 ('How can I report a missing place?','Use Send feedback in the app or email feedback@tripperdeelabs.com. Include the place and a useful source link. Suggestions are reviewed rather than published automatically.')],[(1,'Local Lore dark theme with nearby discoveries and theme filters'),(2,'Local Lore light theme showing history results for San Francisco'),(4,'Local Lore map with discovery markers around the San Francisco Bay area')])
 
-add('roboball','Offline arcade basketball for Android',
+add('roboball','RoboBall: Offline Arcade Basketball for Android',
 'Play RoboBall offline on Android. Time your release, aim at moving hoops, practice trick shots, and save your stars and basketball scores on your phone.',
 'RoboBall is an arcade basketball game for Android built around timing your shot. Watch the power meter, choose when to release, and see the ball react to the hoop and its surroundings. It suits players who want short shooting challenges, a place to practice, and progress they can keep on their own phone.',[
 ('Learn the release, then adjust your aim','Start with untimed practice or guided practice to get a feel for the meter. A successful shot depends on timing and aim, while the ball interacts with the rim, backboard, and obstacles. Once the basic release feels familiar, moving baskets, wind, and changes in gravity give you different conditions to work with. Replaying a court lets you try a different approach.'),
@@ -28,7 +28,7 @@ add('roboball','Offline arcade basketball for Android',
 ('Does progress transfer through an online account?','No account is required and progression is local. Do not rely on a cloud profile to restore your scores when changing phones or removing app data.'),
 ('Does the game contain ads or subscriptions?','No. RoboBall is a one-time purchase with no ads or subscriptions. The current price and device availability are shown on Google Play.')],[(1,'RoboBall practice court with basketball, aim controls, and power meter'),(2,'RoboBall instructions explaining the power meter and release timing'),(4,'RoboBall timed basketball run showing the countdown and target score')])
 
-add('moto-thrash','Offline motocross racing and track building',
+add('moto-thrash','Moto Thrash: Offline Motocross Racing and Track Builder',
 'Race 24 tracks in Moto Thrash for Android. Balance your bike, time your boost, attempt bus jumps, and build custom courses that stay on your device.',
 'Moto Thrash is a retro motocross game for Android with racing, bike balance, and a local course builder. Race computer opponents across 24 tracks in four cups, or step away from the race schedule to design a course. It is for players who enjoy learning jumps and experimenting with an arcade dirt bike.',[
 ('Balance the bike and manage your boost','Use the on-screen directional pad to change lanes and control bike balance. Keeping the bike level in the air helps you line up a landing. Wheelies and front-wheel balances give you more ways to ride, but pushing too far costs stability. Boost adds another decision: watch engine heat and choose when the extra speed will help you through the track.'),
@@ -39,7 +39,7 @@ add('moto-thrash','Offline motocross racing and track building',
 ('How many tracks are included?','The game includes 24 tracks across four cups. The course builder and Stunt Show provide separate ways to experiment with jumps and layouts.'),
 ('What happens to my custom courses if I clear storage?','Courses and progress are local app data. Clearing storage or uninstalling can remove them; the game does not provide a cloud-save account.')],[(2,'Moto Thrash racers approaching a dirt ramp with race position and heat indicators'),(3,'Moto Thrash track builder with ramps, hazards, and local save-slot controls'),(4,'Stunt Show setup for bus count, ramp size, and run-up speed')])
 
-add('captain-quack','Offline arcade space shooter for Android',
+add('captain-quack','Captain Quack: Offline Arcade Space Shooter for Android',
 'Guide Captain Quack through aliens, asteroids and gravity wells. Play an offline Android space shooter with touch controls, pickups, and local scores.',
 'Captain Quack is an arcade space shooter starring a duck in a spaceship. Steer through alien formations, avoid asteroids, and keep firing as each run gets harder. The game is for players looking for a straightforward touch-controlled arcade challenge, with scores and career ranks saved on their own Android device.',[
 ('Steer, shoot, and watch the whole screen','A touch joystick controls movement, and a separate fire button handles shooting. You need to make room for your ship while aiming at the enemies ahead. Alien formations, asteroids, and gravity wells change what you need to respond to. Clearing an entire formation earns a bonus, so choosing where to move can matter as much as holding the fire button.'),
@@ -50,7 +50,7 @@ add('captain-quack','Offline arcade space shooter for Android',
 ('Can I pause and change the sound?','Yes. Pause and resume your run, and use the music and sound settings when you want a quieter session.'),
 ('Are scores stored online?','No. The top-five scores and career ranks stay on your device. Removing app data or uninstalling removes local progress; there is no account-based score recovery.')],[(2,'Captain Quack firing at alien formations with touch joystick and fire button'),(3,'Captain Quack ship beside a gravity well during a space-shooter run'),(4,'Captain Quack facing a large alien enemy with score and level indicators')])
 
-add('dive-watch','Analog dive-style watch face for Wear OS',
+add('dive-watch','Dive Watch: Analog Watch Face for Wear OS',
 'Customize Dive Watch for Wear OS with steel, red or green themes, analog hands, a date window, and a battery gauge built into the left dial marker.',
 'Dive Watch is an analog watch face for Wear OS, with a dive-inspired dial and everyday watch information. It combines sculpted hands, luminous markers, and a date window with a battery indicator built into the left marker. It is for people who prefer a traditional dial while keeping a useful data field on the watch.',[
 ('Choose the dial that suits you','Classic steel, Red night, and Green lume are included. Customize the hands, choose a wave-textured or pure-black dial, and decide whether to show seconds or an additional digital time readout. The Classic steel theme has accent-color options. A separate always-on layout shows clear digital time and the date when your watch’s display settings allow it.'),
@@ -61,7 +61,7 @@ add('dive-watch','Analog dive-style watch face for Wear OS',
 ('Are all three themes included?','Yes. Classic steel, Red night, and Green lume are included in the purchase. There is no subscription or separate theme purchase.'),
 ('Why might a complication be empty?','Data availability depends on the watch and selected provider. Check the provider’s setup and permissions in watch settings. Some providers may require internet access to update.')],[(1,'Dive Watch Classic steel dial with analog hands, date, and lower steps field'),(3,'Dive Watch Red night theme with red luminous hands and markers'),(4,'Dive Watch Green lume theme with green hands and dial markers')])
 
-add('amelia-navigator','Aviation watch face for Wear OS',
+add('amelia-navigator','Amelia Navigator: Aviation Watch Face for Wear OS',
 'Amelia Navigator brings a navy aviation dial, brass details and an hourly aircraft animation to Wear OS, with digital time and available watch readings.',
 'Amelia Navigator is an aviation-style watch face for Wear OS. A navy dial, brass details, compass-style markings, and digital time draw on historical flight instruments. It is for people who enjoy that visual style and want everyday watch readings alongside an aircraft animation, without installing a separate phone interface.',[
 ('A flight-inspired dial for everyday timekeeping','The round layout combines large digital time with day, date, and seconds. Select a 12-hour or 24-hour display to match how you read time. Navigator Navy and Night Instrument dial styles provide different looks, with Brushed Brass or Monochrome accents around the ring. The quieter ambient display pares the face back for the watch’s always-on mode.'),
@@ -72,7 +72,7 @@ add('amelia-navigator','Aviation watch face for Wear OS',
 ('Is the compass ring a navigation tool?','No. The compass-style ring is decorative. Do not use the face to determine a bearing, plan a route, or replace a navigation instrument.'),
 ('Why are some health or weather readings missing?','The face displays available Wear OS data. Check the watch sensors, provider settings, and permissions; the face itself does not supply a separate health or weather service.')],[(1,'Amelia Navigator navy dial with 12-hour time, brass ring, and data fields'),(2,'Amelia Navigator minimal ambient display with digital time and date'),(4,'Amelia Navigator aircraft animation crossing the lower part of the dial')])
 
-add('summit-line','Mountain watch face for Wear OS',
+add('summit-line','Summit Line: Mountain Watch Face for Wear OS',
 'See digital time over mountain scenery with Summit Line for Wear OS. Choose landscapes, accents, a step-goal ring, and compatible data complications.',
 'Summit Line is a scenic digital watch face for Wear OS. Mountain backgrounds sit behind large time digits and everyday watch readings. It is for people who want an outdoor-inspired face for daily wear, with a choice of scenery and a step-goal ring rather than a full hiking or navigation app.',[
 ('Choose scenery and readable time','Pick Sunrise Hike, Whitney Trail, Alpine, Night Trail, or Pure Black. Automatic scenery changes with fixed morning, daytime, and night periods based on local time; it does not calculate sunrise or sunset at your location. Choose an accent color, show or hide seconds and the moon phase, and select a supported time format. A minimal ambient display keeps time visible on compatible watch settings.'),
@@ -83,7 +83,7 @@ add('summit-line','Mountain watch face for Wear OS',
 ('Can I use my health app’s step goal?','The ring uses native watch steps and a goal chosen inside Summit Line. It does not synchronize the goal from a separate health app.'),
 ('Why does a data field show a dash?','A reading may be unavailable from the watch or chosen provider. Check the provider’s installation, settings, and permissions. Some updates, such as weather, may need a connection.')],[(1,'Summit Line mountain scenery with digital time and lower data fields'),(2,'Summit Line minimal always-on time display'),(4,'Summit Line detailed mountain dial with moon phase, steps, and battery')])
 
-add('kenai-fishing-report','Kenai fishing reports on your Wear OS watch',
+add('kenai-fishing-report','Kenai Fishing Report: Salmon Counts on Wear OS',
 'View Kenai sockeye counts, Soldotna water temperature and Cape Kasilof tides on Wear OS with Kenai Fishing Report and its separate data companion.',
 'Kenai Fishing Report is a Wear OS watch face that places public fishing-report information beside the time. With the separate Kenai Report Data companion installed, it can show a sockeye count, river temperature, and the next predicted tide. It is designed for people who follow Kenai Peninsula reports and want a quick view on their watch.',[
 ('Install the face and its data companion','Install Kenai Report Data on the same watch, then select Kenai Fishing Report as the watch face. Assign the Kenai complication providers if they are not selected automatically. The companion retrieves the reports; the face arranges them on the dial. You do not need a phone app or studio account, but the watch needs internet access for fresh information.'),
@@ -94,7 +94,7 @@ add('kenai-fishing-report','Kenai fishing reports on your Wear OS watch',
 ('Does a fish count mean fishing is open?','No. Reports are unofficial context, not permission to fish or a catch forecast. Check current official regulations, emergency orders, and local conditions.'),
 ('Which devices are supported?','Wear OS 5 or newer with Watch Face Format 2 is required. The face is for Wear OS watches, not phones, Garmin, or Apple Watch.')],[(1,'Kenai Fishing Report dial showing sockeye count, time, river temperature, and tide'),(2,'Kenai Fishing Report minimal always-on time display'),(4,'Detailed Kenai watch dial with a stale count date and source labels')])
 
-add('launch-vector','Rocket launch countdown watch face for Wear OS',
+add('launch-vector','Launch Vector: Rocket Launch Countdown for Wear OS',
 'Follow a rocket launch countdown on Wear OS with Launch Vector. Add its free data companion for schedule updates alongside time and watch readings.',
 'Launch Vector is a free Wear OS watch face with a rocket launch countdown. It combines time and everyday watch readings with launch status and an animated rocket. It is for space enthusiasts who want to glance at a scheduled launch from their wrist while still using the watch for ordinary timekeeping.',[
 ('Add the launch-data companion','Install the free Launch Vector Data Provider companion so the face can refresh its schedule. The face and companion perform different jobs: one displays the countdown, while the other retrieves launch information. Fresh schedules require internet access. The companion keeps the latest successful schedule and refresh times on the watch, but a saved report cannot account for a schedule change while disconnected.'),
@@ -105,7 +105,7 @@ add('launch-vector','Rocket launch countdown watch face for Wear OS',
 ('Does this app track my location?','No. Neither app requests device location access. The launch service receives ordinary network metadata needed to deliver and operate its schedule service, as described in the privacy policy.'),
 ('Is it an official SpaceX app?','No. Launch Vector is independent and is not affiliated with or endorsed by SpaceX. Its launch-inspired design does not imply access to an operator’s internal schedule.')],[(1,'Launch Vector dial with rocket countdown, weather, and battery over an Earth horizon'),(3,'Launch Vector ambient mode with subdued time and countdown'),(4,'Launch Vector 24-hour display showing scheduled launch details')])
 
-add('private-eyes','Offline encrypted photo vault for Android',
+add('private-eyes','Private Eyes: Encrypted Photo Vault for Android',
 'Keep photos and files in an encrypted Android vault with Private Eyes. Capture privately, manage imported originals, and understand local recovery limits.',
 'Private Eyes is an encrypted photo and file vault for Android. It stores selected files on your phone and includes a camera for photos and short silent videos captured directly into the vault. It is for people who want deliberate control over private copies without a developer account or an online storage service.',[
 ('Import a copy, then manage the original','Choose files with Android’s file picker, review the import result, and open important copies to check them. Importing does not automatically hide or delete the source from Gallery, Downloads, or a cloud library. Optional original removal depends on the source provider and Android confirmation. Other copies can remain elsewhere, so review them separately instead of assuming one import protects every version.'),

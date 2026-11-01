@@ -8,7 +8,15 @@ Historical baseline: 16 public Google Play listings were verified on October 23,
 
 Alaska Gold Run has a full homepage game card and SEO page. The owner confirmed Play Console status ‘Changes in review,’ last updated October 24, 2026, for com.tripperdeelabs.alaskagoldrun. Its public listing is not available yet. Real desktop gameplay captures come from the release-preparation assets; see assets/apps/alaska-gold-run/provenance.json. Moments remains a development preview. Do not add purchase offers or label development assets as Play screenshots without a verified public listing.
 
-Kenai Report Data is a separate Wear OS companion app, not a phone app or watch face; its page links to the existing joint Kenai privacy policy. `/garmin/` now describes the verified Wear OS faces.
+Kenai Report Data is a separate Wear OS companion app, not a phone app or watch face; its page links to the existing joint Kenai privacy policy. `/wear-os/` is the canonical Wear OS category. The old `/garmin/` URL remains a noindex HTML redirect.
+
+## November 1, 2026: SEO and Play Store corrections
+
+- Product-first titles and headings identify released app pages; the homepage names Android apps, offline games and Wear OS watch faces.
+- Navigation and sitemap use `/wear-os/` instead of `/garmin/`; the legacy path uses an HTML redirect with noindex and canonical (not HTTP 301).
+- App pages already contain direct Google Play links; these were preserved.
+- US listing prices rechecked for Private Eyes, Salmon Tracker, Moto Thrash and Captain Quack: $0.99. Other prices were not rechecked.
+- Rebuild and test with `python3 scripts/build_catalog.py`, `python3 scripts/check_catalog.py` and `python3 scripts/check_seo.py`.
 
 ## Build and verify
 

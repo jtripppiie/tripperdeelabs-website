@@ -1,8 +1,8 @@
 """Reviewed SEO pilot copy. Promote into catalog generator only after owner approval."""
 PAGES = {
  'parked': {
-  'title': 'Find where I parked my car — Parked for Android',
-  'h1': 'Find where I parked my car',
+  'title': 'Parked: Find My Car and Parking Widget for Android',
+  'h1': 'Parked: Find My Car on Android',
   'description': 'Save your parking spot with Parked for Android. Use a home-screen widget, keep your pin on your phone, and open walking directions when you return.',
   'intro': 'Parked is an Android parking reminder for the moment you leave your car and the moment you need to find it again. Save one location from the app or its home-screen widget, then open walking directions back to that spot. It is useful for unfamiliar streets, shopping trips, airport lots, and busy event parking.',
   'sections': [
@@ -19,8 +19,8 @@ PAGES = {
   'screenshots': [(1, 'Parked home-screen widget with Find My Car and App controls'), (2, 'Parked light theme showing no saved car and the Park Here button'), (3, 'Parked dark theme with a saved location, directions, sharing, and clear controls')]
  },
  'salmon-tracker': {
-  'title': 'Alaska salmon counts — Salmon Tracker for Android',
-  'h1': 'Alaska salmon counts on your Android phone',
+  'title': 'Salmon Tracker: Alaska Salmon Counts for Android',
+  'h1': 'Salmon Tracker: Alaska Salmon Counts on Android',
   'description': 'Follow Alaska salmon counts for Kenai, Kasilof and Russian River runs. Compare daily totals and past seasons, with optional alerts and cached reports.',
   'intro': 'Salmon Tracker brings public Alaska salmon passage counts to your Android phone. Follow selected Kenai Peninsula runs, view daily counts alongside season totals, and compare reports across years. It is for anglers and anyone following the progress of a salmon run who wants those reports together in a phone app.',
   'sections': [
