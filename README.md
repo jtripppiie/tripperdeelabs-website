@@ -41,7 +41,7 @@ SoftwareApplication JSON-LD includes verified offers, OS, category, image, autho
 
 ## Email and Search Console
 
-Website contact links, support and privacy pages, feedback prompts, and site schema use `TripperDeeLabs@gmail.com` directly. These browser `mailto:` links open the visitor's email app; they do **not** forward messages addressed to `feedback@tripperdeelabs.com`. Domain-level forwarding or an inbox for that legacy address would require separate email/DNS-provider configuration. No DNS settings are changed by this website update.
+Website contact links, support and privacy pages, feedback prompts, and site schema use `tripperdeelabs@gmail.com` directly. These browser `mailto:` links open the visitor's email app; they do **not** forward messages addressed to `tripperdeelabs@gmail.com`. Domain-level forwarding or an inbox for that legacy address would require separate email/DNS-provider configuration. No DNS settings are changed by this website update.
 
 Public DNS inspection on October 23, 2026 found no MX or TXT answers; authoritative nameservers are ns-cloud-e1 through ns-cloud-e4.googledomains.com. This does not establish the registrar or the available account permissions.
 
@@ -161,3 +161,5 @@ Coming-soon game page, app-specific privacy policy and support guide: `/stick-sp
 ## Untangle Trails (November 2, 2026)
 
 `/untangle-trails/` presents the current native Android game as coming soon, with six physical-phone development screenshots, the rectangular board and original nautical art. No unverified Play download link or purchase offer is published. `/untangle-trails/privacy/` covers AdMob, UMP choices, Play Billing, local saves and support; `/untangle-trails/support/` explains play and troubleshooting. Sources: `scripts/untangle_pages.py`, `data/untangle-privacy.txt`, and `assets/apps/untangle-trails/`. The catalog generator adds its homepage entry and sitemap routes. No APKs, AABs or credentials are included. Catalog/SEO checks and browser overflow checks at 390px and 1280px passed; mobile page visually reviewed.
+
+Website contact rule (November 2, 2026): every email link and displayed studio support address uses `tripperdeelabs@gmail.com`. Preserve this in generators, policy sources, and published HTML. The catalog checker enforces mailto recipients.

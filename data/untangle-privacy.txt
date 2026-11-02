@@ -11,6 +11,6 @@ We do not operate a game account server or collect your puzzle moves on our own 
 
 You control Android backup and advertising preferences through device settings. Clearing app storage deletes local progress and settings; this cannot be undone. Eligible purchases can be restored through Google Play.
 
-For questions or requests about information you have sent us, contact feedback@tripperdeelabs.com.
+For questions or requests about information you have sent us, contact tripperdeelabs@gmail.com.
 
 Sharing opens the Android share chooser only when you select it. The app does not post automatically or read your contacts. Review actions open Google Play. Those services apply their own privacy policies.
