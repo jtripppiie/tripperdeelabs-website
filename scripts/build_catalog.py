@@ -89,6 +89,8 @@ from stick_sprint_pages import build as build_stick_sprint
 build_stick_sprint(page)
 from math_sprint_pages import build as build_math_sprint
 build_math_sprint(page)
+from untangle_pages import build as build_untangle
+build_untangle(page)
 # Preserve existing policy/support text, adding any missing canonical URLs.
 for p in ROOT.rglob('*.html'):
  if '.git' in p.parts:continue

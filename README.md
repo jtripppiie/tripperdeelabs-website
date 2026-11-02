@@ -157,3 +157,7 @@ Coming-soon game page, app-specific privacy policy and support guide: `/stick-sp
 ## Math Sprint Castle (October31,2026)
 
 `/math-sprint-castle/` is a development preview, with actual local gameplay/computer-mode screenshots and no public download or purchase offer. Home lists it under In development. The game, support and privacy pages use the shared studio footer. Copy lives in `scripts/seo_content.py` and `scripts/math_sprint_pages.py`; screenshot provenance is in `assets/apps/math-sprint-castle/provenance.json`. Current All Access is preview-only, not working billing.
+
+## Untangle Trails (November 2, 2026)
+
+`/untangle-trails/` presents the current native Android game as coming soon, with six physical-phone development screenshots, the rectangular board and original nautical art. No unverified Play download link or purchase offer is published. `/untangle-trails/privacy/` covers AdMob, UMP choices, Play Billing, local saves and support; `/untangle-trails/support/` explains play and troubleshooting. Sources: `scripts/untangle_pages.py`, `data/untangle-privacy.txt`, and `assets/apps/untangle-trails/`. The catalog generator adds its homepage entry and sitemap routes. No APKs, AABs or credentials are included. Catalog/SEO checks and browser overflow checks at 390px and 1280px passed; mobile page visually reviewed.

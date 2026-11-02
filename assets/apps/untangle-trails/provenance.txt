@@ -1,0 +1,5 @@
+Current icon: original project launcher art, art/v0.12/PROVENANCE.txt.
+Scenic artwork: art/v0.13/PROVENANCE.txt. Rectangular board: art/v0.16/PROVENANCE.txt. Original image-generation sources and prompts retained in project art/.
+Feature graphic: deterministic composition of existing scenic art and actual native puzzle-9 board crop; DejaVu Serif and Lato typography. Regenerate with tools/prepare_store_images.py.
+Screenshots: physical CPH2647 phone, matching v0.17.0 code18 debug UI, November 2 2026. Captured via qa/store_phone.py and storePreview instrumentation. Six app screens verified visually. Only system status/navigation bars cropped; no fabricated progress, marketing overlays or device frames. Raw images and crop bounds: qa/evidence/store-phone-v0.17/.
+Initial interrupted capture set discarded; current capture checks game window focus. Current screenshots show the owner's actual campaign progress. No synthetic wins or purchases.

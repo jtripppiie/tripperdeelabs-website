@@ -1,0 +1,16 @@
+Untangle Trails — Privacy
+TripperDeeLabs · Updated November 2, 2026
+
+Your puzzle progress, preferences, best scores and cached ad-free status are stored on your device. Android may back up app data under your system backup settings. No player account is required.
+
+Google AdMob provides advertising between completed rounds. Its SDK may process IP address (including approximate location), device/advertising identifiers, app and ad interactions and diagnostic information for advertising, analytics, fraud prevention and service operation. Consent choices are requested where required. Privacy Choices appears in Settings when Google makes it available. Buying Remove Ads stops ad requests; it does not erase information already processed by Google.
+
+Google Play processes the optional one-time Remove Ads purchase. The app receives purchase status and a purchase token, not your payment card details. Purchase checks require Google Play connectivity; puzzles work offline. Google’s privacy policy is at https://policies.google.com/privacy.
+
+We do not operate a game account server or collect your puzzle moves on our own server. If you email support, we receive the information you choose to send and use it to respond. Do not include sensitive information.
+
+You control Android backup and advertising preferences through device settings. Clearing app storage deletes local progress and settings; this cannot be undone. Eligible purchases can be restored through Google Play.
+
+For questions or requests about information you have sent us, contact feedback@tripperdeelabs.com.
+
+Sharing opens the Android share chooser only when you select it. The app does not post automatically or read your contacts. Review actions open Google Play. Those services apply their own privacy policies.

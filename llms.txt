@@ -56,3 +56,9 @@ Use individual product pages as the source for features, compatibility, screensh
 - [Android photo privacy guides](https://tripperdeelabs.com/private-eyes/guides/): Practical guides on photo encryption, imports, originals, capture, and recovery.
 - [Feedback](https://tripperdeelabs.com/feedback/): Contact the developer or send product feedback.
 
+
+## Untangle Trails
+
+- [Untangle Trails](https://tripperdeelabs.com/untangle-trails/): Coming-soon Android untangling puzzle game with 100 campaign puzzles and free play.
+- [Privacy](https://tripperdeelabs.com/untangle-trails/privacy/): Local progress, AdMob, consent and Google Play purchases.
+- [Support](https://tripperdeelabs.com/untangle-trails/support/): Gameplay guidance and contact.
