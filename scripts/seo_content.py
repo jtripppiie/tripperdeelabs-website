@@ -15,7 +15,7 @@ add('local-lore','Local Lore: Local History and Landmarks Near You',
 ('Can I search somewhere other than my current location?','Yes. Enter a town, address, or postal code to explore another area. This also gives you a way to use discovery without granting current-location access.'),
 ('Are the stories sourced?','Entries link to their sources so you can investigate further. Local legends and historical records are different kinds of material; read the linked context before treating a story as established fact.'),
 ('Does Local Lore work entirely offline?','No. New discoveries, maps, and external source pages need internet access. Favorites and a recently retrieved area cache are stored locally, but they are not a complete offline travel guide.'),
-('How can I report a missing place?','Use Send feedback in the app or email feedback@tripperdeelabs.com. Include the place and a useful source link. Suggestions are reviewed rather than published automatically.')],[(1,'Local Lore dark theme with nearby discoveries and theme filters'),(2,'Local Lore light theme showing history results for San Francisco'),(4,'Local Lore map with discovery markers around the San Francisco Bay area')])
+('How can I report a missing place?','Use Send feedback in the app or email TripperDeeLabs@gmail.com. Include the place and a useful source link. Suggestions are reviewed rather than published automatically.')],[(1,'Local Lore dark theme with nearby discoveries and theme filters'),(2,'Local Lore light theme showing history results for San Francisco'),(4,'Local Lore map with discovery markers around the San Francisco Bay area')])
 
 add('roboball','RoboBall: Offline Arcade Basketball for Android',
 'Play RoboBall offline on Android. Time your release, aim at moving hoops, practice trick shots, and save your stars and basketball scores on your phone.',
@@ -162,7 +162,7 @@ add('stick-sprint','Stick Sprint — Offline stick-figure runner for Android',
 ('Can I download Stick Sprint now?','A public download is not available yet. Check this page for the Google Play release link when the game launches.'),
 ('Does it need internet to play?','No. Gameplay is offline. Opening the website or sharing through another app uses that app and may require a connection.'),
 ('Will my progress move to another phone?','There is no game account or cloud-sync service. Progress stays in local app storage; uninstalling or clearing storage can remove it.'),
-('How do I get help or send feedback?','Email feedback@tripperdeelabs.com with Stick Sprint in the subject. Include your device model, Android version and what happened. Please do not send passwords or other sensitive information.')],[(1,'Grid Run with the themed HUD and Light Speed — Android tablet development build 0.13.0; device overlays visible'),(2,'Monochrome course and articulated runner — earlier Android development build 0.8.2; HUD has since changed')])
+('How do I get help or send feedback?','Email TripperDeeLabs@gmail.com with Stick Sprint in the subject. Include your device model, Android version and what happened. Please do not send passwords or other sensitive information.')],[(1,'Grid Run with the themed HUD and Light Speed — Android tablet development build 0.13.0; device overlays visible'),(2,'Monochrome course and articulated runner — earlier Android development build 0.8.2; HUD has since changed')])
 PAGES['stick-sprint']['status']='Coming soon to Google Play · In development'
 
 

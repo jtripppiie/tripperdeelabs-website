@@ -41,6 +41,8 @@ SoftwareApplication JSON-LD includes verified offers, OS, category, image, autho
 
 ## Email and Search Console
 
+Website contact links, support and privacy pages, feedback prompts, and site schema use `TripperDeeLabs@gmail.com` directly. These browser `mailto:` links open the visitor's email app; they do **not** forward messages addressed to `feedback@tripperdeelabs.com`. Domain-level forwarding or an inbox for that legacy address would require separate email/DNS-provider configuration. No DNS settings are changed by this website update.
+
 Public DNS inspection on October 23, 2026 found no MX or TXT answers; authoritative nameservers are ns-cloud-e1 through ns-cloud-e4.googledomains.com. This does not establish the registrar or the available account permissions.
 
 No DNS records have been changed. Email routing requires the destination Gmail address and access to the actual DNS/forwarding provider. Obtain that provider's exact MX priorities/targets and any required TXT values, and show the exact additions/removals before applying them. Preserve the website's A/CNAME records.

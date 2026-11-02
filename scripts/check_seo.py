@@ -9,7 +9,7 @@ ROOT=Path(__file__).resolve().parents[1];BASE='https://tripperdeelabs.com'
 apps={a['slug']:a for a in json.loads((ROOT/'data/apps.json').read_text())}
 urls={n.text for n in ET.parse(ROOT/'sitemap.xml').iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
 home=BeautifulSoup((ROOT/'index.html').read_text(),'html.parser')
-assert home.select_one('a[href="mailto:feedback@tripperdeelabs.com"]')
+assert home.select_one('a[href="mailto:TripperDeeLabs@gmail.com"]')
 assert "Android Apps, Offline Games" in home.h1.get_text(" ",strip=True)
 assert home.select_one('a[href="/wear-os/"]')
 assert BASE+"/wear-os/" in urls and BASE+"/garmin/" not in urls
