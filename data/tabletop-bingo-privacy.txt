@@ -1,0 +1,16 @@
+Tabletop Bingo — Privacy policy
+TripperDeeLabs · Updated November 3, 2026
+
+Tabletop Bingo stores your nickname, your current solo card and called numbers, and your in-game settings on your device. No player account is required. Android may back up app data according to your system settings and device backup choices.
+
+Multiplayer uses Bluetooth to connect nearby devices directly. Bluetooth play does not send your game, nickname or card to TripperDeeLabs or to a game server. Your phone's Bluetooth and location permissions are used only to find and connect to nearby players, as Android requires for Bluetooth scanning.
+
+The Android app includes Google AdMob advertising and Google's User Messaging Platform for consent. Google's SDK may process IP address (including approximate location), advertising/device identifiers, app and ad interactions, and diagnostic information for advertising, analytics, fraud prevention and service operation. Consent information is refreshed at launch, and privacy choices can be reopened from the app when Google requires them in your region. Development builds use Google's demo advertisements.
+
+Google Play handles the optional one-time Remove Ads purchase. The app receives purchase state and purchase tokens, not your payment card details. Purchase availability and restoration require Google Play and the account used to buy the item.
+
+TripperDeeLabs does not run player accounts for this game. Website analytics are covered separately by the website privacy policy.
+
+To remove the app's local data, uninstall it or clear its storage in Android settings. Uninstalling removes the saved solo card and nickname from your device.
+
+Questions about this policy can be sent to tripperdeelabs@gmail.com.
