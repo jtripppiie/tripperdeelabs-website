@@ -91,6 +91,8 @@ from math_sprint_pages import build as build_math_sprint
 build_math_sprint(page)
 from untangle_pages import build as build_untangle
 build_untangle(page)
+from origins_pages import build as build_origins
+build_origins(page)
 # Preserve existing policy/support text, adding any missing canonical URLs.
 for p in ROOT.rglob('*.html'):
  if '.git' in p.parts:continue

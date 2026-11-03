@@ -1,0 +1,17 @@
+{
+  "version": "0.3.1",
+  "version_code": 4,
+  "source": "physical Android CPH2647, 1080x2376, native Canvas renderer",
+  "capture_package": "com.tripperdeelabs.shiftgrid.qa",
+  "release_package": "com.tripperdeelabs.shiftgrid",
+  "fixture": "isolated QA saves; real touch inputs, no owner save edits",
+  "matches_release": "same source/resources; QA debug signing/application suffix and rapid demo-ad gate differ from release",
+  "reviewed": true,
+  "screenshots": [
+    "01-gameplay.png",
+    "02-home.png",
+    "03-game-modes.png",
+    "04-daily.png",
+    "05-how-to-play.png"
+  ]
+}

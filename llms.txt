@@ -62,3 +62,5 @@ Use individual product pages as the source for features, compatibility, screensh
 - [Untangle Trails](https://tripperdeelabs.com/untangle-trails/): Coming-soon Android untangling puzzle game with 100 campaign puzzles and free play.
 - [Privacy](https://tripperdeelabs.com/untangle-trails/privacy/): Local progress, AdMob, consent and Google Play purchases.
 - [Support](https://tripperdeelabs.com/untangle-trails/support/): Gameplay guidance and contact.
+
+- [Origins: Chain Reaction](https://tripperdeelabs.com/origins/): Android block puzzle in development; [privacy](https://tripperdeelabs.com/origins/privacy/) and [support](https://tripperdeelabs.com/origins/support/).

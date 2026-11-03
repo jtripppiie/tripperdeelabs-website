@@ -1,0 +1,12 @@
+Origins: Chain Reaction — Privacy policy
+TripperDeeLabs · Updated November 3, 2026
+
+Origins stores your current puzzle, score, best score, power-ups and tutorial state on your device. No player account is required. Android may back up your gameplay preferences according to your system settings. Cached purchase status is excluded from the app's configured backup and transfer rules.
+
+The Android app includes Google AdMob advertising and Google's User Messaging Platform for consent. Google's SDK may process IP address (including approximate location), advertising/device identifiers, app and ad interactions, and diagnostic information for advertising, analytics, fraud prevention and service operation. The app requests non-personalized ads; this does not mean that no information is processed. Consent information is refreshed at launch and privacy choices can be reopened from Settings when Google requires them in your region. Development builds use Google's demo advertisements.
+
+Google Play handles the optional one-time Remove Ads purchase. The app receives purchase state and purchase tokens, not your payment card details. Purchase availability and restoration require Google Play and the account used for the purchase. Gameplay works offline. An owned purchase prevents new ad requests; it does not delete information Google already processed. Google applies its own privacy policy: https://policies.google.com/privacy.
+
+TripperDeeLabs does not operate a gameplay account server or upload your board or scores to its own server. If you contact support, we receive the information you choose to send and use it to respond. Please do not send payment details, passwords or other sensitive information.
+
+You can manage Android backup and advertising preferences in device settings. Clearing app storage or uninstalling can delete local gameplay data; avoid doing this when troubleshooting. Purchases can be restored through Google Play. For questions or requests concerning support information you have sent us, email tripperdeelabs@gmail.com.
