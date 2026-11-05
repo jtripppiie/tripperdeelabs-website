@@ -95,6 +95,8 @@ from origins_pages import build as build_origins
 build_origins(page)
 from tabletop_bingo_pages import build as build_tabletop_bingo
 build_tabletop_bingo(page)
+from tower_breadcrumbs_pages import build as build_tower_breadcrumbs
+build_tower_breadcrumbs(page)
 # Preserve existing policy/support text, adding any missing canonical URLs.
 for p in ROOT.rglob('*.html'):
  if '.git' in p.parts:continue

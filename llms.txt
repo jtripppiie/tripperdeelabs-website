@@ -43,6 +43,8 @@ Use individual product pages as the source for features, compatibility, screensh
 
 ## In development
 
+- [Tower Breadcrumbs](https://tripperdeelabs.com/tower-breadcrumbs/): Offline GPS and reception breadcrumbs for Android, in development; [privacy](https://tripperdeelabs.com/tower-breadcrumbs/privacy/) and [support](https://tripperdeelabs.com/tower-breadcrumbs/support/).
+
 - [Alaska Gold Run](https://tripperdeelabs.com/alaska-gold-run/): Alaska-themed runner; public Google Play availability not verified.
 - [Math Sprint Castle](https://tripperdeelabs.com/math-sprint-castle/): Math puzzles and castle-themed runner project.
 - [Stick Sprint](https://tripperdeelabs.com/stick-sprint/): Offline stick-figure running game project.
