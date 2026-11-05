@@ -99,6 +99,8 @@ from tower_breadcrumbs_pages import build as build_tower_breadcrumbs
 build_tower_breadcrumbs(page)
 from clap_counter_pages import build as build_clap_counter
 build_clap_counter(page)
+from just_remind_me_pages import build as build_just_remind_me
+build_just_remind_me(page)
 # Preserve existing policy/support text, adding any missing canonical URLs.
 for p in ROOT.rglob('*.html'):
  if '.git' in p.parts:continue

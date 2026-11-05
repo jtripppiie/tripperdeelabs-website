@@ -72,3 +72,5 @@ Use individual product pages as the source for features, compatibility, screensh
 - [Clap Counter](https://tripperdeelabs.com/clap-counter/): Android sound counter with live dBFS graph and local history. Not yet listed here for public download.
 - [Clap Counter privacy](https://tripperdeelabs.com/clap-counter/privacy/)
 - [Clap Counter support](https://tripperdeelabs.com/clap-counter/support/)
+
+- [Just Remind Me](https://tripperdeelabs.com/just-remind-me/): Android voice reminders and widget, in development. Planned $0.99 paid download with no ads. [Privacy](https://tripperdeelabs.com/just-remind-me/privacy/) and [support](https://tripperdeelabs.com/just-remind-me/support/).

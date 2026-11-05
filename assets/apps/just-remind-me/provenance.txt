@@ -1,0 +1,1 @@
+Icon: built-in image_gen artwork based on owner-supplied reference; original in android-reminder/source/artwork. Screen: actual Android 16 emulator capture of development UI, November 5, 2026; not a Play screenshot. No spoken-input success is implied.
