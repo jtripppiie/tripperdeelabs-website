@@ -43,7 +43,8 @@ for a in apps:
 for p in root.rglob('*.html'):
  s=BeautifulSoup(p.read_text(),'html.parser');check(len(s.select('link[rel="canonical"]'))==1,str(p)+' canonical')
  for link in s.select('a[href^="mailto:"]'):
-  check(link['href'][7:].split('?')[0]=='tripperdeelabs@gmail.com',str(p)+' unexpected email recipient')
+  expected_email = 'feedback@tripperdeelabs.com' if p.relative_to(root).as_posix() == 'tracker/privacy/index.html' else 'tripperdeelabs@gmail.com'
+  check(link['href'][7:].split('?')[0]==expected_email,str(p)+' unexpected email recipient')
  for tag,attr in [('a','href'),('img','src'),('link','href'),('script','src')]:
   for node in s.select(f'{tag}[{attr}]'):
    url=urlsplit(node[attr])
