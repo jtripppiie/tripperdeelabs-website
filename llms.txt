@@ -66,3 +66,9 @@ Use individual product pages as the source for features, compatibility, screensh
 - [Support](https://tripperdeelabs.com/untangle-trails/support/): Gameplay guidance and contact.
 
 - [Origins: Chain Reaction](https://tripperdeelabs.com/origins/): Android block puzzle in development; [privacy](https://tripperdeelabs.com/origins/privacy/) and [support](https://tripperdeelabs.com/origins/support/).
+
+## Clap Counter — development preview
+
+- [Clap Counter](https://tripperdeelabs.com/clap-counter/): Android sound counter with live dBFS graph and local history. Not yet listed here for public download.
+- [Clap Counter privacy](https://tripperdeelabs.com/clap-counter/privacy/)
+- [Clap Counter support](https://tripperdeelabs.com/clap-counter/support/)
