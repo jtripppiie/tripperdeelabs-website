@@ -70,7 +70,7 @@ for a in apps:
 groups=[('Phone games',[a for a in apps if a['category']=='GameApplication']),('Phone apps',[a for a in apps if a['os']=='Android' and a['category']!='GameApplication']),('Wear OS watch faces',[a for a in apps if a['os']=='Wear OS' and a['slug']!='kenai-report-data']),('Wear OS companion apps',[a for a in apps if a['slug']=='kenai-report-data'])]
 body='<section class="catalog-hero"><p class="eyebrow">Independent Android development</p><h1>Android Apps, Offline Games<br>and Wear OS Watch Faces</h1><p class="lead">Explore TripperDeeLabs games, phone utilities and Wear OS watch faces.</p><a href="#apps">Browse the apps ↓</a></section><div id="apps">'
 for name,items in groups:body+='<section><h2>'+name+'</h2><div class="catalog-grid">'+''.join(card(a) for a in items)+'</div></section>'
-body+='</div><section><h2>Other projects</h2><p><a href="/alaska-gold-run/">Alaska Gold Run</a> · <a href="/moments/">Moments</a></p></section><section id="about"><h2>About TripperDeeLabs</h2><p>I’m the independent developer behind TripperDeeLabs. I make Android games, practical phone apps and Wear OS watch faces, with projects ranging from Alaska fish reports to retro arcade games.</p><p>For questions or feedback, visit the <a href="/feedback/">feedback page</a>.</p></section>'
+body+='</div><section><h2>Other projects</h2><p><a href="/familylink/">FamilyLink Offline Chat (in development)</a> · <a href="/alaska-gold-run/">Alaska Gold Run</a> · <a href="/moments/">Moments</a></p></section><section id="about"><h2>About TripperDeeLabs</h2><p>I’m the independent developer behind TripperDeeLabs. I make Android games, practical phone apps and Wear OS watch faces, with projects ranging from Alaska fish reports to retro arcade games.</p><p>For questions or feedback, visit the <a href="/feedback/">feedback page</a>.</p></section>'
 page('/','Android Apps, Games and Wear OS Watch Faces','Explore TripperDeeLabs Android games, useful phone apps and Wear OS watch faces, with screenshots, Google Play links and privacy information.',body)
 faces=groups[2][1]
 page('/wear-os/','Wear OS Watch Faces','Explore TripperDeeLabs watch faces for Wear OS, including Dive Watch, Summit Line, Amelia Navigator, Kenai Fishing Report and Launch Vector.','<section class="catalog-hero"><h1>Wear OS watch faces</h1><p>These current Google Play releases are for compatible Wear OS watches. They do not run on Garmin watches.</p></section><div class="catalog-grid">'+''.join(card(a).replace('<h3>','<h2>').replace('</h3>','</h2>') for a in faces)+'</div><p><a href="/kenai-report-data/">Kenai Report Data companion app</a></p>')
@@ -101,6 +101,8 @@ from clap_counter_pages import build as build_clap_counter
 build_clap_counter(page)
 from just_remind_me_pages import build as build_just_remind_me
 build_just_remind_me(page)
+from familylink_pages import build as build_familylink
+build_familylink(page)
 # Preserve existing policy/support text, adding any missing canonical URLs.
 for p in ROOT.rglob('*.html'):
  if '.git' in p.parts:continue

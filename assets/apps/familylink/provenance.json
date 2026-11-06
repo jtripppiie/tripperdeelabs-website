@@ -1,0 +1,65 @@
+{
+  "app": "FamilyLink Offline Chat",
+  "version": "0.39.0 (73)",
+  "date": "2026-11-06",
+  "screenshots": [
+    {
+      "file": "screenshots/01-home.png",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "8b877620a72e55f53c31f7e1a9e6e0cde112c3e6a2ef9876c431b9ab87b9ee76",
+      "source": "validation/capture-light-home.png"
+    },
+    {
+      "file": "screenshots/02-chat.png",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "22a334750df1084def81f633e701f3c32694beb2e7823a032bfa7e5cf44de8b8",
+      "source": "validation/capture-light-chat.png"
+    },
+    {
+      "file": "screenshots/03-settings.png",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "398c7fb60aba1d183413ac56cec4d7d4d22b8bc8e638379ee2f80abc0040b4b6",
+      "source": "validation/capture-light-appearance.png"
+    },
+    {
+      "file": "screenshots/04-meeting.png",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "ac39069c3f1a3114e1d701056cc880dbc0a1faf0e52e65be8c38bfd228f8869e",
+      "source": "validation/capture-light-meeting.png"
+    },
+    {
+      "file": "screenshots/05-locations.png",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "3b0e5a8800c7a27fa6b33706efed3555867cf91ede49d4129c76c953e9c46f5e",
+      "source": "validation/capture-light-locations.png"
+    },
+    {
+      "file": "screenshots/06-dark-home.png",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "a1f1243eb29b69950de05295062847f90678988faf59dadd2ee2489d4f82f05d",
+      "source": "validation/capture-dark-home.png"
+    }
+  ],
+  "capture": "Actual Android API36 emulator display screenshots of isolated review build from the same source as release. Synthetic room/profile/message/meeting/location fixtures. No UI compositing. Screenshots do not verify radio or field GPS operation. Signed release installed and launched separately.",
+  "icon": "Existing adaptive launcher foreground/background rendered by Android to a square 512px PNG.",
+  "feature_graphic": "Original Pillow typography layout using existing friends_family_network_wide.png; no invented app screen.",
+  "status": "Development preview, not public Play availability."
+}
