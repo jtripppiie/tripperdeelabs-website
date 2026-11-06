@@ -1,0 +1,10 @@
+{
+  "version": "0.3.0 (7)",
+  "date": "2026-11-06",
+  "sources": {
+    "icon.webp": "/home/jt/projects/android-air-hockey/app/src/main/res/drawable-nodpi/launcher.png",
+    "home.webp": "/home/jt/projects/android-air-hockey/verification/0.3.0/phone-device-home-final.png",
+    "game.webp": "/home/jt/projects/android-air-hockey/verification/0.3.0/phone-device-controls-final.png"
+  },
+  "notes": "Actual physical OnePlus development screenshots and existing generated app artwork. Not Play listing assets."
+}

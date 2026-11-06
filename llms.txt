@@ -76,3 +76,5 @@ Use individual product pages as the source for features, compatibility, screensh
 - [Just Remind Me](https://tripperdeelabs.com/just-remind-me/): Android voice reminders and widget, in development. Planned $0.99 paid download with no ads. [Privacy](https://tripperdeelabs.com/just-remind-me/privacy/) and [support](https://tripperdeelabs.com/just-remind-me/support/).
 
 - [NearCrew Offline Chat](https://tripperdeelabs.com/nearcrew/): Development preview of nearby Bluetooth/local Wi-Fi group messaging; planned $0.99 once, no ads. Not yet on Google Play. [Privacy](https://tripperdeelabs.com/nearcrew/privacy/) · [Support](https://tripperdeelabs.com/nearcrew/support/).
+
+- [Neon Air Hockey](https://tripperdeelabs.com/neon-air-hockey/): Android air hockey in development; solo and same-screen play. [Privacy](https://tripperdeelabs.com/neon-air-hockey/privacy/) · [Support](https://tripperdeelabs.com/neon-air-hockey/support/).
