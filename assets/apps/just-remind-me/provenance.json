@@ -1,0 +1,68 @@
+{
+  "app": "Just Remind Me",
+  "version": "0.1.4 (5)",
+  "date": "2026-11-06",
+  "screenshots": [
+    {
+      "file": "en-US/phone-screenshots/01-home.png",
+      "source": "play-store/releases/0.1.4-vc5/validation/final-home.png",
+      "sha256": "f7f19d8d486a3590efe4adc70662e535b04db90d7bfe7f094f65333b24db7768",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "capture": "Android API36 QA emulator, actual signed 0.1.4 (5); sample recognized text injected for confirmation/upcoming; no UI compositing or invented screens"
+    },
+    {
+      "file": "en-US/phone-screenshots/02-confirmation.png",
+      "source": "play-store/releases/0.1.4-vc5/validation/final-confirmation.png",
+      "sha256": "e2e243d4878668b222f5faa164851f8b93d1c06370e30ecbc4577a8b2d217b4c",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "capture": "Android API36 QA emulator, actual signed 0.1.4 (5); sample recognized text injected for confirmation/upcoming; no UI compositing or invented screens"
+    },
+    {
+      "file": "en-US/phone-screenshots/03-upcoming.png",
+      "source": "play-store/releases/0.1.4-vc5/validation/final-upcoming.png",
+      "sha256": "519e8d1a1a6ce1e2e4b277db5cae478e58bf9947711867e22430172a96048fd3",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "capture": "Android API36 QA emulator, actual signed 0.1.4 (5); sample recognized text injected for confirmation/upcoming; no UI compositing or invented screens"
+    },
+    {
+      "file": "en-US/phone-screenshots/04-settings.png",
+      "source": "play-store/releases/0.1.4-vc5/validation/final-settings.png",
+      "sha256": "73ea75267e6d19874a20ba195146fbc0a4c0596760bdae424c598bd16d0addc7",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "capture": "Android API36 QA emulator, actual signed 0.1.4 (5); sample recognized text injected for confirmation/upcoming; no UI compositing or invented screens"
+    },
+    {
+      "file": "en-US/phone-screenshots/05-assistant-setup.png",
+      "source": "play-store/releases/0.1.4-vc5/validation/final-assistant-setup.png",
+      "sha256": "d2447b6dc4d2b4558d1e688bad2b8c0d8fbdbf89108b94e29071e4023bf2c57e",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "capture": "Android API36 QA emulator, actual signed 0.1.4 (5); sample recognized text injected for confirmation/upcoming; no UI compositing or invented screens"
+    },
+    {
+      "file": "en-US/phone-screenshots/06-examples.png",
+      "source": "play-store/releases/0.1.4-vc5/validation/final-examples.png",
+      "sha256": "5257b7bafd4d07805be782296aff7bd60824cca57065120e1842056e38075847",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "capture": "Android API36 QA emulator, actual signed 0.1.4 (5); sample recognized text injected for confirmation/upcoming; no UI compositing or invented screens"
+    }
+  ],
+  "status": "Pre-release screenshots; app not yet publicly listed on Google Play"
+}
