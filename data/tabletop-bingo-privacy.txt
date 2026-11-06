@@ -1,7 +1,7 @@
 Tabletop Bingo — Privacy policy
-TripperDeeLabs · Updated November 3, 2026
+TripperDeeLabs · Updated November 6, 2026
 
-Tabletop Bingo stores your nickname, your current solo card and called numbers, and your in-game settings on your device. No player account is required. Android may back up app data according to your system settings and device backup choices.
+Tabletop Bingo stores your nickname, your current solo card and called numbers, and your in-game settings on your device. No player account is required. The app disables Android automatic app backup. Device-manufacturer transfer behavior may vary.
 
 Multiplayer uses Bluetooth to connect nearby devices directly. Bluetooth play does not send your game, nickname or card to TripperDeeLabs or to a game server. Your phone's Bluetooth and location permissions are used only to find and connect to nearby players, as Android requires for Bluetooth scanning.
 
