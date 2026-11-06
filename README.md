@@ -167,3 +167,7 @@ Website contact rule (November 2, 2026): every email link and displayed studio s
 ## Neon Air Hockey — November 6, 2026
 
 Product, privacy and support at `/neon-air-hockey/`, `/neon-air-hockey/privacy/` and `/neon-air-hockey/support/`. Maintained source: `scripts/neon_air_hockey_pages.py`. Homepage discovery, sitemap and llms directory included. Uses real 0.3.0 phone screenshots and existing app art; provenance in `assets/apps/neon-air-hockey/`. Coming soon, no download/price claims; Bluetooth explicitly still being tested. Current test-ad practices described. Catalog/SEO checks and six browser route/viewport checks passed.
+
+## Tank Wars — November 6, 2026
+
+Development product/privacy/support at `/tank-wars/`, `/tank-wars/privacy/`, `/tank-wars/support/`. Maintained source: `scripts/tank_wars_pages.py`. Uses generated raster art and actual 0.1.0 emulator captures; source provenance under `assets/apps/tank-wars/`. No public Play link, price or real-radio validation claim. Catalog/SEO checks and all three routes at 390px/1280px passed browser overflow/image checks.

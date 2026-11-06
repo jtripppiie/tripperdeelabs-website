@@ -1,0 +1,10 @@
+{
+  "version": "0.1.0 (1)",
+  "date": "2026-11-06",
+  "sources": {
+    "art.webp": "/home/jt/projects/android-tank-wars/artwork/tank-wars-original.png",
+    "home.webp": "/home/jt/projects/android-tank-wars/verification/0.1.0/phone-home.png",
+    "game.webp": "/home/jt/projects/android-tank-wars/verification/0.1.0/phone-projectile.png"
+  },
+  "notes": "Actual emulator development captures; projectile frame temporarily frozen by test harness for capture. Original generated raster art retained in Android project."
+}
