@@ -1,0 +1,65 @@
+{
+  "app": "NearCrew Offline Chat",
+  "version": "0.40.0 (74)",
+  "date": "2026-11-06",
+  "screenshots": [
+    {
+      "file": "screenshots/01-home.png",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "ad25296a8524c2c6df2a2d0ae4d8db43d38bc93002808684e0d64ea481aed4e0",
+      "source": "validation/capture-light-home.png"
+    },
+    {
+      "file": "screenshots/02-chat.png",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "66a048d7969f98b826ce367648a7c0a8e8e7ac2e66b211fa5f87249e081ef2ef",
+      "source": "validation/capture-light-chat.png"
+    },
+    {
+      "file": "screenshots/03-settings.png",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "6fc02a30246b9c8d40f08ecf926755280fde62a0275cf8c384966b61876607ee",
+      "source": "validation/capture-light-appearance.png"
+    },
+    {
+      "file": "screenshots/04-meeting.png",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "aa200f18e5a55fabf908fe6d5001ef30dddda8d2d3be2d4606ceebe0c742f2ed",
+      "source": "validation/capture-light-meeting.png"
+    },
+    {
+      "file": "screenshots/05-locations.png",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "06179f15eb14ea126ac8ab5306c4fd3e15f7d2e050af87b338af0abc41772216",
+      "source": "validation/capture-light-locations.png"
+    },
+    {
+      "file": "screenshots/06-dark-home.png",
+      "dimensions": [
+        1080,
+        2400
+      ],
+      "sha256": "378df4ad92d20abacb4d96460cb10c930dd6cc490e14f81b1dd450cf7e3c9db2",
+      "source": "validation/capture-dark-home.png"
+    }
+  ],
+  "capture": "Actual API36 QA emulator display of isolated review build, same main source as signed release. Synthetic adult names Alex/Sam and sample messages/meeting/coordinates. No composited UI or radio qualification claim. Signed release and native age flow tested separately.",
+  "icon": "Existing abstract group/chat launcher mark rendered by Android; no child/family illustration.",
+  "feature_graphic": "Original typography layout with actual launcher mark; no generated mock screen.",
+  "status": "Adult18+ development preview, not a public Play listing or legal clearance."
+}
