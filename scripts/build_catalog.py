@@ -95,6 +95,8 @@ from origins_pages import build as build_origins
 build_origins(page)
 from neon_air_hockey_pages import build as build_neon_air_hockey
 build_neon_air_hockey(page)
+from bluetooth_racing_pages import build as build_bluetooth_racing
+build_bluetooth_racing(page)
 from tank_wars_pages import build as build_tank_wars
 build_tank_wars(page)
 from tabletop_bingo_pages import build as build_tabletop_bingo

@@ -80,3 +80,5 @@ Use individual product pages as the source for features, compatibility, screensh
 - [Neon Air Hockey](https://tripperdeelabs.com/neon-air-hockey/): Android air hockey in development; solo and same-screen play. [Privacy](https://tripperdeelabs.com/neon-air-hockey/privacy/) · [Support](https://tripperdeelabs.com/neon-air-hockey/support/).
 
 - [Tank Wars](https://tripperdeelabs.com/tank-wars/): Android artillery game in development, with destructible terrain and offline local battles. [Privacy](https://tripperdeelabs.com/tank-wars/privacy/) · [Support](https://tripperdeelabs.com/tank-wars/support/).
+
+- [Bluetooth Drag Racing](https://tripperdeelabs.com/bluetooth-racing/): Android drag racer in development; offline solo runs, garages and ghosts. Bluetooth is in testing. [Privacy](https://tripperdeelabs.com/bluetooth-racing/privacy/) · [Support](https://tripperdeelabs.com/bluetooth-racing/support/).
