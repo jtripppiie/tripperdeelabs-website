@@ -1,10 +1,10 @@
 {
-  "version": "0.2.0 (2)",
+  "version": "0.3.0 (4)",
   "date": "2026-11-06",
   "sources": {
     "art.webp": "/home/jt/projects/android-tank-wars/artwork/tank-wars-forest-desert.png",
-    "home.webp": "/home/jt/projects/android-tank-wars/verification/0.2.0/phone-home.png",
-    "game.webp": "/home/jt/projects/android-tank-wars/verification/0.2.0/phone-projectile.png"
+    "home.webp": "/home/jt/projects/android-tank-wars/verification/0.3.0/phone-home.png",
+    "game.webp": "/home/jt/projects/android-tank-wars/verification/0.3.0/phone-solo.png"
   },
-  "notes": "Actual emulator development captures; projectile frame temporarily frozen by test harness for capture. Original generated raster art retained in Android project."
+  "notes": "Actual emulator menu and aiming-screen captures. Generated raster artwork retained in the Android project."
 }
