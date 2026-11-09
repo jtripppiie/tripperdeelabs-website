@@ -1,0 +1,34 @@
+{
+  "app": "Survival",
+  "version": "0.9.1",
+  "version_code": 12,
+  "capture": "Native PixelCopy of running MainActivity window on physical Lenovo TB710FU, Android 16",
+  "phone": {
+    "size": [
+      1080,
+      1920
+    ],
+    "density": 420,
+    "note": "phone-sized viewport on tablet, not physical phone"
+  },
+  "tablet": {
+    "size": [
+      3200,
+      1800
+    ],
+    "density": 400,
+    "note": "16:9 landscape viewport on tablet"
+  },
+  "script": "app/src/androidTest/java/com/tripperdeelabs/survival/StoreCaptureTest.kt",
+  "screens": [
+    "Home",
+    "Library",
+    "Lost outdoors guide",
+    "Bag checklist"
+  ],
+  "fixture": "existing local app; no generated content or substituted UI; screenshot avoids personal location",
+  "matches_release": "same captured UI; final uncaptured canning guide title corrected afterward",
+  "processing": "PixelCopy excludes other-app overlays and system window content; RGB PNG conversion only, no invented UI",
+  "reviewed": true,
+  "ai_generated": false
+}

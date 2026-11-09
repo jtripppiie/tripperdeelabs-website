@@ -171,3 +171,7 @@ Product, privacy and support at `/neon-air-hockey/`, `/neon-air-hockey/privacy/`
 ## Tank Wars — November 6, 2026
 
 Development product/privacy/support at `/tank-wars/`, `/tank-wars/privacy/`, `/tank-wars/support/`. Maintained source: `scripts/tank_wars_pages.py`. Uses generated raster art and actual 0.1.0 emulator captures; source provenance under `assets/apps/tank-wars/`. No public Play link, price or real-radio validation claim. Catalog/SEO checks and all three routes at 390px/1280px passed browser overflow/image checks.
+
+## Survival — November 9, 2026
+
+Product, privacy and support routes are maintained by `scripts/survival_pages.py`. Planned US$0.99 upfront, adults18+, no ads/IAP; coming soon, no store badge or offer schema. Actual native preview screenshots and AI-generated icon/feature art come from Survival 0.9.1 (12), with capture provenance retained. Optional online provider/location processing is disclosed. No app binary, private signing material or owner location is published.
