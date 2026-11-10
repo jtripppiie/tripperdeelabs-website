@@ -175,3 +175,7 @@ Development product/privacy/support at `/tank-wars/`, `/tank-wars/privacy/`, `/t
 ## Survival — November 9, 2026
 
 Product, privacy and support routes are maintained by `scripts/survival_pages.py`. Planned US$0.99 upfront, adults18+, no ads/IAP; coming soon, no store badge or offer schema. Actual native preview screenshots and AI-generated icon/feature art come from Survival 0.9.1 (12), with capture provenance retained. Optional online provider/location processing is disclosed. No app binary, private signing material or owner location is published.
+
+## Retro Arcade privacy policy — November 10, 2026
+
+`/retro-arcade/privacy/` is the public policy for the resource-only Wear OS face `com.tripperdeelabs.retroarcadewatch`. Its maintained source is `retro-arcade/privacy/index.html`; the catalog generator discovers this standalone page for the sitemap and must preserve its contents. No product page, Play availability claim, APK/AAB download, source archive, pricing offer or website analytics was added to this policy page. This publication is separate from Play Store submission.
