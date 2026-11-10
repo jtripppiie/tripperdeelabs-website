@@ -179,3 +179,7 @@ Product, privacy and support routes are maintained by `scripts/survival_pages.py
 ## Retro Arcade privacy policy — November 10, 2026
 
 `/retro-arcade/privacy/` is the public policy for the resource-only Wear OS face `com.tripperdeelabs.retroarcadewatch`. Its maintained source is `retro-arcade/privacy/index.html`; the catalog generator discovers this standalone page for the sitemap and must preserve its contents. No product page, Play availability claim, APK/AAB download, source archive, pricing offer or website analytics was added to this policy page. This publication is separate from Play Store submission.
+
+## Shared privacy workflow — November 10, 2026
+
+Use `/privacy/watch-faces/` for qualifying resource-only Wear OS faces after verifying their data practices match. `/privacy/apps/` is a directory, not a substitute policy URL for Play. Existing app policies and old URLs remain valid. Do not move ads/accounts/cloud/location products to the watch policy. For new apps reuse a policy only after its actual SDKs, permissions, collection/sharing, retention/deletion and audience practices are covered; otherwise update the relevant policy or add a product-specific supplement. Check the developer identity matches the Play listing. Each app still needs its own truthful Console declarations. Keep this directory updated when adding policies.
