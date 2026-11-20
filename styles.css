@@ -649,3 +649,6 @@ p,li,a{overflow-wrap:anywhere}
 .links a.button{color:#071526}
 .links a.button.secondary{color:var(--white)}
 h1,h2,h3,h4{overflow-wrap:anywhere}
+/* Keep the new collection discoverable in the home/page navigation on phones. */
+@media(max-width:760px){.site-header .nav{flex-wrap:wrap;gap:6px;padding-block:10px}.site-header .links{display:flex;flex-wrap:wrap;gap:4px 16px;width:100%}.site-header .links a{font-size:.875rem;min-height:44px}}
+@media(max-width:760px){.site-header .links a{display:inline-flex}}

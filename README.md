@@ -183,3 +183,13 @@ Product, privacy and support routes are maintained by `scripts/survival_pages.py
 ## Shared privacy workflow — November 10, 2026
 
 Use `/privacy/watch-faces/` for qualifying resource-only Wear OS faces after verifying their data practices match. `/privacy/apps/` is a directory, not a substitute policy URL for Play. Existing app policies and old URLs remain valid. Do not move ads/accounts/cloud/location products to the watch policy. For new apps reuse a policy only after its actual SDKs, permissions, collection/sharing, retention/deletion and audience practices are covered; otherwise update the relevant policy or add a product-specific supplement. Check the developer identity matches the Play listing. Each app still needs its own truthful Console declarations. Keep this directory updated when adding policies.
+
+## November 20, 2026: Watch Faces collection and Origins privacy
+
+`/watch-faces/` is the 19-design collection, linked from the home navigation and sitemap. `data/watch-faces.json` records names, exact Play links, existing Play-icon provenance, current US prices and listing availability. Seventeen public faces are $0.99; Launch Vector is free. Puppy Time is marked coming soon because its supplied package listing returns 404. Do not show a working purchase button until its public listing is confirmed.
+
+Regenerate only this page with `python3 scripts/watch_faces_pages.py`; the full catalog builder also calls it. Shared page rendering now lives in `scripts/page_template.py`, preserving the existing site design and consent-gated analytics. The shared watch privacy page names every collection face while keeping existing product-specific policies and companion-app boundaries intact.
+
+Origins privacy paragraphs match `/home/jt/projects/updated/origins/PRIVACY-DRAFT.txt` exactly; internal unpublished/publication instructions were omitted from the public page. Both privacy updates are dated November 20, 2026. The maintained Origins source is `data/origins-privacy.txt`.
+
+Checks: catalog and SEO validators; exact Origins paragraph comparison; all 19 names and icons; 320/390/1440px browser layouts, image loading and no horizontal overflow. Publication uses the existing GitHub Pages main/root workflow. This website update does not submit Origins or any watch to Google Play.

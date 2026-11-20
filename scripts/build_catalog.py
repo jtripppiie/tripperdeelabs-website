@@ -24,27 +24,8 @@ COPY={
 'kenai-report-data':('Kenai Report Data: Fish Count and Tide Complications for Wear OS','Kenai Report Data supplies public fishing-report data to compatible Wear OS complications. It is a separate watch app, not a watch face, and can work with Kenai Fishing Report or another compatible face.','It fetches ADF&G counts, USGS readings and NOAA tide predictions over the internet and caches validated reports. Requires Wear OS 5 or newer. Check official rules and conditions; this independent app does not decide whether fishing is permitted.',['Kenai late-run sockeye counts','Soldotna water readings','Cape Kasilof tide predictions','Report times, refresh and official source links']),
 'launch-vector':('Rocket Launch Countdown Watch Face for Wear OS','Launch Vector displays the next rocket launch countdown with time, weather and watch data. It includes launch status, an animated rocket and an ambient display.','Install the Launch Vector Data Provider companion to refresh launch schedules. Schedule updates require internet. This is an independent design, not affiliated with or endorsed by SpaceX.',['Launch countdown and status','12- and 24-hour time','Rocket flight animation','Wear OS weather and health complications'])}
 apps=json.loads((ROOT/'data/apps.json').read_text())
-HEADER='<header class="site-header"><nav class="nav wrap" aria-label="Main navigation"><a class="brand" href="/"><img class="brand-logo" src="/assets/tripperdeelabs-logo.png" width="48" height="48" alt="">TripperDeeLabs</a><div class="links"><a href="/#apps">Apps</a><a href="/wear-os/">Wear OS</a><a href="/#about">About</a></div></nav></header>'
-FOOTER='<footer class="studio-footer"><div class="wrap"><div class="studio-footer-main"><div class="studio-footer-brand"><a href="/">TripperDeeLabs</a><p>Doing TripperDee things in a TripperDee world.</p></div><nav class="studio-footer-nav" aria-label="Footer navigation"><a href="/#apps">Apps</a><a href="/#about">About the developer</a><a href="mailto:tripperdeelabs@gmail.com">Contact</a><a href="/feedback/">Feedback</a><a href="/privacy/">Website privacy</a></nav></div><div class="studio-footer-bottom"><span>© 2026 TripperDeeLabs</span><span>Google Play and the Google Play logo are trademarks of Google LLC.</span></div></div></footer>'
+from page_template import page, HEADER, FOOTER
 
-def page(path,title,desc,body,image=None,schema=None):
- url=BASE+path; image=image or BASE+'/assets/tripperdeelabs-logo.png'
- tags=f'<title>{E(title)} — TripperDeeLabs</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{url}">'
- for prop,val in [('og:type','website'),('og:title',title),('og:description',desc),('og:url',url),('og:image',image),('og:image:alt',title)]:tags+=f'<meta property="{prop}" content="{E(val)}">'
- if '/social.png' in image:tags+='<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
- for name,val in [('twitter:card','summary_large_image'),('twitter:title',title),('twitter:description',desc),('twitter:image',image),('twitter:image:alt',title)]:tags+=f'<meta name="{name}" content="{E(val)}">'
- if schema:tags+='<script type="application/ld+json">'+json.dumps(schema).replace('<','\\u003c')+'</script>'
- # Stable studio/site identity helps consumers connect each page to its publisher.
- organization={'@type':'Organization','@id':BASE+'/#studio','name':'TripperDeeLabs','url':BASE+'/','logo':BASE+'/assets/tripperdeelabs-logo.png','email':'tripperdeelabs@gmail.com'}
- website={'@type':'WebSite','@id':BASE+'/#website','url':BASE+'/','name':'TripperDeeLabs','publisher':{'@id':BASE+'/#studio'},'inLanguage':'en'}
- webpage={'@type':'WebPage','@id':url+'#webpage','url':url,'name':title,'description':desc,'isPartOf':{'@id':BASE+'/#website'},'publisher':{'@id':BASE+'/#studio'},'inLanguage':'en'}
- identity={'@context':'https://schema.org','@graph':[organization,website,webpage]}
- if path!='/':
-  identity['@graph'].append({'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':BASE+'/'},{'@type':'ListItem','position':2,'name':title,'item':url}]})
-  body='<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">'+E(title)+'</span></nav>'+body
- tags+='<script type="application/ld+json">'+json.dumps(identity).replace('<','\\u003c')+'</script>'
- doc='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+tags+'<link rel="icon" href="/assets/tripperdeelabs-logo.png" type="image/png"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/catalog.css"><script defer src="/cookie-consent.js"></script></head><body>'+HEADER+'<main class="wrap">'+body+'</main>'+FOOTER+'</body></html>'
- out=ROOT/path.strip('/')/'index.html';out.parent.mkdir(exist_ok=True,parents=True);out.write_text(doc+'\n')
 def badge(a):
  if a.get("status")=="maintenance":return '<p class="availability">Under maintenance</p>'
  return f'<a class="play-link" href="{E(a["play"])}"><img class="play-badge" src="/assets/google-play-badge.png" width="194" height="75" alt="Get {E(a["name"])} on Google Play"></a>'
@@ -113,6 +94,8 @@ from nearcrew_pages import build as build_nearcrew
 build_nearcrew(page)
 from survival_pages import build as build_survival
 build_survival(page)
+from watch_faces_pages import build as build_watch_faces
+build_watch_faces(page)
 # Preserve existing policy/support text, adding any missing canonical URLs.
 for p in ROOT.rglob('*.html'):
  if '.git' in p.parts:continue
