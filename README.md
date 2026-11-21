@@ -193,3 +193,7 @@ Regenerate only this page with `python3 scripts/watch_faces_pages.py`; the full 
 Origins privacy paragraphs match `/home/jt/projects/updated/origins/PRIVACY-DRAFT.txt` exactly; internal unpublished/publication instructions were omitted from the public page. Both privacy updates are dated November 20, 2026. The maintained Origins source is `data/origins-privacy.txt`.
 
 Checks: catalog and SEO validators; exact Origins paragraph comparison; all 19 names and icons; 320/390/1440px browser layouts, image loading and no horizontal overflow. Publication uses the existing GitHub Pages main/root workflow. This website update does not submit Origins or any watch to Google Play.
+
+## Zodiac collection — November 21, 2026
+
+The Watch Faces page now previews all twelve scenic zodiac faces with native emulator screenshots and explicit coming-soon status. These are not live Play offers. Entries and image provenance live in `data/watch-faces.json`; render with `python3 scripts/watch_faces_pages.py`. The shared policy canonical source is `privacy/watch-faces/index.html`; it now names all twelve zodiac packages and preserves the eight previously prepared holiday/other additions. No private APK/AAB, signing material or local source projects are published. Both existing page URLs already appear in the sitemap.
