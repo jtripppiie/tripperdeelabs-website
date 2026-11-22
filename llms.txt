@@ -83,6 +83,8 @@ Use individual product pages as the source for features, compatibility, screensh
 
 - [NearCrew Offline Chat](https://tripperdeelabs.com/nearcrew/): Development preview of nearby Bluetooth/local Wi-Fi group messaging; planned $0.99 once, no ads. Not yet on Google Play. [Privacy](https://tripperdeelabs.com/nearcrew/privacy/) · [Support](https://tripperdeelabs.com/nearcrew/support/).
 
+- [ReadyDocs](https://tripperdeelabs.com/readydocs/): Android document handoff in development. Show selected PDFs or images while the phone stays locked, with a separate emergency card. [Privacy](https://tripperdeelabs.com/readydocs/privacy/) · [Support](https://tripperdeelabs.com/readydocs/support/).
+
 - [Neon Air Hockey](https://tripperdeelabs.com/neon-air-hockey/): Android air hockey in development; solo and same-screen play. [Privacy](https://tripperdeelabs.com/neon-air-hockey/privacy/) · [Support](https://tripperdeelabs.com/neon-air-hockey/support/).
 
 - [Tank Wars](https://tripperdeelabs.com/tank-wars/): Android artillery game in development, with destructible terrain and offline local battles. [Privacy](https://tripperdeelabs.com/tank-wars/privacy/) · [Support](https://tripperdeelabs.com/tank-wars/support/).
