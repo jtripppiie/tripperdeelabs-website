@@ -201,3 +201,8 @@ The Watch Faces page now previews all twelve scenic zodiac faces with native emu
 ## November 21, 2026: consent UI removed
 
 At the owner’s request, the website loads its existing G-77H5RENPZ3 Analytics tag automatically. The consent banner, Cookie settings button, stored-choice gate and associated CSS were removed. The legacy cookie-consent.js URL remains to serve existing pages. Google signals and advertising personalization remain disabled. Website privacy text now reflects automatic measurement. App policies are unchanged.
+
+
+## ClapFind — November 22, 2026
+
+Development product, privacy and support pages: `/clap-find/`, `/clap-find/privacy/`, `/clap-find/support/`. Maintained source: `scripts/clap_find_pages.py`; the catalog builder renders these routes. ClapFind is a nearby Android phone finder using clap detection, alarm sound, vibration and optional flashlight. Audio is processed on-device; no audio is saved or uploaded. Planned one-time US price: $0.50. No public Play listing, APK or AAB is published. Device testing, store assets and Play review remain before release.

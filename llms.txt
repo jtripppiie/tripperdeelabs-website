@@ -75,6 +75,10 @@ Use individual product pages as the source for features, compatibility, screensh
 - [Clap Counter privacy](https://tripperdeelabs.com/clap-counter/privacy/)
 - [Clap Counter support](https://tripperdeelabs.com/clap-counter/support/)
 
+## ClapFind — development preview
+
+- [ClapFind](https://tripperdeelabs.com/clap-find/): Nearby Android phone finder that responds to claps with sound, vibration, and flashlight alerts. Planned one-time price: US$0.50; not yet on Google Play. [Privacy](https://tripperdeelabs.com/clap-find/privacy/) · [Support](https://tripperdeelabs.com/clap-find/support/).
+
 - [Just Remind Me](https://tripperdeelabs.com/just-remind-me/): Android voice reminders and widget, in development. Planned $0.99 paid download with no ads. [Privacy](https://tripperdeelabs.com/just-remind-me/privacy/) and [support](https://tripperdeelabs.com/just-remind-me/support/).
 
 - [NearCrew Offline Chat](https://tripperdeelabs.com/nearcrew/): Development preview of nearby Bluetooth/local Wi-Fi group messaging; planned $0.99 once, no ads. Not yet on Google Play. [Privacy](https://tripperdeelabs.com/nearcrew/privacy/) · [Support](https://tripperdeelabs.com/nearcrew/support/).
