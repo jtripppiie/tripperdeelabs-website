@@ -583,51 +583,6 @@ footer a { color: var(--cyan); }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 
-/* Cookie consent */
-.cookie-banner {
-  position: fixed;
-  z-index: 1000;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: min(100% - 40px, 920px);
-  margin-inline: auto;
-  padding: 20px;
-  gap: 24px;
-  border: 2px solid var(--cyan);
-  border-radius: 18px;
-  color: var(--white);
-  background: #071526;
-  box-shadow: 7px 7px 0 rgba(44, 185, 232, .35), 0 18px 60px rgba(0, 0, 0, .5);
-}
-.cookie-banner[hidden], .cookie-settings[hidden] { display: none; }
-.cookie-copy { max-width: 610px; }
-.cookie-copy h2 { margin: 0 0 6px; font-size: 22px; letter-spacing: -.02em; }
-.cookie-copy p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
-.cookie-actions { display: flex; flex: 0 0 auto; gap: 10px; }
-.cookie-button, .cookie-settings {
-  min-height: 42px;
-  padding: 9px 15px;
-  border: 2px solid var(--white);
-  border-radius: 10px;
-  color: var(--white);
-  background: transparent;
-  font: 800 14px/1 system-ui, sans-serif;
-  cursor: pointer;
-}
-.cookie-accept { border-color: var(--orange-2); color: #071526; background: var(--orange-2); }
-.cookie-button:hover, .cookie-button:focus-visible, .cookie-settings:hover, .cookie-settings:focus-visible { transform: translateY(-2px); outline: 3px solid rgba(44, 185, 232, .45); outline-offset: 2px; }
-.cookie-settings { position: fixed; z-index: 999; left: 12px; bottom: 12px; min-height: 34px; padding: 7px 10px; border-color: var(--line); color: var(--muted); background: #071526; font-size: 12px; }
-
-@media (max-width: 680px) {
-  .cookie-banner { right: 12px; bottom: 12px; left: 12px; display: block; width: auto; padding: 18px; }
-  .cookie-actions { margin-top: 16px; }
-  .cookie-button { flex: 1; }
-}
-
 /* Keyboard navigation and unobscured content, including at high zoom. */
 .skip-link{position:fixed;top:8px;left:8px;z-index:2000;transform:translateY(-200%);padding:12px 18px;background:#071526;color:#fff;border:3px solid #f9d269;border-radius:6px}
 .skip-link:focus{transform:none}
@@ -637,10 +592,6 @@ main:focus{outline:none}
 html{scroll-padding-block:16px}
 a,button,input,select,textarea{scroll-margin-block:20px}
 .links a,.studio-footer-nav a,.directory-more{display:inline-flex;align-items:center;min-height:44px}
-.cookie-banner{position:relative;inset:auto;width:min(calc(100% - 32px),920px);margin:16px auto}
-.cookie-settings{position:static;display:block;min-height:44px;margin:20px auto 0;font-size:14px}
-.cookie-button{min-height:44px}
-.cookie-button:focus-visible,.cookie-settings:focus-visible{outline:3px solid #f9d269;outline-offset:4px;transform:none}
 .breadcrumbs{padding-top:24px;font-size:.9rem;line-height:1.7;overflow-wrap:anywhere}
 .breadcrumbs a{display:inline-flex;align-items:center;min-height:44px}
 p,li,a{overflow-wrap:anywhere}

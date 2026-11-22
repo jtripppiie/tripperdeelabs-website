@@ -197,3 +197,7 @@ Checks: catalog and SEO validators; exact Origins paragraph comparison; all 19 n
 ## Zodiac collection — November 21, 2026
 
 The Watch Faces page now previews all twelve scenic zodiac faces with native emulator screenshots and explicit coming-soon status. These are not live Play offers. Entries and image provenance live in `data/watch-faces.json`; render with `python3 scripts/watch_faces_pages.py`. The shared policy canonical source is `privacy/watch-faces/index.html`; it now names all twelve zodiac packages and preserves the eight previously prepared holiday/other additions. No private APK/AAB, signing material or local source projects are published. Both existing page URLs already appear in the sitemap.
+
+## November 21, 2026: consent UI removed
+
+At the owner’s request, the website loads its existing G-77H5RENPZ3 Analytics tag automatically. The consent banner, Cookie settings button, stored-choice gate and associated CSS were removed. The legacy cookie-consent.js URL remains to serve existing pages. Google signals and advertising personalization remain disabled. Website privacy text now reflects automatic measurement. App policies are unchanged.
