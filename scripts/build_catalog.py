@@ -98,6 +98,8 @@ from survival_pages import build as build_survival
 build_survival(page)
 from watch_faces_pages import build as build_watch_faces
 build_watch_faces(page)
+from readydocs_pages import build as build_readydocs
+build_readydocs()
 # Preserve existing policy/support text, adding any missing canonical URLs.
 for p in ROOT.rglob('*.html'):
  if '.git' in p.parts:continue
