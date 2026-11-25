@@ -1,8 +1,8 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "date": "2026-11-25",
   "game.png": "Unaltered Godot rendered desktop UI capture, study-10-lit.png. Revised integrated glass board with depth. Not a physical Android screenshot.",
   "collection.png": "Unaltered Godot rendered desktop UI capture, home.png.",
-  "art": "Original AI-generated glass atlas and menu workbench; live board, lighting, bevels and UI drawn by Godot.",
+  "art": "Original generated arcade jewel atlas; live vivid blue board, beveled controls, burst effects and UI drawn by Godot. Menu workbench retired.",
   "availability": "Development candidate; no public Play listing."
 }
