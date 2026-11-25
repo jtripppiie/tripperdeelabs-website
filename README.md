@@ -206,3 +206,7 @@ At the owner’s request, the website loads its existing G-77H5RENPZ3 Analytics 
 ## ClapFind — November 22, 2026
 
 Development product, privacy and support pages: `/clap-find/`, `/clap-find/privacy/`, `/clap-find/support/`. Maintained source: `scripts/clap_find_pages.py`; the catalog builder renders these routes. ClapFind is a nearby Android phone finder using clap detection, alarm sound, vibration and optional flashlight. Audio is processed on-device; no audio is saved or uploaded. Planned one-time US price: $0.50. No public Play listing, APK or AAB is published. Device testing, store assets and Play review remain before release.
+
+## Glowglass — November 25, 2026
+
+Product, privacy and support routes: `/glowglass/`, `/glowglass/privacy/`, `/glowglass/support/`. Maintained source: `scripts/glowglass_pages.py`, integrated into the catalog builder. The page describes the 60-puzzle 1.0.0 candidate and planned $0.99 upfront price, clearly marked coming soon. Actual desktop-rendered game captures show the integrated glass board with depth; provenance is in `assets/apps/glowglass/provenance.json`. No store availability, download badge, reviews or physical-device verification is claimed. No binaries or credentials are included.

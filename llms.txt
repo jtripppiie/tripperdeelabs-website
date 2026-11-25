@@ -92,3 +92,9 @@ Use individual product pages as the source for features, compatibility, screensh
 - [Bluetooth Drag Racing](https://tripperdeelabs.com/bluetooth-racing/): Android drag racer in development; offline solo runs, garages and ghosts. Bluetooth is in testing. [Privacy](https://tripperdeelabs.com/bluetooth-racing/privacy/) · [Support](https://tripperdeelabs.com/bluetooth-racing/support/).
 
 - [Watch Faces](https://tripperdeelabs.com/watch-faces/): Current Wear OS collection, Play links, prices and privacy policies.
+
+## Glowglass (coming soon)
+
+- [Glowglass: Light Puzzles](https://tripperdeelabs.com/glowglass/): 60 offline optical puzzles for Android; not yet released.
+- [Privacy](https://tripperdeelabs.com/glowglass/privacy/)
+- [Support](https://tripperdeelabs.com/glowglass/support/)
